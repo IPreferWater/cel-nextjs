@@ -1,0 +1,36 @@
+{
+    "month": 1,
+    "monthLabel": "janvier",
+    "color": {
+        "background": "orange"
+    },
+    "planning": [
+        {
+            "1": [
+                "de 10h à 12h à la salle tremiere ",
+                "14 à 15 atelier abracadabra"
+            ],
+            "2": [
+                "de 10h à 12h à  "
+            ],
+            "3": [
+                "couturiere"
+            ],
+            "4": [
+                "de 10h à 12h à la salle tremiere "
+            ],
+            "5": [
+                "de 10h à 12h à la salle tremiere "
+            ],
+            "6": [
+                "de 10h à 12h à la salle tremiere "
+            ],
+            "7": [
+                "de 10h à 12h à la salle tremiere "
+            ],
+            "8": [
+                ""
+            ]
+        }
+    ]
+}
