@@ -4,6 +4,12 @@
 
 @import "tailwindcss/utilities";
 
+@layer utilities {
+  .blur {
+    filter: blur(25px);
+  }
+}
+
 body {
   @apply bg-white ;
 }
