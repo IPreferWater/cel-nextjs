@@ -1,5 +1,4 @@
 {
-    "month": 1,
     "label": "janvier",
     "color": {
         "background": "orange"
@@ -10,7 +9,11 @@
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":8
+                }
         },
         {  
             "day":"2",
@@ -21,7 +24,11 @@
                 "14 à 15 atelier abracadabra",
                 "14 à 15 atelier abracadabra",
                 "14 à 15 atelier abracadabra",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":10
+                }
         },
         {  
             "day":"3",
@@ -34,7 +41,11 @@
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":0
+                }
         },
         {  
             "day":"5",
@@ -54,7 +65,11 @@
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":2
+                }
         },
         {  
             "day":"8",
@@ -80,14 +95,22 @@
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":5
+                }
         },
         {  
             "day":"12",
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":8
+                }
         },
         {  
             "day":"13",
@@ -100,7 +123,11 @@
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":8
+                }
         },
         {  
             "day":"15",
@@ -120,7 +147,11 @@
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":8
+                }
         },
         {  
             "day":"18",
@@ -146,14 +177,22 @@
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":8
+                }
         },
         {  
             "day":"22",
             "type":"projet libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+                "14 à 15 atelier abracadabra"],
+                "participants":{
+                    "max":10,
+                    "booked":8
+                }
         },
         {  
             "day":"23",
