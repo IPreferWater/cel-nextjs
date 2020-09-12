@@ -12,7 +12,7 @@
                 "14 à 15 atelier abracadabra"],
                 "participants":{
                     "max":10,
-                    "booked":8
+                    "booked":10
                 }
         },
         {  
@@ -191,7 +191,7 @@
                 "14 à 15 atelier abracadabra"],
                 "participants":{
                     "max":10,
-                    "booked":8
+                    "booked":9
                 }
         },
         {  

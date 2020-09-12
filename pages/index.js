@@ -27,7 +27,7 @@ import { LazyImage} from '@components/lazy-image'
                     return (
                         <li key={idx}>
                             <Link href={`/plannings/${planning.slug}`}>
-                                <a>{planning.slug}</a>
+                                <a>{planning.title}</a>
                             </Link>
                         </li>
                     )
