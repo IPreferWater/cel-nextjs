@@ -16,7 +16,27 @@ export async function getAllPosts(){
             image: `blog/${meta.data.image}.jpg`
         })
     }
-    return posts;
+    return posts
+}
+
+export async function  getLatestsPostsByNumber(){
+    const context = require.context('../_posts', false, /\.md$/)
+    const posts = []
+    var len = context.keys().length
+    for (let i = 1; i <= 4; i++) {
+        len = len-1
+        const key = context.keys()[len]
+        const post = key.slice(2);
+        const content = await import(`../_posts/${post}`);
+        const meta = matter(content.default)
+        posts.push({
+            slug: post.replace('.md',''),
+            title: meta.data.title,
+            image: `blog/${meta.data.image}_s.jpg`
+        })
+
+      }
+      return posts;
 }
 
 export async function getPostBySlug(slug){

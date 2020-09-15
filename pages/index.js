@@ -1,7 +1,8 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import { getConfig ,getAllPosts, getAllPlannings } from '@api'
+import { getConfig ,getAllPosts, getAllPlannings, getLatestsPostsByNumber } from '@api'
 import { BandeauCleo} from '@components/bandeau-cleo'
+import { BandeauBlog} from '@components/bandeau-blog'
 import { LazyImage} from '@components/lazy-image'
 
   export default  class Home extends React.Component {
@@ -45,6 +46,8 @@ import { LazyImage} from '@components/lazy-image'
                     )
                 })}
             </ul>
+
+            <BandeauBlog latestPosts={this.props.latestPosts}/>
     </div>
   )}
 }
@@ -53,13 +56,15 @@ export async function getStaticProps(){
   const config = await getConfig()
   const allPosts = await getAllPosts()
   const allPlannings = await getAllPlannings()
+  const latestPosts = await getLatestsPostsByNumber()
 
   return {
       props: {
           posts: allPosts,
           plannings: allPlannings,
           title: config.title,
-          description: config.description
+          description: config.description,
+          latestPosts : latestPosts
       }
   }
 }

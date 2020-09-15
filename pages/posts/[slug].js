@@ -1,13 +1,28 @@
 import { getPostBySlug, getAllPosts } from "@api"
 import Link from 'next/link'
-export default function Post(props){
+import { LazyImage} from '@components/lazy-image'
+
+export default class Post extends React.Component {
+
+    state = {imgLoaded: false};
+    componentDidMount () {
+        setTimeout(() => {  this.setState({imgLoaded: true}); }, 2000);
+        //this.setState({imgLoaded: true})
+      }
+render(){
+    console.log("data img => "+this.props.image)
+
     return <div>
             <article>
-                <h1>{props.title}</h1>
-                <div dangerouslySetInnerHTML={{__html:props.content}}/>
+                <div className="object-center">
+                <LazyImage fileName={this.props.image} loaded={this.state.imgLoaded} ></LazyImage>
+                </div>
+                <h1>{this.props.title}</h1>
+                <div dangerouslySetInnerHTML={{__html:this.props.content}}/>
                 <div><Link href='/'><a>Home</a></Link></div> 
             </article>
     </div>
+    }
 }
 
 export async function getStaticProps(context){

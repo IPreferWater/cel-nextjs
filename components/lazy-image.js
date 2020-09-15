@@ -4,9 +4,9 @@ export function LazyImage({fileName, loaded}) {
 
     //TODO i would prefer this component doesn't handle by hitself to add the "image" prefix
     return (
-        <div className="relative">
-        <img className={`absolute blur ${loaded ? "invisible" : "visible"}`} width="100%" height="100%" src={require(`images/${fileName}?lqip`)} />
-        <img className={`${loaded ? "visible" : "invisible"}`} src={require(`images/${fileName}`)} />
+        <div className="relative  w-full h-full ">
+        <img className={`absolute blur ${loaded ? "invisible" : "visible w-full h-full"}`}  src={require(`images/${fileName}?lqip`)} />
+        <img className={`object-cover ${loaded ? "visible w-full h-full" : "invisible"}`} src={require(`images/${fileName}`)} />
         </div>
     )
 }
