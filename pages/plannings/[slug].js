@@ -2,13 +2,14 @@ import { getPlanningBySlug, getAllPlannings } from "@api"
 import { PlanningDay } from "@components/planningday"
 
 export default function Planning(props){
+
     const data = props.content
 
     return <div>
             <article>
                 <h1>{data.label}</h1>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">                {data.planning.map((day, index) => (
-                    <PlanningDay  key={index} day={day}/>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">                {data.planning.map((day, index) => (
+                    <PlanningDay  key={index} data={day} slug={props.slug}/>
     ))}
     </div>
                 

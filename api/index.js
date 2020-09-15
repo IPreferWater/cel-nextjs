@@ -73,7 +73,8 @@ export async function getPlanningBySlug(slug){
     const fileContent = await import(`../_plannings/${slug}.json`)
 
     return {
-        content: fileContent.default
+        content: fileContent.default,
+        slug : slug
     }
 }
 
