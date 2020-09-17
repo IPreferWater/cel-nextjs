@@ -13,3 +13,14 @@
 body {
   @apply bg-white ;
 }
+
+h1  {
+  @apply text-4xl mb-6;
+}
+
+h2 {
+  @apply text-2xl mb-6;
+}
+p {
+  @apply mb-6
+}
