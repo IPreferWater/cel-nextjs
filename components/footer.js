@@ -1,23 +1,32 @@
-import FooterList from './footer-list'
+import { InstagramIcon } from '@components/icons/instagram-icon'
+import { FacebookIcon } from '@components/icons/facebook-icon'
+import Link from 'next/link'
+
 
 function Footer() {
-    const followLinks = [
-        { label: "Facebook", url: "google.fr" },
-        { label: "Instagram", url: "google.fr" },
-        { label: "Twitter", url: "google.fr" },
-        { label: "Linkedin", url: "google.fr" }]
-
-    const routeLinks = [
-        { label: "Tenant", url: "/tenant" },
-        { label: "Landlord", url: "/landlord" },
-        { label: "About Us", url: "/about" },
-        { label: "Linkedin", url: "/contact" }]
     return (
-        <footer className="bg-blue-700">
-            <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
-                <FooterList title="follow" data={followLinks} external={true}></FooterList>
-                <FooterList title="navigation" data={routeLinks} external={false}></FooterList>
-            </nav>
+        <footer className="bg-green-700 text-white">
+
+
+            <div className="flex justify-between p-8">
+
+                <nav className="flex flex-col">
+                    <h1 className="text-center">Suivez nous</h1>
+                    <div className="m-2 flex flex-row ">
+                        <Link href={"https://www.instagram.com/clementinestla"} target="_blank">
+                            <div className="px-4">
+                                <InstagramIcon />
+                            </div>
+                        </Link>
+
+                        <Link href={"https://www.facebook.com/search/top?q=clementine%20conceptstore"} target="_blank">
+                            <div className="px-4">
+                                <FacebookIcon />
+                            </div>
+                        </Link>
+                    </div>
+                </nav>
+            </div>
         </footer>
     )
 }
