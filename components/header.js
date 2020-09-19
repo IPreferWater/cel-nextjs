@@ -15,7 +15,7 @@ import Link from 'next/link'
   render() {
   return (
     <header className="bg-teal-700">
-      <div className="flex flex-row items-center justify-between p-4 md:p-8">
+      <div className="flex flex-col sm:flex-row items-center justify-between p-4 md:p-8">
         <Link href="/">
           <h1 className="flex items-center text-white no-underline">
             <span className="text-xl font-bold tracking-tight">
@@ -25,7 +25,9 @@ import Link from 'next/link'
         </Link>
 
         <nav
-          className={ `flex flex-row justify-between text-white w-2/3`}
+          className={ ` ${
+            this.state.isExpanded ? `` : `hidden sm:contents`
+          } flex flex-col sm:flex-row justify-between text-white w-2/3`}
         >
           {[
             {
@@ -58,8 +60,8 @@ import Link from 'next/link'
           ))}
         </nav>
 
-       {/*  <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
+         <button
+          className="flex items-center block px-3 py-2 text-white border border-white rounded sm:hidden"
           onClick={this.handleClick}
         >
           <svg
@@ -71,7 +73,7 @@ import Link from 'next/link'
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
-*/}
+
       </div>
     </header>
   )};
