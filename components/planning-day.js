@@ -1,10 +1,18 @@
 
 function getColorType(type){
   switch (type) {
-    case 'Oranges':
-      return "bg-gray-200"
+    case 'cours enfant':
+      return "bg-pink-300"
+      case 'cours adulte':
+        return "bg-blue-200"
+        case 'access libre':
+          return "bg-green-200"
+          case 'projet libre':
+            return "bg-purple-200"
+            case 'absent':
+              return "bg-red-100"
     default:
-      return "bg-gray-200"
+      return "bg-orange-300"
   }
 }
 
@@ -16,7 +24,6 @@ function getParticipants(participants){
 }
 
 function getLabelDay(slug, day){
-    console.log(slug)
     const dateArr = slug.split('_');
     var date = new Date(`${dateArr[0]}/${dateArr[1]}/${day}`);
     return date.toLocaleDateString("fr-FR", { weekday: 'long' });        

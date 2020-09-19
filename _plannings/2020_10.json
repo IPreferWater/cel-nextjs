@@ -6,7 +6,7 @@
     "planning": [
         {  
             "day":"1",
-            "type":"projet libre",
+            "type":"cours enfant",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
                 "14 à 15 atelier abracadabra"],
@@ -17,7 +17,7 @@
         },
         {  
             "day":"2",
-            "type":"projet libre",
+            "type":"cours adulte",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
                 "14 à 15 atelier abracadabra",
@@ -38,7 +38,7 @@
         },
         {  
             "day":"4",
-            "type":"projet libre",
+            "type":"access libre",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
                 "14 à 15 atelier abracadabra"],
@@ -62,7 +62,7 @@
         },
         {  
             "day":"7",
-            "type":"projet libre",
+            "type":"random",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
                 "14 à 15 atelier abracadabra"],
@@ -185,7 +185,7 @@
         },
         {  
             "day":"22",
-            "type":"projet libre",
+            "type":"cours adulte",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
                 "14 à 15 atelier abracadabra"],
@@ -202,7 +202,7 @@
         },
         {  
             "day":"24",
-            "type":"projet libre",
+            "type":"cours adulte",
             "labels":[
                 "de 10h à 12h à la salle tremiere ",
                 "14 à 15 atelier abracadabra"]

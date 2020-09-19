@@ -1,5 +1,5 @@
 import { getPlanningBySlug, getAllPlannings } from "@api"
-import { PlanningDay } from "@components/planningday"
+import { PlanningDay } from "@components/planning-day"
 
 export default function Planning(props){
 
