@@ -13,16 +13,16 @@ function Footer() {
                 <nav className="flex flex-col">
                     <h1 className="text-center">Suivez nous</h1>
                     <div className="m-2 flex flex-row ">
-                        <Link href={"https://www.instagram.com/clementinestla"} target="_blank">
-                            <div className="px-4">
+                        <Link href={"https://www.instagram.com/clementinestla"}>
+                            <a className="px-4" target="_blank">
                                 <InstagramIcon />
-                            </div>
+                            </a>
                         </Link>
 
-                        <Link href={"https://www.facebook.com/search/top?q=clementine%20conceptstore"} target="_blank">
-                            <div className="px-4">
+                        <Link href={"https://www.facebook.com/search/top?q=clementine%20conceptstore"}>
+                            <a className="px-4" target="_blank">
                                 <FacebookIcon />
-                            </div>
+                            </a>
                         </Link>
                     </div>
                 </nav>

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-//function Header()  {
   export default  class Header extends React.Component {
 
     state = {isExpanded: false};
@@ -19,7 +18,7 @@ import Link from 'next/link'
         <Link href="/">
           <h1 className="flex items-center text-white no-underline">
             <span className="text-xl font-bold tracking-tight">
-              title of website
+              Clementinestla
               </span>
           </h1>
         </Link>
@@ -78,4 +77,3 @@ import Link from 'next/link'
     </header>
   )};
           }
-//export default Header;

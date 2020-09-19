@@ -8,10 +8,10 @@ export class BandeauBlog extends React.Component {
             <section className="w-full">
                <div className="flex flex-wrap content-center justify-between">
                {this.props.latestPosts.map((post, i) =>
-               <Link href={`/posts/${post.slug}`}>
-               <image key={i} className="h-64 w-64">
+               <Link key={i} href={`/posts/${post.slug}`}>
+               <div  className="h-64 w-64">
                    <LazyImage  fileName={post.image} loaded={this.state.imgLoaded} ></LazyImage>
-                   </image>
+                   </div>
                </Link>
 
     )}
