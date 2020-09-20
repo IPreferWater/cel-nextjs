@@ -13,7 +13,7 @@ import Link from 'next/link'
 
   render() {
   return (
-    <header className="bg-teal-700">
+    <header className="bg-beach-green">
       <div className="flex flex-col sm:flex-row items-center justify-between p-4 md:p-8">
         <Link href="/">
           <h1 className="flex items-center text-white no-underline">
@@ -26,7 +26,7 @@ import Link from 'next/link'
         <nav
           className={ ` ${
             this.state.isExpanded ? `` : `hidden sm:contents`
-          } flex flex-col sm:flex-row justify-between text-white w-2/3`}
+          } flex flex-col sm:flex-row justify-between text-white font-extrabold w-2/3`}
         >
           {[
             {

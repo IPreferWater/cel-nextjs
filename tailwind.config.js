@@ -4,10 +4,20 @@ module.exports = {
     extend: {
       colors: {
         'cel-green': '#16a085',
+        'beach-green': '#96ceb4',
+        'beach-sand': '#ffeead',
+        'beach-red': '#ff6f69',
+        'beach-sun': '#ffcc5c',
+        'beach-green-flashy': '#88d8b0',
+        'beach-grey': '#6d7090',
       },
-      fill: theme => theme('colors')
+      fill: theme => theme('colors'),
+      screens:{
+        'sm-max': {'max': '640px'},
+    }
     },
   },
+
   variants: {},
   plugins: [],
   future: {
