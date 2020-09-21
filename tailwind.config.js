@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       colors: {
         'cel-green': '#16a085',
-        'beach-green': '#96ceb4',
+        'beach-green': '#7eb79d',
         'beach-sand': '#ffeead',
         'beach-red': '#ff6f69',
         'beach-sun': '#ffcc5c',

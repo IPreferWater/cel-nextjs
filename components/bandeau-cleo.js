@@ -8,7 +8,7 @@ export function BandeauCleo() {
        "Evidemment, comme tout est fabriqué à la commande, il est possible de faire n'importe quelle taille ou ajustement. Vous pouvez nous indiquer vos propres mesures dans les commentaires au moment du panier."]
 
     return (
-        <section className="bg-cel-green">
+        <section className="bg-beach-green">
             <div className="flex flex-wrap content-center">
            {texts.map((txt, i) =>
       <div key={i} className="sm:w-1/2 lg:w-1/4 lg:flex-shrink text-sm py-8 px-10 text-white">{txt}</div>

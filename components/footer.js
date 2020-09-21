@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function Footer() {
     return (
-        <footer className="bg-green-700 text-white">
+        <footer className="bg-beach-green text-white">
 
 
             <div className="flex justify-between p-8">
