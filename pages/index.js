@@ -4,50 +4,60 @@ import { getConfig, getAllPosts, getAllPlannings, getLatestsPostsByNumber } from
 import { BandeauCleo } from '@components/bandeau-cleo'
 import { BandeauBlog } from '@components/bandeau-blog'
 import { LazyImage } from '@components/lazy-image'
-import { ClementineIcon} from '@components/icons/clementine-icon'
+import { ClementineIcon } from '@components/icons/clementine-icon'
 
 import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 export default class Home extends React.Component {
 
     state = { imgLoaded: false };
- t ={
-    
+    t = {
+
         resolve: autoplayPlugin,
         options: {
-          interval: 2000,
+            interval: 2000,
         }
-      
-} 
+
+    }
     componentDidMount() {
-        this.setState({ imgLoaded: true })
+        this.setState({ imgLoaded: false })
     }
     render() {
         return (
             <div className={styles.container}>
-<section className="w-full p-8 bg-beach-sand rounded-lg mb-4">
-    <div className="flex flex-col sm:flex-row justify-center">
-    <ClementineIcon className="sm-max:w-full justify-center"/>
-    <h1 className="text-center text-beach-grey font-extrabold">Consommez autrement, upcyclez votre quotidien !</h1>
-    <ClementineIcon className=" sm-max:w-full justify-center "/>
-    </div>
+                <section className="w-full p-8 bg-beach-sand rounded-lg mb-4">
+                    <div className="flex flex-col sm:flex-row justify-center">
+                        <ClementineIcon className="sm-max:w-full justify-center" />
+                        <h1 className="text-center text-beach-grey font-extrabold">Consommez autrement, upcyclez votre quotidien !</h1>
+                        <ClementineIcon className=" sm-max:w-full justify-center " />
+                    </div>
+                </section>
 
-</section>
-<Carousel   infinite  autoPlay={3500} >
-<LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded} ></LazyImage>
-<LazyImage fileName={'about_photo.jpg'} loaded={this.state.imgLoaded} ></LazyImage>
-</Carousel>
+                <Carousel infinite autoPlay={3500} >
+                    <LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded} ></LazyImage>
+                    <LazyImage fileName={'about_photo.jpg'} loaded={this.state.imgLoaded} ></LazyImage>
+                </Carousel>
+
                 <BandeauCleo />
+
+                <section className="w-1/2 bg-beach-sand rounded-lg">
+                    <Carousel arrows>
+                        {this.props.plannings.map(function (planning, idx) {
+                            return (
+                                <Link key={idx} href={`/plannings/${planning.slug}`}>
+                                    <a className="w-full  h-24 text-beach-grey font-extrabold text-2xl text-center">
+                                        planning {planning.title}
+                                    </a>
+                                </Link>
+
+                            )
+                        })}
+                    </Carousel>
+                </section>
+
+
                 <p>List of plannings:</p>
                 <ul>
-                    {this.props.plannings.map(function (planning, idx) {
-                        return (
-                            <li key={idx}>
-                                <Link href={`/plannings/${planning.slug}`}>
-                                    <a>{planning.title}</a>
-                                </Link>
-                            </li>
-                        )
-                    })}
+
                 </ul>
                 <p>List of posts:</p>
                 <ul>
