@@ -4,20 +4,38 @@ import { getConfig, getAllPosts, getAllPlannings, getLatestsPostsByNumber } from
 import { BandeauCleo } from '@components/bandeau-cleo'
 import { BandeauBlog } from '@components/bandeau-blog'
 import { LazyImage } from '@components/lazy-image'
+import { ClementineIcon} from '@components/icons/clementine-icon'
 
+import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 export default class Home extends React.Component {
 
     state = { imgLoaded: false };
-
+ t ={
+    
+        resolve: autoplayPlugin,
+        options: {
+          interval: 2000,
+        }
+      
+} 
     componentDidMount() {
         this.setState({ imgLoaded: true })
     }
     render() {
         return (
             <div className={styles.container}>
-                <div>
-                    <LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded} ></LazyImage>
-                </div>
+<section className="w-full p-8 bg-beach-sand rounded-lg mb-4">
+    <div className="flex flex-col sm:flex-row justify-center">
+    <ClementineIcon className="sm-max:w-full justify-center"/>
+    <h1 className="text-center text-beach-grey font-extrabold">Consommez autrement, upcyclez votre quotidien !</h1>
+    <ClementineIcon className=" sm-max:w-full justify-center "/>
+    </div>
+
+</section>
+<Carousel   infinite  autoPlay={3500} >
+<LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded} ></LazyImage>
+<LazyImage fileName={'about_photo.jpg'} loaded={this.state.imgLoaded} ></LazyImage>
+</Carousel>
                 <BandeauCleo />
                 <p>List of plannings:</p>
                 <ul>
