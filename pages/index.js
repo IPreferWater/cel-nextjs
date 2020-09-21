@@ -5,6 +5,7 @@ import { BandeauCleo } from '@components/bandeau-cleo'
 import { BandeauBlog } from '@components/bandeau-blog'
 import { LazyImage } from '@components/lazy-image'
 import { ClementineIcon } from '@components/icons/clementine-icon'
+import { CalendarIcon } from '@components/icons/calendar-icon'
 
 import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 export default class Home extends React.Component {
@@ -44,21 +45,17 @@ export default class Home extends React.Component {
                         {this.props.plannings.map(function (planning, idx) {
                             return (
                                 <Link key={idx} href={`/plannings/${planning.slug}`}>
-                                    <a className="w-full  h-24 text-beach-grey font-extrabold text-2xl text-center">
-                                        planning {planning.title}
+                                    <a className="w-full  h-40 text-beach-grey font-extrabold text-2xl text-center">
+                                        <p>planning {planning.title}</p>
+                                        <CalendarIcon className="w-full text-center"/>
                                     </a>
+                                    
                                 </Link>
 
                             )
                         })}
                     </Carousel>
                 </section>
-
-
-                <p>List of plannings:</p>
-                <ul>
-
-                </ul>
                 <p>List of posts:</p>
                 <ul>
                     {this.props.posts.map(function (post, idx) {
