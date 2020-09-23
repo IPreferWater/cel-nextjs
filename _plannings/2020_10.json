@@ -1,251 +1,441 @@
 {
     "label": "janvier",
-    "color": {
-        "background": "orange"
-    },
+    "color": "orange",
     "planning": [
         {  
             "day":"1",
-            "type":"cours enfant",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":10
+            "events": [
+                {
+                    "type": "access libre",
+                    "label": "5€ par heure",
+                    "start": "10h00",
+                    "end":"14h00"
+                },
+                {
+                    "type": "projet libre",
+                    "start": "17h30",
+                    "end":"19h30",
+                    "participants":{
+                        "max":4,
+                        "booked":0
+                    }
                 }
+            ]
         },
         {  
             "day":"2",
-            "type":"cours adulte",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra",
-                "14 à 15 atelier abracadabra",
-                "14 à 15 atelier abracadabra",
-                "14 à 15 atelier abracadabra",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":10
+            "events": [
+                {
+                    "type": "access libre",
+                    "label": "5€ par heure",
+                    "start": "10h00",
+                    "end":"14h00"
+                },
+                {
+                    "type":"cours ados",
+                    "start": "18h15",
+                    "end":"19h30"
                 }
+            ]
         },
         {  
             "day":"3",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type": "cours adultes",
+                    "start": "10h00",
+                    "end":"14h00"
+                }
+            ]
         },
         {  
             "day":"4",
-            "type":"access libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":0
-                }
+            "events": []
         },
         {  
             "day":"5",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": [
+                {
+                    "type": "projet libre",
+                    "start": "14h00",
+                    "end":"16h00",
+                    "participants":{
+                        "max":4,
+                        "booked":4
+                    }
+                }
+            ]
         },
         {  
             "day":"6",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"access libre",
+                    "label":"5€ par heure",
+                    "start": "10h00",
+                    "end":"12h00"
+                },
+                {
+                    "type":"cours ados",
+                    "start": "17h15",
+                    "end":"18h30"
+                }
+            ]
         },
         {  
             "day":"7",
-            "type":"random",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":2
+            "events": [
+                {
+                    "type":"cours enfants",
+                    "start": "10h00",
+                    "end":"11h15"
+                },
+                {
+                    "type":"cours enfants",
+                    "start": "11h15",
+                    "end":"12h30"
+                },
+                {
+                    "type":"cours ados",
+                    "start": "13h15",
+                    "end":"14h30"
+                },
+                {
+                    "type":"access libre",
+                    "label":"5€ par heure",
+                    "start": "14h30",
+                    "end":"17h00"
+                },
+                {
+                    "type":"cours ados",
+                    "start": "17h15",
+                    "end":"18h30"
                 }
+            ]
         },
         {  
             "day":"8",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": [
+                {
+                    "type":"access libre",
+                    "label":"5€ par heure",
+                    "start": "10h00",
+                    "end":"14h00"
+                }
+            ]
         },
         {  
             "day":"9",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"cours adultes",
+                    "start": "18h15",
+                    "end":"19h30"
+                }
+            ]
         },
         {  
             "day":"10",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"cours adultes",
+                    "start": "11h15",
+                    "end":"12h30"
+                },
+                {
+                    "type":"atelier upcycling",
+                    "start": "14h00",
+                    "end":"16h30"
+                }
+            ]
         },
         {  
             "day":"11",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":5
+            "events": [
+                {
+                    "type":"cours adultes",
+                    "start": "11h15",
+                    "end":"12h30"
                 }
+            ]
         },
         {  
             "day":"12",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":8
+            "events": [
+                {
+                    "type":"projet libre",
+                    "start": "14h00",
+                    "end":"16h00",
+                    "participants":{
+                        "max":4,
+                        "booked":0
+                    }
                 }
+            ]
         },
         {  
             "day":"13",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"access libre",
+                    "label":"5€ par heure",
+                    "start": "10h00",
+                    "end":"12h00"
+                },
+                {
+                    "type":"access libre",
+                    "label":"5€ par heure",
+                    "start": "17h15",
+                    "end":"18h30"
+                }
+            ]
         },
         {  
             "day":"14",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":8
+            "events": [
+                {
+                    "type":"cours enfants",
+                    "start": "10h00",
+                    "end":"11h15"
+                },
+                {
+                    "type":"cours enfants",
+                    "start": "11h15",
+                    "end":"12h30"
+                },
+                {
+                    "type":"cours ados",
+                    "start": "13h15",
+                    "end":"14h30"
+                },
+                {
+                    "type":"access libre",
+                    "label":"5€ par heure",
+                    "start": "14h30",
+                    "end":"17h00"
+                },
+                {
+                    "type":"cours ados",
+                    "start": "17h15",
+                    "end":"18h30"
                 }
+            ]
         },
         {  
             "day":"15",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": [
+                {
+                    "type": "access libre",
+                    "label": "5€ par heure",
+                    "start": "10h00",
+                    "end":"14h00"
+                },
+                {
+                    "type": "projet libre",
+                    "start": "17h30",
+                    "end":"19h30",
+                    "participants":{
+                        "max":4,
+                        "booked":0
+                    }
+                }
+            ]
         },
         {  
             "day":"16",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type": "access libre",
+                    "label": "5€ par heure",
+                    "start": "10h00",
+                    "end":"14h00"
+                },
+                {
+                    "type":"cours adultes",
+                    "start": "18h15",
+                    "end":"19h30"
+                }
+            ]
         },
         {  
             "day":"17",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":8
+            "events": [
+                {
+                    "type":"cours adultes",
+                    "start": "11h15",
+                    "end":"12h30"
                 }
+            ]
         },
         {  
             "day":"18",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": []
         },
         {  
             "day":"19",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"stage couture enfants - ados - adultes",
+                    "label":"annonce prochainement",
+                    "start": "11h15",
+                    "end":"12h30"
+                }
+            ]
         },
         {  
             "day":"20",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"stage couture enfants - ados - adultes",
+                    "label":"annonce prochainement",
+                    "start": "11h15",
+                    "end":"12h30"
+                },
+                {
+                    "type": "projet libre",
+                    "start": "17h30",
+                    "end":"19h30",
+                    "participants":{
+                        "max":4,
+                        "booked":0
+                    }
+                }
+            ]
         },
         {  
             "day":"21",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":8
+            "events": [
+                {
+                    "type":"stage couture enfants - ados - adultes",
+                    "label":"annonce prochainement",
+                    "start": "11h15",
+                    "end":"12h30"
                 }
+            ]
         },
         {  
             "day":"22",
-            "type":"cours adulte",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"],
-                "participants":{
-                    "max":10,
-                    "booked":9
+            "events": [
+                {
+                    "type":"absent",
+                    "label":"en deplacement",
+                    "start": "",
+                    "end":""
                 }
+            ]
         },
         {  
             "day":"23",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"absent",
+                    "label":"en deplacement",
+                    "start": "",
+                    "end":""
+                }
+            ]
         },
         {  
             "day":"24",
-            "type":"cours adulte",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": [
+                {
+                    "type":"absent",
+                    "label":"en deplacement",
+                    "start": "",
+                    "end":""
+                }
+            ]
         },
         {  
             "day":"25",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": []
         },
         {  
             "day":"26",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"absent",
+                    "label":"en deplacement",
+                    "start": "",
+                    "end":""
+                }
+            ]
         },
+
+
         {  
             "day":"27",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": [
+                {
+                    "type":"stage couture enfants - ados - adultes",
+                    "label":"annonce prochainement",
+                    "start": "",
+                    "end":""
+                },
+                {
+                    "type": "projet libre",
+                    "start": "17h30",
+                    "end":"19h30",
+                    "participants":{
+                        "max":4,
+                        "booked":0
+                    }
+                }
+            ]
         },
         {  
             "day":"28",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": [
+                {
+                    "type":"stage couture enfants - ados - adultes",
+                    "label":"annonce prochainement",
+                    "start": "",
+                    "end":""
+                }
+            ]
         },
         {  
             "day":"29",
-            "type":"absent",
-            "labels":[]
-
+            "events": [
+                {
+                    "type":"stage couture enfants - ados - adultes",
+                    "label":"annonce prochainement",
+                    "start": "",
+                    "end":""
+                },
+                {
+                    "type": "projet libre",
+                    "start": "17h30",
+                    "end":"19h30",
+                    "participants":{
+                        "max":4,
+                        "booked":0
+                    }
+                }
+            ]
         },
         {  
             "day":"30",
-            "type":"projet libre",
-            "labels":[
-                "de 10h à 12h à la salle tremiere ",
-                "14 à 15 atelier abracadabra"]
+            "events": [
+                {
+                    "type": "access libre",
+                    "label": "5€ par heure",
+                    "start": "10h00",
+                    "end":"14h00"
+                }
+            ]
+        },
+        {  
+            "day":"31",
+            "events": [
+                {
+                    "type":"absent",
+                    "label":"en deplacement",
+                    "start": "",
+                    "end":""
+                }
+            ]
         }
-    ]
+
+    ]       
 }

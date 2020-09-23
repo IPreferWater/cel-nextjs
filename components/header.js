@@ -31,7 +31,7 @@ import Link from 'next/link'
           {[
             {
               route: `/`,
-              title: `Acceuil`,
+              title: `Accueil`,
             },
             {
               route: `/blog`,
