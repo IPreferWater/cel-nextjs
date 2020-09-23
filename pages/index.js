@@ -15,12 +15,12 @@ export default class Home extends React.Component {
 
         resolve: autoplayPlugin,
         options: {
-            interval: 2000,
+            interval: 4000,
         }
 
     }
     componentDidMount() {
-        this.setState({ imgLoaded: false })
+        this.setState({ imgLoaded: true })
     }
     render() {
         return (
@@ -33,7 +33,7 @@ export default class Home extends React.Component {
                     </div>
                 </section>
 
-                <Carousel infinite autoPlay={3500} >
+                <Carousel infinite autoPlay={6000} animationSpeed={3000} dots >
                     <LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded} ></LazyImage>
                     <LazyImage fileName={'about_photo.jpg'} loaded={this.state.imgLoaded} ></LazyImage>
                 </Carousel>
