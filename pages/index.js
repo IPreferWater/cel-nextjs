@@ -40,12 +40,12 @@ export default class Home extends React.Component {
 
                 <BandeauCleo />
 
-                <section className="w-1/2 bg-beach-sand rounded-lg">
-                    <Carousel arrows>
+                <section className="w-1/2 bg-beach-sand rounded-lg mt-6 flex flex-col">
+
                         {this.props.plannings.map(function (planning, idx) {
                             return (
                                 <Link key={idx} href={`/plannings/${planning.slug}`}>
-                                    <a className="w-full  h-40 text-beach-grey font-extrabold text-2xl text-center">
+                                    <a className="w-auto h-40 text-beach-grey font-extrabold text-2xl text-center">
                                         <p>planning {planning.title}</p>
                                         <CalendarIcon className="w-full text-center"/>
                                     </a>
@@ -54,9 +54,8 @@ export default class Home extends React.Component {
 
                             )
                         })}
-                    </Carousel>
                 </section>
-                <p>List of posts:</p>
+               {/* <p>List of posts:</p>
                 <ul>
                     {this.props.posts.map(function (post, idx) {
                         return (
@@ -69,7 +68,7 @@ export default class Home extends React.Component {
                     })}
                 </ul>
 
-                <BandeauBlog latestPosts={this.props.latestPosts} />
+                <BandeauBlog latestPosts={this.props.latestPosts} />*/}
             </div>
         )
     }

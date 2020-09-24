@@ -31,7 +31,8 @@ export default class PlanningBuilder extends React.Component {
         e.preventDefault();
         const nbrOfDays = getDaysInMonth(this.state.month, this.state.year)
         let planning = new Array(nbrOfDays)
-        for (let i = 0; i <= nbrOfDays; i++) {
+        console.log(nbrOfDays)
+        for (let i = 0; i < nbrOfDays; i++) {
             const dayPlanning = {
                 day: i,
                 events: [{ type: "", start: "", end: "" }]

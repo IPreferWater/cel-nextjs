@@ -11,7 +11,7 @@ function Footer() {
             <div className="flex justify-between p-8">
 
                 <nav className="flex flex-col">
-                    <h1 className="text-center">Suivez nous</h1>
+                    <h1 className="text-center">Suivez moi</h1>
                     <div className="m-2 flex flex-row ">
                         <Link href={"https://www.instagram.com/clementinestla"}>
                             <a className="px-4" target="_blank">
