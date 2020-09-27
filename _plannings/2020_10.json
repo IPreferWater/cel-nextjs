@@ -33,8 +33,8 @@
                 },
                 {
                     "type":"cours ados",
-                    "start": "18h15",
-                    "end":"19h30"
+                    "start": "17h15",
+                    "end":"18h30"
                 }
             ]
         },
@@ -43,8 +43,8 @@
             "events": [
                 {
                     "type": "cours adultes",
-                    "start": "10h00",
-                    "end":"14h00"
+                    "start": "11h15",
+                    "end":"12h30"
                 }
             ]
         },
@@ -61,7 +61,7 @@
                     "end":"16h00",
                     "participants":{
                         "max":4,
-                        "booked":4
+                        "booked":0
                     }
                 }
             ]
@@ -101,10 +101,15 @@
                     "end":"14h30"
                 },
                 {
-                    "type":"access libre",
-                    "label":"5€ par heure",
+                    "type":"cours ados",
                     "start": "14h30",
-                    "end":"17h00"
+                    "end":"15h45"
+                },
+                {
+                "type":"access libre",
+                    "label":"5€ par heure",
+                    "start": "15h45",
+                    "end":"17h15"
                 },
                 {
                     "type":"cours ados",
@@ -152,11 +157,7 @@
         {  
             "day":"11",
             "events": [
-                {
-                    "type":"cours adultes",
-                    "start": "11h15",
-                    "end":"12h30"
-                }
+                
             ]
         },
         {  
@@ -181,13 +182,8 @@
                     "label":"5€ par heure",
                     "start": "10h00",
                     "end":"12h00"
-                },
-                {
-                    "type":"access libre",
-                    "label":"5€ par heure",
-                    "start": "17h15",
-                    "end":"18h30"
                 }
+                
             ]
         },
         {  

@@ -31,6 +31,26 @@ export default class PlanningBuilder extends React.Component {
         this.setState({ month: now.getMonth(), year: now.getFullYear() });
     }
 
+    deleteEvent = (indexDay, indexEvent) => (e) => {
+        e.preventDefault();
+        let newArray = [...this.state.planning]
+        let elem = newArray[indexDay].events
+        elem.splice(indexEvent, 1);
+
+        this.setState({
+            planning: newArray,
+        });
+    }
+
+    addEvent = (indexDay) => (e) => {
+        e.preventDefault();
+        let newArray = [...this.state.planning]
+        newArray[indexDay].events.push({ type: "", start: "", end: "" })
+        this.setState({
+            planning: newArray,
+        });
+    }
+
     handleClick = (e) => {
         e.preventDefault();
         const nbrOfDays = getDaysInMonth(this.state.month, this.state.year)
@@ -63,10 +83,10 @@ export default class PlanningBuilder extends React.Component {
         });
     }
 
-    handleChangePlaning = (index, parameter) => (e) => {
+    handleChangePlaning = (indexDay, indexEvent, parameter) => (e) => {
         let newArray = [...this.state.planning]
         const value = e.target.value
-        let elem = newArray[index]
+        let elem = newArray[indexDay].events[indexEvent]
         switch (parameter) {
             case 'type':
                 elem.type = value
@@ -74,8 +94,8 @@ export default class PlanningBuilder extends React.Component {
             case 'start':
                 elem.start = value
                 break;
-            case 'stop':
-                elem.stop = value
+            case 'end':
+                elem.end = value
                 break;
             case 'label':
                 elem.label = value
@@ -95,10 +115,10 @@ export default class PlanningBuilder extends React.Component {
     }
 
 
-    addParticipants = (index) => (e) => {
+    addParticipants = (indexDay, indexEvent) => (e) => {
         e.preventDefault();
         let newArray = [...this.state.planning]
-        let elem = newArray[index]
+        let elem = newArray[indexDay].events[indexEvent]
 
         if (participantsIsNull(elem)) {
 
@@ -113,85 +133,113 @@ export default class PlanningBuilder extends React.Component {
         console.log("ok")
     }
 
+    copyToClipboard = (e) => {
+        e.preventDefault();
+        const copyText = "blaaaaaaa"
+        copyText.select();
+        document.execCommand("copy");
+    };
+
     render() {
 
         const availableType = ["access libre", "projet libre", "cours enfants", "cours ados", "cours adultes"]
         const availableHours = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
 
         return (
-            <div>
-                <button onClick={this.handleClick}>+</button>
-                <label> month :
+            <div className="flex flex-row">
+                <div className="w-1/2">
+                    <button onClick={this.handleClick}>+</button>
+                    <label> month :
           <input type="text" value={this.state.month} onChange={this.handleChangeMonth} />
-                </label>
-                <label> year :
+                    </label>
+                    <label> year :
           <input type="text" value={this.state.year} onChange={this.handleChangeYear} />
-                </label>
+                    </label>
 
-                {this.state.planning.map((dayPlanning, i) =>
-                    <div key={i} className="flex flex-col mb-8" >
-                            <h2>{`day ${i}`}</h2>
-                        <section>
-                            <label> type :
-                        <input type="text" value={dayPlanning.type || ""} onChange={this.handleChangePlaning(i, "type")} />
-                            </label>
-                            <select name="type" onChange={this.handleChangePlaning(i, "type")} value={this.state.planning[i].type}>
-                                <option value="choose">--SELECT TYPE--</option>
-                                {availableType.map((type, i) =>
-                                    <option key={i} value={type}>{type}</option>
-                                )}
-                            </select>
-                        </section>
+                    {this.state.planning.map((dayPlanning, indexDay) =>
 
-                        <section>
-                            <label> start :
-                        <input type="text" value={dayPlanning.start || ""} onChange={this.handleChangePlaning(i, "start")} />
-                            </label>
-                            <select name="type" onChange={this.handleChangePlaning(i, "start")} value={this.state.planning[i].type}>
-                                <option value="choose">--SELECT START HOUR--</option>
-                                {availableHours.map((hour, i) =>
-                                    <option key={i} value={`${hour}h`}>{hour}</option>
-                                )}
-                            </select>
-                        </section>
+                        <div key={indexDay} className="flex flex-col mb-8">
+                            <h2>{`day ${indexDay}`}</h2>
+                            {dayPlanning.events.map((event, indexEvent) =>
+                                <div key={`${indexDay}_${indexEvent}`}>
 
-                        <section>
-                            <label> stop :
-                        <input type="text" value={dayPlanning.stop || ""} onChange={this.handleChangePlaning(i, "stop")} />
-                            </label>
-                            <select name="type" onChange={this.handleChangePlaning(i, "stop")} value={this.state.planning[i].type}>
-                                <option value="choose">--SELECT STOP HOUR--</option>
-                                {availableHours.map((hour, i) =>
-                                    <option key={i} value={`${hour}h`}>{hour}</option>
-                                )}
-                            </select>
-                        </section>
+                                    <button className={`p-2 bg-beach-red`} onClick={this.deleteEvent(indexDay, indexEvent)} type="button">X</button>
 
-                        <section>
-                            <label> label :
-                        <input type="text" value={dayPlanning.label || ""} onChange={this.handleChangePlaning(i, "label")} />
-                            </label>
-                        </section>
+                                    <section>
+                                        <label> type :
+                        <input type="text" value={event.type || ""} onChange={this.handleChangePlaning(indexDay, indexEvent, "type")} />
+                                        </label>
+                                        <select name="type" onChange={this.handleChangePlaning(indexDay, indexEvent, "type")} value={this.state.planning[indexDay].type}>
+                                            <option value="choose">--SELECT TYPE--</option>
+                                            {availableType.map((type, indexType) =>
+                                                <option key={indexType} value={type}>{type}</option>
+                                            )}
+                                        </select>
+                                    </section>
 
-                        <div>
-                            <button className={`p-4 ${participantsIsNull(dayPlanning) ? "bg-beach-green" : "bg-beach-red"}`} onClick={this.addParticipants(i)} type="button">trigger participants</button>
-                            { !participantsIsNull(dayPlanning) &&
-                                <div className="flex flex-col">
-                                    <label>max participants :
-                                                            <input type="number" value={dayPlanning.participants.max} onChange={this.handleChangePlaning(i, "participants-max")} />
-                                    </label>
+                                    <section>
+                                        <label> start :
+                        <input type="text" value={event.start || ""} onChange={this.handleChangePlaning(indexDay, indexEvent, "start")} />
+                                        </label>
+                                        <select name="type" onChange={this.handleChangePlaning(indexDay, indexEvent, "start")} value={this.state.planning[indexDay].type}>
+                                            <option value="choose">--SELECT START HOUR--</option>
+                                            {availableHours.map((hour, indexHours) =>
+                                                <option key={indexHours} value={`${hour}h`}>{hour}</option>
+                                            )}
+                                        </select>
+                                    </section>
 
-                                    <label>booked participants :
-                                                            <input type="number" value={dayPlanning.participants.booked} onChange={this.handleChangePlaning(i, "participants-booked")} />
-                                    </label>
+                                    <section>
+                                        <label> end :
+                        <input type="text" value={event.end || ""} onChange={this.handleChangePlaning(indexDay, indexEvent, "end")} />
+                                        </label>
+                                        <select name="type" onChange={this.handleChangePlaning(indexDay, indexEvent, "end")} value={this.state.planning[indexDay].type}>
+                                            <option value="choose">--SELECT END HOUR--</option>
+                                            {availableHours.map((hour, indexHours) =>
+                                                <option key={indexHours} value={`${hour}h`}>{hour}</option>
+                                            )}
+                                        </select>
+                                    </section>
+
+                                    <section>
+                                        <label> label :
+                        <input type="text" value={event.label || ""} onChange={this.handleChangePlaning(indexDay, indexEvent, "label")} />
+                                        </label>
+                                    </section>
+
+                                    <div>
+                                        <button className={`p-4 ${participantsIsNull(event) ? "bg-beach-green" : "bg-beach-red"}`} onClick={this.addParticipants(indexDay, indexEvent)} type="button">trigger participants</button>
+                                        {!participantsIsNull(event) &&
+                                            <div className="flex flex-col">
+                                                <label>max participants :
+                                                            <input type="number" value={event.participants.max} onChange={this.handleChangePlaning(indexDay, indexEvent, "participants-max")} />
+                                                </label>
+
+                                                <label>booked participants :
+                                                            <input type="number" value={event.participants.booked} onChange={this.handleChangePlaning(indexDay, indexEvent, "participants-booked")} />
+                                                </label>
+                                            </div>
+                                        }
+                                    </div>
+                                    <button className={`p-2 bg-beach-green`} onClick={this.addEvent(indexDay, indexEvent)} type="button">+</button>
+
                                 </div>
-                            }
-
+                            )}
                         </div>
+
+                    )}
+
+                    <div>
+                        <button onClick={this.copyToClipboard}>copy json file</button>
+                        {this.state.copySuccess}
                     </div>
-                )}
+                </div>
 
+                <div className="w-1/2">
+                    <h2>file : {"filename_todo.json"}</h2>
 
+                    <pre>{JSON.stringify(this.state.planning, null, 2)}</pre>
+                </div>
             </div>
         )
     }

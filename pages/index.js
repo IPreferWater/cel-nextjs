@@ -31,13 +31,11 @@ export default class Home extends React.Component {
                         <h1 className="text-center text-beach-grey font-extrabold">Consommez autrement, upcyclez votre quotidien !</h1>
                         <ClementineIcon className=" sm-max:w-full justify-center " />
                     </div>
-                </section>
-
-                <Carousel infinite autoPlay={6000} animationSpeed={3000} dots >
-                    <LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded} ></LazyImage>
-                    <LazyImage fileName={'about_photo.jpg'} loaded={this.state.imgLoaded} ></LazyImage>
+                </section>                
+                <Carousel infinite  autoPlay={6000} animationSpeed={3000} dots >
+                <div className="w-full md:w-4/5 lg:w-2/3 xl:w-3/5 h-bandeau"><LazyImage fileName={'gangcharlotte.jpg'} loaded={this.state.imgLoaded}/></div>
+                <div className="w-full md:w-4/5 lg:w-2/3 xl:w-3/5 h-bandeau"><LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded}/></div>
                 </Carousel>
-
                 <BandeauCleo />
 
                 <section className="w-1/2 bg-beach-sand rounded-lg mt-6 flex flex-col">

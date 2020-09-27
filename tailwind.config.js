@@ -14,6 +14,9 @@ module.exports = {
       fill: theme => theme('colors'),
       screens:{
         'sm-max': {'max': '640px'},
+    }, 
+    height : {
+      "bandeau": "25rem",
     }
     },
   },
