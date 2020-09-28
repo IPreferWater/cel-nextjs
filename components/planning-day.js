@@ -29,19 +29,19 @@ function getParticipants(participants) {
   return `${available} places`
 }
 
-function getLabelDay(slug, day) {
+function getLabelDayWithSlug(slug, day) {
   const dateArr = slug.split('_');
-  var date = new Date(`${dateArr[0]}/${dateArr[1]}/${day}`);
-  return date.toLocaleDateString("fr-FR", { weekday: 'long' });
+  return getLabelDay(dateArr[0], dateArr[1], day);
 }
 
+import { getLabelDay } from '@util'
 export function PlanningDay({ data, slug }) {
   return (<div className="min-h-200 min-w-200 rounded overflow-hidden shadow-lg relative">
 
     <div className="px-6 py-4 pb-16">
       <div className="flex flex-row justify-between">
         <div className="font-bold text-xl mb-2">
-          {getLabelDay(slug, data.day)} {data.day}
+          {getLabelDayWithSlug(slug, data.day)} {data.day}
         </div>
         <div className="text-xs"></div>
       </div>

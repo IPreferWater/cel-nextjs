@@ -10,6 +10,8 @@ function participantsIsNull(elem) {
 }
 
 import { PlanningBuilderInput } from '@components/planning-builder-input'
+import { getLabelDay } from '@util'
+
 
 export default class PlanningBuilder extends React.Component {
     state = {
@@ -57,10 +59,10 @@ export default class PlanningBuilder extends React.Component {
         e.preventDefault();
         const nbrOfDays = getDaysInMonth(this.state.month, this.state.year)
         let planning = new Array(nbrOfDays)
-        console.log(nbrOfDays)
+
         for (let i = 0; i < nbrOfDays; i++) {
             const dayPlanning = {
-                day: i,
+                day: i+1,
                 events: [{ type: "", start: "", end: "" }]
             }
             planning[i] = dayPlanning
@@ -163,7 +165,7 @@ export default class PlanningBuilder extends React.Component {
                     {this.state.planning.map((dayPlanning, indexDay) =>
                         <div key={indexDay} className="flex flex-row ">
                             <div className="flex flex-col mb-8">
-                                <h2>{`day ${indexDay}`}</h2>
+                                <h2>{`${getLabelDay(this.state.year,this.state.month,indexDay)} - ${indexDay+1}`}</h2>
                                 {dayPlanning.events.map((event, indexEvent) =>
                                     <div key={`${indexDay}_${indexEvent}`}>
 
