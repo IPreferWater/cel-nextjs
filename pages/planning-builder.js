@@ -1,14 +1,3 @@
-function getDaysInMonth(month, year) {
-    return new Date(year, month, 0).getDate();
-}
-
-function participantsIsNull(elem) {
-    if (elem.participants == null) {
-        return true
-    }
-    return false
-}
-
 import { PlanningBuilderInput } from '@components/planning-builder-input'
 import { getLabelDay } from '@util'
 
@@ -17,6 +6,7 @@ export default class PlanningBuilder extends React.Component {
     state = {
         month: "",
         year: "",
+        showJsonFile: false,
         file: {
             label: "label",
             color: "beach-green",
@@ -26,12 +16,27 @@ export default class PlanningBuilder extends React.Component {
 
     };
 
+    getDaysInMonth(month, year) {
+        return new Date(year, month, 0).getDate();
+    }
+
+    participantsIsNull(elem) {
+        if (elem.participants == null) {
+            return true
+        }
+        return false
+    }
+
+    getJsonFileName() {
+        let month = this.state.month
+        if (month <= 10) {
+            month = `0${month}`
+        }
+        return `${this.state.year}_${month}.json`
+    }
+
     componentDidMount() {
         const now = new Date()
-        /*if (month <= 10) {
-            month = `0${month}`
-        }*/
-        // const todayFileName = `${now.getFullYear()}_${month}.json`
         this.setState({ month: now.getMonth(), year: now.getFullYear() });
     }
 
@@ -57,12 +62,13 @@ export default class PlanningBuilder extends React.Component {
 
     handleClick = (e) => {
         e.preventDefault();
-        const nbrOfDays = getDaysInMonth(this.state.month, this.state.year)
+        const nbrOfDays = this.getDaysInMonth(this.state.month, this.state.year)
         let planning = new Array(nbrOfDays)
 
         for (let i = 0; i < nbrOfDays; i++) {
             const dayPlanning = {
-                day: i+1,
+                //array start at 0 but day at 1
+                day: i + 1,
                 events: [{ type: "", start: "", end: "" }]
             }
             planning[i] = dayPlanning
@@ -119,16 +125,15 @@ export default class PlanningBuilder extends React.Component {
     }
 
 
-    addParticipants = (indexDay, indexEvent) => (e) => {
+    triggerParticipants = (indexDay, indexEvent) => (e) => {
         e.preventDefault();
         let newArray = [...this.state.planning]
         let elem = newArray[indexDay].events[indexEvent]
 
-        if (participantsIsNull(elem)) {
-
+        if (this.participantsIsNull(elem)) {
             elem.participants = { max: 4, booked: 0 }
         } else {
-            elem.participants = null
+            delete elem.participants
         }
 
         this.setState({
@@ -137,11 +142,11 @@ export default class PlanningBuilder extends React.Component {
         console.log("ok")
     }
 
-    copyToClipboard = (e) => {
+    showJsonFile = (e) => {
         e.preventDefault();
-        const copyText = "blaaaaaaa"
-        copyText.select();
-        document.execCommand("copy");
+        this.setState(prevState => ({
+            showJsonFile: !prevState.showJsonFile
+        }))
     };
 
     render() {
@@ -152,8 +157,8 @@ export default class PlanningBuilder extends React.Component {
 
 
         return (
-            <div className="flex flex-row">
-                <div className="">
+            <div className="">
+                <section>
                     <button onClick={this.handleClick}>+</button>
                     <label> month :
           <input type="text" value={this.state.month} onChange={this.handleChangeMonth} />
@@ -165,20 +170,17 @@ export default class PlanningBuilder extends React.Component {
                     {this.state.planning.map((dayPlanning, indexDay) =>
                         <div key={indexDay} className="flex flex-row ">
                             <div className="flex flex-col mb-8">
-                                <h2>{`${getLabelDay(this.state.year,this.state.month,indexDay)} - ${indexDay+1}`}</h2>
+                                <h2>{`${getLabelDay(this.state.year, this.state.month, indexDay)} - ${indexDay + 1}`}</h2>
                                 {dayPlanning.events.map((event, indexEvent) =>
-                                    <div key={`${indexDay}_${indexEvent}`}>
-
-
-
+                                    <div key={`event_${indexEvent}`}>
                                         <button className={`p-2 bg-beach-red`} onClick={this.deleteEvent(indexDay, indexEvent)} type="button">X</button>
                                         <PlanningBuilderInput field="type" event={event} indexDay={indexDay} indexEvent={indexEvent} handleChangePlaning={this.handleChangePlaning} options={availableType} />
                                         <PlanningBuilderInput field="start" event={event} indexDay={indexDay} indexEvent={indexEvent} handleChangePlaning={this.handleChangePlaning} options={availableHours} />
                                         <PlanningBuilderInput field="end" event={event} indexDay={indexDay} indexEvent={indexEvent} handleChangePlaning={this.handleChangePlaning} options={availableHours} />
                                         <PlanningBuilderInput field="label" event={event} indexDay={indexDay} indexEvent={indexEvent} handleChangePlaning={this.handleChangePlaning} options={availableLabel} />
                                         <div>
-                                            <button className={`p-4 ${participantsIsNull(event) ? "bg-beach-green" : "bg-beach-red"}`} onClick={this.addParticipants(indexDay, indexEvent)} type="button">trigger participants</button>
-                                            {!participantsIsNull(event) &&
+                                            <button className={`p-4 ${this.participantsIsNull(event) ? "bg-beach-green" : "bg-beach-red"}`} onClick={this.triggerParticipants(indexDay, indexEvent)} type="button">trigger participants</button>
+                                            {!this.participantsIsNull(event) &&
                                                 <div className="flex flex-col">
                                                     <label>max participants :
                                                             <input type="number" value={event.participants.max} onChange={this.handleChangePlaning(indexDay, indexEvent, "participants-max")} />
@@ -190,7 +192,6 @@ export default class PlanningBuilder extends React.Component {
                                                 </div>
                                             }
                                         </div>
-
                                     </div>
                                 )}
                                 <button className={`p-2 bg-beach-green`} onClick={this.addEvent(indexDay)} type="button">+</button>
@@ -206,16 +207,15 @@ export default class PlanningBuilder extends React.Component {
                     )}
 
                     <div>
-                        <button onClick={this.copyToClipboard}>copy json file</button>
-                        {this.state.copySuccess}
+                        <button onClick={this.showJsonFile}>show json file</button>
                     </div>
-                </div>
+                </section>
 
-                {/** <div >
-                    <h2>file : {"filename_todo.json"}</h2>
-
-                    <pre>{JSON.stringify(this.state.planning, null, 2)}</pre>
-                </div> */}
+                {this.state.showJsonFile > 0 &&
+                    <section className="bg-red-200">
+                        <h2>file : {this.getJsonFileName()}</h2>
+                        <pre>{JSON.stringify(this.state.planning, null, 2)}</pre>
+                    </section>}
             </div>
         )
     }
