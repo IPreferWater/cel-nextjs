@@ -61,7 +61,7 @@
                     "end":"16h00",
                     "participants":{
                         "max":4,
-                        "booked":0
+                        "booked":1
                     }
                 }
             ]
@@ -74,11 +74,6 @@
                     "label":"5€ par heure",
                     "start": "10h00",
                     "end":"12h00"
-                },
-                {
-                    "type":"cours ados",
-                    "start": "17h15",
-                    "end":"18h30"
                 }
             ]
         },
@@ -146,11 +141,6 @@
                     "type":"cours adultes",
                     "start": "11h15",
                     "end":"12h30"
-                },
-                {
-                    "type":"atelier upcycling",
-                    "start": "14h00",
-                    "end":"16h30"
                 }
             ]
         },
@@ -169,7 +159,7 @@
                     "end":"16h00",
                     "participants":{
                         "max":4,
-                        "booked":0
+                        "booked":2
                     }
                 }
             ]
@@ -205,10 +195,9 @@
                     "end":"14h30"
                 },
                 {
-                    "type":"access libre",
-                    "label":"5€ par heure",
+                    "type":"cours ados",
                     "start": "14h30",
-                    "end":"17h00"
+                    "end":"15h45"
                 },
                 {
                     "type":"cours ados",
@@ -271,10 +260,19 @@
             "day":"19",
             "events": [
                 {
-                    "type":"stage couture enfants - ados - adultes",
-                    "label":"annonce prochainement",
-                    "start": "11h15",
-                    "end":"12h30"
+                    "type":"stage couture enfants",
+                    "start": "10h45",
+                    "end":"12h"
+                },
+                {
+                    "type":"stage couture ados",
+                    "start": "13h30",
+                    "end":"15h15"
+                },
+                {
+                    "type":"stage couture adultes",
+                    "start": "15h30",
+                    "end":"17h15"
                 }
             ]
         },
@@ -282,10 +280,19 @@
             "day":"20",
             "events": [
                 {
-                    "type":"stage couture enfants - ados - adultes",
-                    "label":"annonce prochainement",
-                    "start": "11h15",
-                    "end":"12h30"
+                    "type":"stage couture enfants",
+                    "start": "10h45",
+                    "end":"12h"
+                },
+                {
+                    "type":"stage couture ados",
+                    "start": "13h30",
+                    "end":"15h15"
+                },
+                {
+                    "type":"stage couture adultes",
+                    "start": "15h30",
+                    "end":"17h15"
                 },
                 {
                     "type": "projet libre",
@@ -302,10 +309,19 @@
             "day":"21",
             "events": [
                 {
-                    "type":"stage couture enfants - ados - adultes",
-                    "label":"annonce prochainement",
-                    "start": "11h15",
-                    "end":"12h30"
+                    "type":"stage couture enfants",
+                    "start": "10h45",
+                    "end":"12h"
+                },
+                {
+                    "type":"stage couture ados",
+                    "start": "13h30",
+                    "end":"15h15"
+                },
+                {
+                    "type":"stage couture adultes",
+                    "start": "15h30",
+                    "end":"17h15"
                 }
             ]
         },
@@ -363,10 +379,19 @@
             "day":"27",
             "events": [
                 {
-                    "type":"stage couture enfants - ados - adultes",
-                    "label":"annonce prochainement",
-                    "start": "",
-                    "end":""
+                    "type":"stage couture enfants",
+                    "start": "10h45",
+                    "end":"12h"
+                },
+                {
+                    "type":"stage couture ados",
+                    "start": "13h30",
+                    "end":"15h15"
+                },
+                {
+                    "type":"stage couture adultes",
+                    "start": "15h30",
+                    "end":"17h15"
                 },
                 {
                     "type": "projet libre",
@@ -383,10 +408,19 @@
             "day":"28",
             "events": [
                 {
-                    "type":"stage couture enfants - ados - adultes",
-                    "label":"annonce prochainement",
-                    "start": "",
-                    "end":""
+                    "type":"stage couture enfants",
+                    "start": "10h45",
+                    "end":"12h"
+                },
+                {
+                    "type":"stage couture ados",
+                    "start": "13h30",
+                    "end":"15h15"
+                },
+                {
+                    "type":"stage couture adultes",
+                    "start": "15h30",
+                    "end":"17h15"
                 }
             ]
         },
@@ -394,10 +428,19 @@
             "day":"29",
             "events": [
                 {
-                    "type":"stage couture enfants - ados - adultes",
-                    "label":"annonce prochainement",
-                    "start": "",
-                    "end":""
+                    "type":"stage couture enfants",
+                    "start": "10h45",
+                    "end":"12h"
+                },
+                {
+                    "type":"stage couture ados",
+                    "start": "13h30",
+                    "end":"15h15"
+                },
+                {
+                    "type":"stage couture adultes",
+                    "start": "15h30",
+                    "end":"17h15"
                 },
                 {
                     "type": "projet libre",
