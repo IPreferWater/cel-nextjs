@@ -19,13 +19,18 @@ export async function getAllPosts(){
     return posts
 }
 
-export async function  getLatestsPostsByNumber(){
+export async function  getLatestsPostsByRange(from, to){
     const context = require.context('../_posts', false, /\.md$/)
     const posts = []
     var len = context.keys().length
-    for (let i = 1; i <= 4; i++) {
-        len = len-1
-        const key = context.keys()[len]
+    if (to>len){
+        to = len
+    }
+    //create empty array same size
+    //
+    
+    for (let i = from; i <= to; i++) {
+        const key = context.keys()[i-1]
         const post = key.slice(2);
         const content = await import(`../_posts/${post}`);
         const meta = matter(content.default)
@@ -36,7 +41,12 @@ export async function  getLatestsPostsByNumber(){
         })
 
       }
-      return posts;
+      return posts.reverse();;
+}
+
+export async function  getNumberOfPosts(){
+    const context = require.context('../_posts', false, /\.md$/)
+    return context.keys().length
 }
 
 export async function getPostBySlug(slug){

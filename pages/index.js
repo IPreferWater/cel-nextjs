@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import { getConfig, getAllPosts, getAllPlannings, getLatestsPostsByNumber } from '@api'
+import { getConfig, getAllPosts, getAllPlannings } from '@api'
 import { BandeauCleo } from '@components/bandeau-cleo'
 import { BandeauBlog } from '@components/bandeau-blog'
 import { LazyImage } from '@components/lazy-image'
@@ -76,7 +76,7 @@ export async function getStaticProps() {
     const config = await getConfig()
     const allPosts = await getAllPosts()
     const allPlannings = await getAllPlannings()
-    const latestPosts = await getLatestsPostsByNumber()
+    //const latestPosts = await getLatestsPostsByNumber()
 
     return {
         props: {
@@ -84,7 +84,7 @@ export async function getStaticProps() {
             plannings: allPlannings,
             title: config.title,
             description: config.description,
-            latestPosts: latestPosts
+            //latestPosts: latestPosts
         }
     }
 }
