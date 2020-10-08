@@ -10,6 +10,7 @@ module.exports = {
         'beach-sun': '#ffcc5c',
         'beach-green-flashy': '#88d8b0',
         'beach-grey': '#6d7090',
+        'beach-black': '#262626',
       },
       fill: theme => theme('colors'),
       screens:{
