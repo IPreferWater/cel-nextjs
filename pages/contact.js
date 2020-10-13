@@ -14,7 +14,7 @@ export default  class Contact extends React.Component {
         <h1>Contact</h1>
             <LazyImage fileName={'about_photo.jpg'} loaded={this.state.imgLoaded} ></LazyImage>
         <p className="mt-6">Des requêtes spécifiques, plus d'infos ou autres ? N'hésitez pas à me contacter via email en cliquant sur le bouton et je tâcherai de vous répondre au plus vite !</p>
-        <a className="bg-beach-sand block mt-8 p-8" href="mailto:matteo@manzinello.dev">envoyer email</a>
+        <a className="bg-beach-sand block mt-8 p-8" href="mailto:cverein.professionnel@yahoo.fr">envoyer email</a>
     </div>
   }
 }
