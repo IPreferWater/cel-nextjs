@@ -139,7 +139,6 @@ export default class PlanningBuilder extends React.Component {
         this.setState({
             planning: newArray,
         });
-        console.log("ok")
     }
 
     showJsonFile = (e) => {
@@ -152,8 +151,8 @@ export default class PlanningBuilder extends React.Component {
     render() {
 
         const availableHours = ["9h00", "10h00", "11h00", "12h00", "13h00", "14h00", "15h00", "16h00", "17h00", "18h00", "19h00", "20h00"]
-        const availableType = ["access libre", "projet libre", "cours enfants", "cours ados", "cours adultes"]
-        const availableLabel = ["5€ la journée"]
+        const availableType = ["access libre", "projet libre", "cours enfants", "cours ados", "cours adultes", "atelier à theme", "cours particulier"]
+        const availableLabel = ["5€ l'heure"]
 
 
         return (
@@ -170,7 +169,7 @@ export default class PlanningBuilder extends React.Component {
                     {this.state.planning.map((dayPlanning, indexDay) =>
                         <div key={indexDay} className="flex flex-row ">
                             <div className="flex flex-col mb-8">
-                                <h2>{`${getLabelDay(this.state.year, this.state.month, indexDay)} - ${indexDay + 1}`}</h2>
+                                <h2>{`${getLabelDay(this.state.year, this.state.month, indexDay+1)} - ${indexDay + 1}`}</h2>
                                 {dayPlanning.events.map((event, indexEvent) =>
                                     <div key={`event_${indexEvent}`}>
                                         <button className={`p-2 bg-beach-red`} onClick={this.deleteEvent(indexDay, indexEvent)} type="button">X</button>
