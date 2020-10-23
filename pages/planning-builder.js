@@ -151,7 +151,7 @@ export default class PlanningBuilder extends React.Component {
 
     render() {
 
-        const availableHours = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+        const availableHours = ["9h00", "10h00", "11h00", "12h00", "13h00", "14h00", "15h00", "16h00", "17h00", "18h00", "19h00", "20h00"]
         const availableType = ["access libre", "projet libre", "cours enfants", "cours ados", "cours adultes"]
         const availableLabel = ["5€ la journée"]
 

@@ -13,6 +13,8 @@ function getColorType(type) {
       return "bg-purple-200"
     case 'absent':
       return "bg-red-100"
+    case 'cours particulier':
+      return "bg-pink-200"
     default:
       return "bg-orange-300"
   }
