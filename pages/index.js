@@ -36,6 +36,11 @@ export default class Home extends React.Component {
                 <div className="w-full md:w-4/5 lg:w-2/3 xl:w-3/5 h-bandeau"><LazyImage fileName={'gangcharlotte.jpg'} loaded={this.state.imgLoaded}/></div>
                 <div className="w-full md:w-4/5 lg:w-2/3 xl:w-3/5 h-bandeau"><LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded}/></div>
                 </Carousel>
+
+                <Link href="/noel">
+                <a className="bg-beach-red w-full my-8 h-12 text-white justify-center"><p> Catalogue de Noel</p></a>
+                </Link>
+
                 <BandeauCleo />
 
                 <section className="w-1/2 bg-beach-sand rounded-lg mt-6 flex flex-col">

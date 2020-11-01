@@ -27,7 +27,6 @@ export async function  getLatestsPostsByRange(from, to){
         to = len
     }
     //create empty array same size
-    //
     
     for (let i = from; i <= to; i++) {
         const key = context.keys()[i-1]
@@ -94,4 +93,22 @@ function getPlanningNameBySlug(slug){
     const monthLabel = getMonthLabelFromInt(arr[1])
 
     return `${monthLabel} - ${arr[0]}`
+}
+
+export async function getAllProductsByCategory(category){
+    const folderPath = `../_products/${category}`
+    console.log(folderPath)
+    const context = require.context("../_products/noel", false, /\.md$/)
+    const products = []
+    for(const key of context.keys()){
+        const product = key.slice(2);
+        const content = await import(`../_products/noel/${product}`);
+        const meta = matter(content.default)
+        products.push({
+            slug: product.replace('.md',''),
+            title: meta.data.title,
+            image: `product/${meta.data.image}`
+        })
+    }
+    return products
 }
