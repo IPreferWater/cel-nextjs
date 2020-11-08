@@ -16,9 +16,9 @@ export default  class Noel extends React.Component {
         <h1>Catalogue de noel</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2" >
         {this.props.products.map((post, i) =>
-          <Link key={i} href={`/product/noel/${post.slug}`}>
-            <a className="mx-20 pt-4 lg:mx-4  flex flex-col text-center shadow-2xl rounded        transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-105 transition ease-in-out duration-300">
-              <LazyImage fileName={post.image} loaded={this.state.imgLoaded} className="h-64 w-full m-auto p-4" ></LazyImage>
+          <Link key={i} href={`/products/${post.slug}`}>
+            <a className="lg:mx-20  flex flex-col text-center shadow-2xl rounded        transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-105 transition ease-in-out duration-300">
+              <LazyImage fileName={post.image} loaded={this.state.imgLoaded} className="h-50 w-50 m-auto" ></LazyImage>
               <span className="text-beach-grey text-2xl mt-2  p-2">{post.title}</span>
             </a>
           </Link>

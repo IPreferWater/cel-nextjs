@@ -1,6 +1,7 @@
-import { getPostBySlug, getAllPosts } from "@api"
+import { getProductBySlugAndCategory, getAllProductsByCategory } from "@api"
 import Link from 'next/link'
 import { LazyImage} from '@components/lazy-image'
+import ReactMarkdown from "react-markdown/with-html";
 
 export default class Product extends React.Component {
 
@@ -9,13 +10,11 @@ export default class Product extends React.Component {
         this.setState({imgLoaded: true})
       }
 render(){
-    console.log("data img => "+this.props.image)
-
     return <div>
-            <article className="text-center text-beach-black">
-                <LazyImage objectBehavior="object-contain" className="h-screen w-full" fileName={this.props.image} loaded={this.state.imgLoaded} ></LazyImage>
+            <article className="content-center text-beach-black w-full">
+                <LazyImage objectBehavior="object-contain" className="h-64 w-64" fileName={this.props.image} loaded={this.state.imgLoaded} ></LazyImage>
                 <h1 className="underline my-10">{this.props.title}</h1>
-                <div className="w-full md:w-4/5 m-auto" dangerouslySetInnerHTML={{__html:this.props.content}}/>
+                <ReactMarkdown escapeHtml={false} source={this.props.content} />
                 <div><Link href='/'><a>Home</a></Link></div> 
             </article>
     </div>
@@ -24,12 +23,13 @@ render(){
 
 export async function getStaticProps(context){
     return {
-        props: await getPostBySlug(context.params.slug)
+        props: await getProductBySlugAndCategory(context.params.slug, "noel")
     }
 }
 
 export async function getStaticPaths(){
-    let paths = await getAllPosts()
+    let paths = await getAllProductsByCategory("noel")
+
     paths = paths.map(post => ({
         params: { slug:post.slug }
     }));
