@@ -18,6 +18,7 @@ module.exports = {
     }, 
     height : {
       "bandeau": "25rem",
+      "product" : "20rem"
     }
     },
   },

@@ -11,10 +11,10 @@ export default class Product extends React.Component {
       }
 render(){
     return <div>
-            <article className="content-center text-beach-black w-full">
-                <LazyImage objectBehavior="object-contain" className="h-64 w-64" fileName={this.props.image} loaded={this.state.imgLoaded} ></LazyImage>
-                <h1 className="underline my-10">{this.props.title}</h1>
-                <ReactMarkdown escapeHtml={false} source={this.props.content} />
+            <article className="flex flex-col text-beach-black text-center">
+                <LazyImage objectBehavior="object-contain" className="h-product w-full" fileName={this.props.image} loaded={this.state.imgLoaded} ></LazyImage>
+                <h1 className="underline my-10 w-full">{this.props.title}</h1>
+                <ReactMarkdown className="w-full" escapeHtml={false} source={this.props.content} />
                 <div><Link href='/'><a>Home</a></Link></div> 
             </article>
     </div>
