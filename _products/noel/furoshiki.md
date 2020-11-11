@@ -1,6 +1,6 @@
 ---
-title:  "couronne"
-image:  "noel/couronne.jpg"
+title:  "furoshiki"
+image:  "noel/furoshiki.jpg"
 ---
 
 bla bla bla

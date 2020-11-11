@@ -1,6 +1,6 @@
 ---
-title:  "couronne"
-image:  "noel/couronne.jpg"
+title:  "col amovible"
+image:  "noel/col.jpg"
 ---
 
 bla bla bla
