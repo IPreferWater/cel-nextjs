@@ -38,7 +38,8 @@ export default class Home extends React.Component {
                 </Carousel>
 
                 <Link href="/noel">
-                <a className="bg-beach-red w-full my-8 h-12 text-white justify-center"><p> Catalogue de Noel</p></a>
+                
+                <a className="bg-beach-red w-full my-8 p-4 text-white text-3xl font-semibold text-center">Catalogue de Noel</a>
                 </Link>
 
                 <BandeauCleo />
