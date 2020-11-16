@@ -13,7 +13,7 @@ export default  class Noel extends React.Component {
       }
     render(){
     return <div className="text-center">
-        <h1>Catalogue de noel</h1>
+        <h1>Catalogue de noël</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2" >
         {this.props.products.map((post, i) =>
           <Link key={i} href={`/products/${post.slug}`}>

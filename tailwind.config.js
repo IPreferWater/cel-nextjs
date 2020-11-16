@@ -21,6 +21,9 @@ module.exports = {
       "product" : "20rem"
     }
     },
+  fontFamily: {
+    candara: ['candara'],
+  },
   },
 
   variants: {},
