@@ -4,7 +4,8 @@ import { getConfig, getAllPosts, getAllPlannings } from '@api'
 import { BandeauCleo } from '@components/bandeau-cleo'
 import { BandeauBlog } from '@components/bandeau-blog'
 import { LazyImage } from '@components/lazy-image'
-import { ClementineIcon } from '@components/icons/clementine-icon'
+import { BaseIcon } from '@components/icons/base-icon'
+import { NoelIcon } from '@components/icons/noel-icon'
 import { CalendarIcon } from '@components/icons/calendar-icon'
 
 import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
@@ -26,10 +27,10 @@ export default class Home extends React.Component {
         return (
             <div className={styles.container}>
                 <section className="w-full p-8 bg-beach-sand rounded-lg mb-4">
-                    <div className="flex flex-col sm:flex-row justify-center">
-                        <ClementineIcon className="sm-max:w-full justify-center" />
+                    <div className="flex flex-col sm:flex-row justify-center items-center">
+                        <BaseIcon className="sm-max:w-full h-32 w-32" />
                         <h1 className="text-center text-beach-grey font-extrabold">Consommez autrement, upcyclez votre quotidien !</h1>
-                        <ClementineIcon className=" sm-max:w-full justify-center " />
+                        <BaseIcon className=" sm-max:w-full h-32 w-32" />
                     </div>
                 </section>                
                 <Carousel infinite  autoPlay={6000} animationSpeed={3000} dots >
@@ -38,8 +39,12 @@ export default class Home extends React.Component {
                 </Carousel>
 
                 <Link href="/noel">
-                
-                <a className="bg-beach-red w-full my-8 p-4 text-white text-3xl font-semibold text-center">Catalogue de Noel</a>
+                <a className="bg-beach-red w-full my-8 p-4">
+                <div className="flex flex-row justify-center items-center">
+                        <NoelIcon className="sm-max:w-full h-32 w-32" />
+                        <h1 className="text-center text-white font-extrabold">Catalogue de Noel</h1>
+                    </div>
+                    </a>
                 </Link>
 
                 <BandeauCleo />

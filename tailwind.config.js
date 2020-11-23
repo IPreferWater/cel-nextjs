@@ -22,7 +22,7 @@ module.exports = {
     }
     },
   fontFamily: {
-    candara: ['candara'],
+    ces: ['cormorantgaramond-semibold','cormorant garamond','serif']
   },
   },
 
