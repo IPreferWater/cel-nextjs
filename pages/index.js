@@ -28,9 +28,9 @@ export default class Home extends React.Component {
             <div className={styles.container}>
                 <section className="w-full p-8 bg-beach-sand rounded-lg mb-4">
                     <div className="flex flex-col sm:flex-row justify-center items-center">
-                        <BaseIcon className="sm-max:w-full h-32 w-32" />
+                        <BaseIcon className="sm-max:w-12 sm-max:h-12 h-32 w-32" />
                         <h1 className="text-center text-beach-grey font-extrabold">Consommez autrement, upcyclez votre quotidien !</h1>
-                        <BaseIcon className=" sm-max:w-full h-32 w-32" />
+                        <BaseIcon className=" sm-max:w-12 sm-max:h-12 h-32 w-32" />
                     </div>
                 </section>                
                 <Carousel infinite  autoPlay={6000} animationSpeed={3000} dots >
@@ -42,7 +42,7 @@ export default class Home extends React.Component {
                 <a className="bg-beach-red w-full my-8 p-4">
                 <div className="flex flex-row justify-center items-center">
                         <NoelIcon className="sm-max:w-full h-32 w-32" />
-                        <h1 className="text-center text-white font-extrabold">Catalogue de Noel</h1>
+                        <h1 className="text-white font-extrabold">Catalogue de Noel</h1>
                     </div>
                     </a>
                 </Link>
