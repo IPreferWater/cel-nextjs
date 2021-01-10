@@ -1,0 +1,335 @@
+{
+"label": "janvier",
+"color":"blue",
+"planning" : [
+  {
+    "day": 9,
+    "events": [
+      {
+        "type": "cours adultes",
+        "start": "10h00",
+        "end": "12h30"
+      },
+      {
+        "type": "cours particulier",
+        "start": "13h30",
+        "end": "15h30"
+      },
+      {
+        "type": "access libre",
+        "start": "15h30",
+        "end": "17h30"
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "events": [
+    ]
+  },
+  {
+    "day": 11,
+    "events": [
+      {
+        "type": "cours particulier",
+        "start": "17h30",
+        "end": "19h30"
+      }
+    ]
+  },
+  {
+    "day": 12,
+    "events": [
+      {
+        "type": "projet libre",
+        "start": "17h30",
+        "end": "19h30",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      }
+    ]
+  },
+  {
+    "day": 13,
+    "events": [
+      {
+        "type": "cours ados",
+        "start": "13h00",
+        "end": "15h00"
+      },
+      {
+        "type": "cours ados",
+        "start": "17h00",
+        "end": "19h00"
+      }
+    ]
+  },
+  {
+    "day": 14,
+    "events": [
+      {
+        "type": "cours particulier",
+        "start": "10h00",
+        "end": "11h00"
+      },
+      {
+        "type": "access libre",
+        "start": "10h00",
+        "end": "14h00",
+        "label": "5€ l'heure",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "events": [
+      {
+        "type": "projet libre",
+        "start": "14h00",
+        "end": "16h00",
+        "participants": {
+          "max": 4,
+          "booked": "1"
+        }
+      },
+      {
+        "type": "cours adultes",
+        "start": "18h00",
+        "end": "19h30"
+      }
+    ]
+  },
+  {
+    "day": 16,
+    "events": [
+      {
+        "type": "cours adultes",
+        "start": "10h00",
+        "end": "12h30"
+      },
+      {
+        "type": "cours particulier",
+        "start": "13h00",
+        "end": "15h00"
+      },
+      {
+        "type": "cours particulier",
+        "start": "15h30",
+        "end": "17h30"
+      }
+    ]
+  },
+  {
+    "day": 17,
+    "events": [
+    ]
+  },
+  {
+    "day": 18,
+    "events": [
+      {
+        "type": "projet libre",
+        "start": "14h00",
+        "end": "16h00",
+        "participants": {
+          "max": 4,
+          "booked": "1"
+        }
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "events": [
+      {
+        "type": "projet libre",
+        "start": "17h30",
+        "end": "19h30",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      }
+    ]
+  },
+  {
+    "day": 20,
+    "events": [
+      {
+        "type": "access libre",
+        "start": "10h00",
+        "end": "12h00",
+        "label": "5€ l'heure",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      },
+      {
+        "type": "cours ados",
+        "start": "13h15",
+        "end": "14h30"
+      },
+      {
+        "type": "cours ados",
+        "start": "17h00",
+        "end": "19h00"
+      }
+    ]
+  },
+  {
+    "day": 21,
+    "events": [
+      {
+        "type": "cours particulier",
+        "start": "14h30",
+        "end": "17h30"
+      }
+    ]
+  },
+  {
+    "day": 22,
+    "events": [
+      {
+        "type": "access libre",
+        "start": "10h00",
+        "end": "14h00",
+        "label": "5€ l'heure",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      },
+      {
+        "type": "cours adultes",
+        "start": "18h00",
+        "end": "19h30"
+      }
+    ]
+  },
+  {
+    "day": 23,
+    "events": [
+      {
+        "type": "cours adultes",
+        "start": "10h00",
+        "end": "12h30"
+      },
+      {
+        "type": "cours particulier",
+        "start": "13h30",
+        "end": "15h30"
+      },
+      {
+        "type": "cours particulier",
+        "start": "15h30",
+        "end": "17h30"
+      }
+    ]
+  },
+  {
+    "day": 24,
+    "events": [
+    ]
+  },
+  {
+    "day": 25,
+    "events": [
+      {
+        "type": "projet libre",
+        "start": "14h00",
+        "end": "16h00",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      }
+    ]
+  },
+  {
+    "day": 26,
+    "events": [
+      {
+        "type": "projet libre",
+        "start": "17h30",
+        "end": "19h30",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      }
+    ]
+  },
+  {
+    "day": 27,
+    "events": [
+      {
+        "type": "cours ados",
+        "start": "13h15",
+        "end": "14h30"
+      },
+      {
+        "type": "cours ados",
+        "start": "17h00",
+        "end": "19h00"
+      }
+    ]
+  },
+  {
+    "day": 28,
+    "events": [
+      {
+        "type": "access libre",
+        "start": "10h00",
+        "end": "14h00",
+        "label": "5€ l'heure",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      }
+    ]
+  },
+  {
+    "day": 29,
+    "events": [
+      {
+        "type": "cours adultes",
+        "start": "18h00",
+        "end": "19h30"
+      }
+    ]
+  },
+  {
+    "day": 30,
+    "events": [
+      {
+        "type": "cours adultes",
+        "start": "10h00",
+        "end": "12h30"
+      },
+      {
+        "type": "cours particulier",
+        "start": "13h30",
+        "end": "15h30"
+      },
+      {
+        "type": "cours particulier",
+        "start": "15h30",
+        "end": "17h30"
+      }
+    ]
+  },
+  {
+    "day": 31,
+    "events": [
+    ]
+  }
+]
+}
