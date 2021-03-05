@@ -1,40 +1,36 @@
 {
-"label": "février",
+"label": "mars",
 "color":"blue",
 "planning" : [
+  {
+    "day": 1,
+    "events": []
+  },
+  {
+    "day": 2,
+    "events": [
+      {
+        "type": "cours particulier",
+        "start": "14h00",
+        "end": "16h00",
+        "label": " créneau réservé"
+      }
+    ]
+  },
   {
     "day": 3,
     "events": [
       {
-        "type": "projet libre",
-        "start": "10h00",
-        "end": "12h00",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
-      },
-      {
-        "type": "cours ados",
-        "start": "13h15",
-        "end": "14h30"
-      },
-      {
-        "type": "cours ados",
-        "start": "15h30",
-        "end": "17h30"
+        "type": "cours particulier",
+        "start": "13h00",
+        "end": "16h00",
+        "label": "  créneau réservé"
       }
     ]
   },
   {
     "day": 4,
-    "events": [
-      {
-        "type": "cours particulier",
-        "start": "14h00",
-        "end": "16h00"
-      }
-    ]
+    "events": []
   },
   {
     "day": 5,
@@ -45,7 +41,7 @@
         "end": "16h00",
         "participants": {
           "max": 4,
-          "booked": "3"
+          "booked": "1"
         }
       }
     ]
@@ -54,49 +50,51 @@
     "day": 6,
     "events": [
       {
-        "type": "cours adultes",
+        "type": "cours particulier",
         "start": "10h00",
-        "end": "12h30"
-      },
-      {
-        "type": "cours particulier",
-        "start": "13h30",
-        "end": "15h30"
-      },
-      {
-        "type": "cours particulier",
-        "start": "15h30",
-        "end": "17h30"
+        "end": "12h00",
+        "label": "  créneau réservé"
       }
     ]
   },
   {
     "day": 7,
-    "events": [
-    ]
+    "events": []
   },
   {
     "day": 8,
     "events": [
       {
-        "type": "projet libre",
+        "type": "cours particulier",
         "start": "14h30",
         "end": "16h30",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
+        "label": "  créneau réservé"
       }
     ]
   },
   {
     "day": 9,
     "events": [
+      {
+        "type": "cours particulier",
+        "start": "13h00",
+        "end": "17h00",
+        "label": "  créneau réservé"
+      }
     ]
   },
   {
     "day": 10,
     "events": [
+      {
+        "type": "projet libre",
+        "start": "10h00",
+        "end": "12h00",
+        "participants": {
+          "max": 4,
+          "booked": "1"
+        }
+      },
       {
         "type": "cours ados",
         "start": "13h15",
@@ -105,24 +103,13 @@
       {
         "type": "cours ados",
         "start": "15h30",
-        "end": "17h30"
+        "end": "16h45"
       }
     ]
   },
   {
     "day": 11,
-    "events": [
-      {
-        "type": "access libre",
-        "start": "10h00",
-        "end": "13h00",
-        "label": "5€ l'heure",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
-      }
-    ]
+    "events": []
   },
   {
     "day": 12,
@@ -133,7 +120,7 @@
         "end": "16h00",
         "participants": {
           "max": 4,
-          "booked": 0
+          "booked": "3"
         }
       }
     ]
@@ -148,8 +135,15 @@
       },
       {
         "type": "cours particulier",
-        "start": "13h30",
-        "end": "15h30"
+        "start": "13h00",
+        "end": "15h00",
+        "label": "  créneau réservé"
+      },
+      {
+        "type": "cours particulier",
+        "start": "15h00",
+        "end": "17h00",
+        "label": "  créneau réservé"
       }
     ]
   },
@@ -162,10 +156,9 @@
     "day": 15,
     "events": [
       {
-        "type": "access libre",
-        "start": "10h00",
-        "end": "12h00",
-        "label": "5€ l'heure",
+        "type": "projet libre",
+        "start": "14h30",
+        "end": "16h30",
         "participants": {
           "max": 4,
           "booked": 0
@@ -182,6 +175,95 @@
     "day": 17,
     "events": [
       {
+        "type": "cours ados",
+        "start": "13h15",
+        "end": "14h30"
+      },
+      {
+        "type": "cours ados",
+        "start": "15h30",
+        "end": "16h45"
+      }
+    ]
+  },
+  {
+    "day": 18,
+    "events": [
+      {
+        "type": "cours particulier",
+        "start": "10h00",
+        "end": "12h00",
+        "label": "  créneau réservé"
+      },
+      {
+        "type": "cours particulier",
+        "start": "14h00",
+        "end": "16h00",
+        "label": "  créneau réservé"
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "events": [
+      {
+        "type": "cours particulier",
+        "start": "10h00",
+        "end": "12h00",
+        "label": "  créneau réservé"
+      },
+      {
+        "type": "projet libre",
+        "start": "14h00",
+        "end": "16h00",
+        "participants": {
+          "max": 4,
+          "booked": "1"
+        }
+      }
+    ]
+  },
+  {
+    "day": 20,
+    "events": [
+      {
+        "type": "cours adultes",
+        "start": "10h00",
+        "end": "12h30"
+      },
+      {
+        "type": "cours particulier",
+        "start": "13h00",
+        "end": "15h00",
+        "label": "  créneau réservé"
+      },
+      {
+        "type": "cours particulier",
+        "start": "15h00",
+        "end": "17h00",
+        "label": "  créneau réservé"
+      }
+    ]
+  },
+  {
+    "day": 21,
+    "events": [
+    ]
+  },
+  {
+    "day": 22,
+    "events": [
+    ]
+  },
+  {
+    "day": 23,
+    "events": [
+    ]
+  },
+  {
+    "day": 24,
+    "events": [
+      {
         "type": "projet libre",
         "start": "10h00",
         "end": "12h00",
@@ -198,131 +280,13 @@
       {
         "type": "cours ados",
         "start": "15h30",
-        "end": "17h30"
-      }
-    ]
-  },
-  {
-    "day": 18,
-    "events": [
-      {
-        "type": "cours particulier",
-        "start": "14h00",
-        "end": "17h00"
-      }
-    ]
-  },
-  {
-    "day": 19,
-    "events": [
-      {
-        "type": "projet libre",
-        "start": "14h00",
-        "end": "16h00",
-        "participants": {
-          "max": 4,
-          "booked": "2"
-        }
-      }
-    ]
-  },
-  {
-    "day": 20,
-    "events": [
-      {
-        "type": "cours adultes",
-        "start": "10h00",
-        "end": "12h30"
-      },
-      {
-        "type": "cours particulier",
-        "start": "13h30",
-        "end": "15h30"
-      }
-    ]
-  },
-  {
-    "day": 21,
-    "events": [
-    ]
-  },
-  {
-    "day": 22,
-    "events": [
-      {
-        "type": "cours particulier",
-        "start": "10h00",
-        "end": "12h00"
-      }
-    ]
-  },
-  {
-    "day": 23,
-    "events": [
-      {
-        "type": "stage couture enfant",
-        "start": "10h45",
-        "end": "12h00",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
-      },
-      {
-        "type": "stage couture ados",
-        "start": "13h15",
-        "end": "15h00",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
-      }
-    ]
-  },
-  {
-    "day": 24,
-    "events": [
-      {
-        "type": "stage couture enfant",
-        "start": "10h45",
-        "end": "12h00",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
-      },
-      {
-        "type": "stage couture ados",
-        "start": "13h15",
-        "end": "15h00",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
+        "end": "16h45"
       }
     ]
   },
   {
     "day": 25,
     "events": [
-      {
-        "type": "stage couture enfant",
-        "start": "10h45",
-        "end": "12h00",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
-      },
-      {
-        "type": "stage couture ados",
-        "start": "13h15",
-        "end": "15h00",
-        "participants": {
-          "max": 4,
-          "booked": 0
-        }
-      }
     ]
   },
   {
@@ -343,15 +307,55 @@
     "day": 27,
     "events": [
       {
+        "type": "cours adultes",
+        "start": "10h00",
+        "end": "12h30"
+      },
+      {
         "type": "cours particulier",
-        "start": "13h00",
-        "end": "15h00"
+        "start": "13h30",
+        "end": "15h30",
+        "label": "  créneau réservé"
       }
     ]
   },
   {
     "day": 28,
     "events": [
+    ]
+  },
+  {
+    "day": 29,
+    "events": [
+      {
+        "type": "projet libre",
+        "start": "14h30",
+        "end": "16h30",
+        "participants": {
+          "max": 4,
+          "booked": 0
+        }
+      }
+    ]
+  },
+  {
+    "day": 30,
+    "events": [
+    ]
+  },
+  {
+    "day": 31,
+    "events": [
+      {
+        "type": "cours ados",
+        "start": "13h15",
+        "end": "14h30"
+      },
+      {
+        "type": "cours ados",
+        "start": "15h30",
+        "end": "16h45"
+      }
     ]
   }
 ]
