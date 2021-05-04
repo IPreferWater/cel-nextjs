@@ -1,0 +1,93 @@
+{
+    "label": "mai",
+    "color":"blue",
+    "planning" : [
+        {
+            "day": 21,
+            "events": [
+              {
+                "type": "projet libre",
+                "start": "14h00",
+                "end": "16h00",
+                "participants": {
+                  "max": 4,
+                  "booked": 0
+                }
+              }
+            ]
+          },
+          {
+            "day": 22,
+            "events": [
+              {
+                "type": "",
+                "start": "",
+                "end": ""
+              }
+            ]
+          },
+          {
+            "day": 23,
+            "events": []
+          },
+          {
+            "day": 24,
+            "events": [
+              {
+                "type": "projet libre",
+                "start": "14h30",
+                "end": "16h30",
+                "participants": {
+                  "max": 4,
+                  "booked": 0
+                }
+              }
+            ]
+          },
+          {
+            "day": 25,
+            "events": []
+          },
+          {
+            "day": 26,
+            "events": []
+          },
+          {
+            "day": 27,
+            "events": []
+          },
+          {
+            "day": 28,
+            "events": [
+              {
+                "type": "projet libre",
+                "start": "14h00",
+                "end": "16h00",
+                "participants": {
+                  "max": 4,
+                  "booked": 0
+                }
+              }
+            ]
+          },
+          {
+            "day": 29,
+            "events": [
+              {
+                "type": "cours particulier",
+                "start": "13h00",
+                "end": "16h00",
+                "label": " créneau réservé"
+              }
+            ]
+          },
+          {
+            "day": 30,
+            "events": []
+          },
+          {
+            "day": 31,
+            "events": []
+          }
+    ]
+    }
