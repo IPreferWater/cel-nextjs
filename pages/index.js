@@ -38,32 +38,44 @@ export default class Home extends React.Component {
                 <div className="w-full md:w-4/5 lg:w-2/3 xl:w-3/5 h-bandeau"><LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded}/></div>
                 </Carousel>
 
-                <Link href="/noel">
+              {/*  <Link href="/noel">
                 <a className="bg-beach-red w-full my-8 p-4">
                 <div className="flex flex-row justify-center items-center">
                         <NoelIcon className="sm-max:w-full h-32 w-32" />
                         <h1 className="text-white font-extrabold">Catalogue de Noel</h1>
                     </div>
                     </a>
-                </Link>
+                </Link>*/}
 
                 <BandeauCleo />
 
-                <section className="w-1/2 bg-beach-sand rounded-lg mt-6 flex flex-col">
-
+                <div className="flex flex-col md:flex-row justify-around w-full md:space-x-10">
+                <section className="w-full md:w-1/2 bg-beach-sand rounded-lg mt-6 flex flex-col">
                         {this.props.plannings.map(function (planning, idx) {
+                            
                             return (
                                 <Link key={idx} href={`/plannings/${planning.slug}`}>
-                                    <a className="w-auto h-40 text-beach-grey font-extrabold text-2xl text-center">
+                                    <a className="w-auto  h-40 text-beach-grey font-extrabold text-4xl text-center">
                                         <p>planning {planning.title}</p>
                                         <CalendarIcon className="w-full text-center"/>
                                     </a>
-                                    
                                 </Link>
-
                             )
                         })}
                 </section>
+
+                <section className="w-full md:w-1/2 bg-beach-sand rounded-lg mt-6 flex flex-col">
+                <Link href={`/tarifs`}>
+                
+                                    <a className="flex w-auto h-40">
+                                    
+                                    <span className="m-auto text-beach-grey font-extrabold text-2xl text-center">Tarifs des réparations<br></br>&<br></br>transformations des vêtements</span>
+                                    </a>
+                                    
+                                </Link>
+                                </section>
+
+                </div>
                {/* <p>List of posts:</p>
                 <ul>
                     {this.props.posts.map(function (post, idx) {
