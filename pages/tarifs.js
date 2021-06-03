@@ -33,9 +33,6 @@ export default  class Tarifs extends React.Component {
         })}
          </div>
         </div>
-        
-
-   
 
 <div className="mt-10 font-bold">Upcycling transformation de vêtements</div>
 <div className="flex flex-col  ">

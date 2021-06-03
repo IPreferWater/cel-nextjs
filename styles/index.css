@@ -24,3 +24,11 @@ h2 {
 p {
   @apply mb-6
 }
+
+@font-face {
+  font-family: "railey";
+  src: url("/fonts/Railey-PersonalUse.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
