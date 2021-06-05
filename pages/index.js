@@ -6,7 +6,9 @@ import { BandeauBlog } from '@components/bandeau-blog'
 import { LazyImage } from '@components/lazy-image'
 import { BaseIcon } from '@components/icons/base-icon'
 import { NoelIcon } from '@components/icons/noel-icon'
-import { CalendarIcon } from '@components/icons/calendar-icon'
+
+import { NavigationTable } from '@components/navigation-table'
+
 
 import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 export default class Home extends React.Component {
@@ -26,11 +28,11 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className={styles.container}>
-                <section className="w-full p-8 bg-beach-sand rounded-lg mb-4">
+                <section className="w-full  p-4 bg-beach-sand rounded-lg mb-4 sm:mb-10">
                     <div className="flex flex-col sm:flex-row justify-center items-center">
-                        <BaseIcon className="sm-max:w-12 sm-max:h-12 h-32 w-32" />
-                        <h1 className="text-center text-beach-grey font-extrabold">Consommez autrement, upcyclez votre quotidien !</h1>
-                        <BaseIcon className=" sm-max:w-12 sm-max:h-12 h-32 w-32" />
+                        <BaseIcon className="h-12 w-12"/>
+                        <h1 className="text-center text-cel-green  font-railey">Consommez autrement, upcyclez votre quotidien !</h1>
+                        <BaseIcon className="h-12 w-12"/>
                     </div>
                 </section>                
                 <Carousel infinite  autoPlay={6000} animationSpeed={3000} dots >
@@ -38,44 +40,29 @@ export default class Home extends React.Component {
                 <div className="w-full md:w-4/5 lg:w-2/3 xl:w-3/5 h-bandeau"><LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded}/></div>
                 </Carousel>
 
-              {/*  <Link href="/noel">
-                <a className="bg-beach-red w-full my-8 p-4">
-                <div className="flex flex-row justify-center items-center">
-                        <NoelIcon className="sm-max:w-full h-32 w-32" />
-                        <h1 className="text-white font-extrabold">Catalogue de Noel</h1>
-                    </div>
-                    </a>
-                </Link>*/}
-
-                <BandeauCleo />
-
-                <div className="flex flex-col md:flex-row justify-around w-full md:space-x-10">
-                <section className="w-full md:w-1/2 bg-beach-sand rounded-lg mt-6 flex flex-col">
-                        {this.props.plannings.map(function (planning, idx) {
-                            
-                            return (
-                                <Link key={idx} href={`/plannings/${planning.slug}`}>
-                                    <a className="w-auto  h-40 text-beach-grey font-extrabold text-4xl text-center">
-                                        <p>planning {planning.title}</p>
-                                        <CalendarIcon className="w-full text-center"/>
-                                    </a>
-                                </Link>
-                            )
-                        })}
-                </section>
-
-                <section className="w-full md:w-1/2 bg-beach-sand rounded-lg mt-6 flex flex-col">
-                <Link href={`/tarifs`}>
-                
-                                    <a className="flex w-auto h-40">
-                                    
-                                    <span className="m-auto text-beach-grey font-extrabold text-2xl text-center">Tarifs des réparations<br></br>&<br></br>transformations des vêtements</span>
-                                    </a>
-                                    
-                                </Link>
-                                </section>
-
+                <div className="flex flex-col items-center text-lg font-railey text-cel-green sm:mt-10">
+                <div className="text-3xl  ">Objectif ?</div>
+                <div className="text-5xl font-bold">Lutter contre le gaspillage textile</div>
                 </div>
+
+                <NavigationTable plannings={this.props.plannings}/>
+
+                <div className="w-full md:w-4/5 text-center text-3xl text-cel-green">
+                <div className="font-railey">contact</div>
+                <div className="flex flex-col sm:flex-row  justify-between">
+                
+                <div className="flex flex-col">
+                    <div className="font-railey">par mail</div>
+                    <div>boutton vers adresse mail</div>
+                </div>
+
+                <div className="flex flex-col">
+                    <div className="font-railey">à l'atelier</div>
+                    <div>adresse atelier</div>
+                </div>
+                </div>
+                </div>
+
                {/* <p>List of posts:</p>
                 <ul>
                     {this.props.posts.map(function (post, idx) {
