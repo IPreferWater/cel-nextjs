@@ -23,9 +23,9 @@ import { Logo } from '@components/icons/logo'
         </Link>
 
         <nav
-          className={ ` font-railey text-4xl ${
-            this.state.isExpanded ? `` : `hidden sm:contents`
-          } flex flex-col sm:flex-row justify-between text-cel-orange font-extrabold w-2/3`}
+          className={ ` font-railey text-3xl ${
+            this.state.isExpanded ? `` : `hidden md:contents`
+          } flex flex-col md:flex-row justify-between text-cel-orange font-extrabold w-2/3`}
         >
           {[
             {
@@ -34,15 +34,11 @@ import { Logo } from '@components/icons/logo'
             },
             {
               route: `/blog`,
-              title: `Blog`,
+              title: `Slow Fashion`,
             },
             {
               route: `/about`,
-              title: `A Propos`,
-            },
-            {
-              route: `/contact`,
-              title: `Contact`,
+              title: `Clementine`,
             },
             {
               route: `/presse`,
@@ -59,7 +55,7 @@ import { Logo } from '@components/icons/logo'
         </nav>
 
          <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded sm:hidden"
+          className="flex items-center block px-3 py-2 text-cel-orange border border-cel-orange rounded md:hidden"
           onClick={this.handleClick}
         >
           <svg

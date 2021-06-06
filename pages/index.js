@@ -7,7 +7,7 @@ import { LazyImage } from '@components/lazy-image'
 import { BaseIcon } from '@components/icons/base-icon'
 import { NoelIcon } from '@components/icons/noel-icon'
 
-import { NavigationTable } from '@components/navigation-table'
+import  NavigationTable  from '@components/navigation-table'
 
 
 import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
@@ -47,19 +47,24 @@ export default class Home extends React.Component {
 
                 <NavigationTable plannings={this.props.plannings}/>
 
-                <div className="w-full md:w-4/5 text-center text-3xl text-cel-green">
-                <div className="font-railey">contact</div>
-                <div className="flex flex-col sm:flex-row  justify-between">
+                <div className="w-full md:w-4/5 text-center text-3xl text-cel-green sm:mt-10">
+                <div className="font-railey text-3xl">contact</div>
+                <div className="flex flex-col sm:flex-row  justify-between text-5xl">
                 
-                <div className="flex flex-col">
-                    <div className="font-railey">par mail</div>
-                    <div>boutton vers adresse mail</div>
+                <div className="flex flex-col text-5xl">
+                    <a className="font-railey p-10" href="mailto:clementinestla@gmail.com">
+                    <div>par mail</div>
+                    <div>clementinestla@gmail.com</div>
+                    </a>
                 </div>
 
                 <div className="flex flex-col">
-                    <div className="font-railey">à l'atelier</div>
-                    <div>adresse atelier</div>
+                <a className="font-railey p-10" target="_blank" href="https://www.google.com/maps/place/La+Bouquinerie+du+Sart/@50.659281,3.1364063,15z/data=!4m5!3m4!1s0x0:0x53ef5eda30be9290!8m2!3d50.659244!4d3.1363242">
+                    <div>7 Boulevard Albert 1er à Villeneuve d'Ascq</div>
+                    <div>🌏</div>
+                    </a>
                 </div>
+
                 </div>
                 </div>
 
