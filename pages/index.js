@@ -1,7 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { getConfig, getAllPosts, getAllPlannings } from '@api'
-import { BandeauCleo } from '@components/bandeau-cleo'
 import { BandeauBlog } from '@components/bandeau-blog'
 import { LazyImage } from '@components/lazy-image'
 import { BaseIcon } from '@components/icons/base-icon'
