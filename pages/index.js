@@ -39,7 +39,7 @@ export default class Home extends React.Component {
                 <div className="w-full md:w-4/5 lg:w-2/3 xl:w-3/5 h-bandeau"><LazyImage fileName={'bandeau_top.jpeg'} loaded={this.state.imgLoaded}/></div>
                 </Carousel>
 
-                <div className="flex flex-col items-center text-lg font-railey text-cel-green sm:mt-10">
+                <div className="flex flex-col items-center text-lg text-center font-railey text-cel-green sm:mt-10">
                 <div className="text-3xl  ">Objectif ?</div>
                 <div className="text-5xl font-bold">Lutter contre le gaspillage textile</div>
                 </div>
@@ -50,10 +50,9 @@ export default class Home extends React.Component {
                 <div className="font-railey text-3xl">contact</div>
                 <div className="flex flex-col sm:flex-row  justify-between text-5xl">
                 
-                <div className="flex flex-col text-5xl">
+                <div className="flex flex-col text-5xl border-4 border-cel-green">
                     <a className="font-railey p-10" href="mailto:clementinestla@gmail.com">
                     <div>par mail</div>
-                    <div>clementinestla@gmail.com</div>
                     </a>
                 </div>
 
