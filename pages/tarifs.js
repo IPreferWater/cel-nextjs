@@ -13,9 +13,7 @@ export default  class Tarifs extends React.Component {
     render(){
 
         var courantes = {
-            'pantalon': 20.4,
-            'teeshirt': 40.2,
-             'short': 5538.8
+            'ourlet vêtement, à partir de ': 10
         };
 
     return <div className="text-center text-3xl">
