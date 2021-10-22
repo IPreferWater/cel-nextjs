@@ -1,8 +1,8 @@
 {
-    "label": "mai",
+    "label": "novembre",
     "color":"blue",
     "planning" : [
-        [
+        
             {
               "day": 1,
               "events": [
@@ -322,6 +322,6 @@
               "day": 30,
               "events": []
             }
-          ]
+          
     ]
     }
