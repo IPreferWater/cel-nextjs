@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Logo } from '@components/icons/logo'
 
   export default  class Header extends React.Component {
 
@@ -13,20 +14,18 @@ import Link from 'next/link'
 
   render() {
   return (
-    <header className="bg-beach-green">
+    <header >
       <div className="flex flex-col sm:flex-row items-center justify-between p-4 md:p-8">
         <Link href="/">
-          <h1 className="flex items-center text-white no-underline">
-            <span className="text-xl font-bold tracking-tight">
-              Clementinestla
-              </span>
-          </h1>
+        <a>
+        <Logo className="sm-max:w-48  w-64" />
+        </a>
         </Link>
 
         <nav
-          className={ ` ${
-            this.state.isExpanded ? `` : `hidden sm:contents`
-          } flex flex-col sm:flex-row justify-between text-white font-extrabold w-2/3`}
+          className={ ` font-railey text-3xl ${
+            this.state.isExpanded ? `` : `hidden md:contents`
+          } flex flex-col md:flex-row justify-between text-cel-orange font-extrabold w-2/3`}
         >
           {[
             {
@@ -35,15 +34,11 @@ import Link from 'next/link'
             },
             {
               route: `/blog`,
-              title: `Blog`,
+              title: `Slow Fashion`,
             },
             {
               route: `/about`,
-              title: `A Propos`,
-            },
-            {
-              route: `/contact`,
-              title: `Contact`,
+              title: `Clementine`,
             },
             {
               route: `/presse`,
@@ -60,7 +55,7 @@ import Link from 'next/link'
         </nav>
 
          <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded sm:hidden"
+          className="flex items-center block px-3 py-2 text-cel-orange border border-cel-orange rounded md:hidden"
           onClick={this.handleClick}
         >
           <svg

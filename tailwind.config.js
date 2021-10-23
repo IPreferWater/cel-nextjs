@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'cel-green': '#16a085',
+        'cel-green': '#5d8c50',
+        'cel-orange': '#e59a67',
         'beach-green': '#7eb79d',
         'beach-sand': '#ffeead',
         'beach-red': '#ff6f69',
@@ -22,7 +23,8 @@ module.exports = {
     }
     },
   fontFamily: {
-    ces: ['cormorantgaramond-semibold','cormorant garamond','serif']
+    ces: ['cormorantgaramond-semibold','cormorant garamond','serif'],
+    railey: ['railey']
   },
   },
 

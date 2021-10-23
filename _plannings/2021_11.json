@@ -1,0 +1,327 @@
+{
+    "label": "novembre",
+    "color":"blue",
+    "planning" : [
+        
+            {
+              "day": 1,
+              "events": [
+                {
+                  "type": "cours particulier",
+                  "start": "10h00",
+                  "end": "12h00",
+                  "label": "Créneau réservé"
+                }
+              ]
+            },
+            {
+              "day": 2,
+              "events": []
+            },
+            {
+              "day": 3,
+              "events": [
+                {
+                  "type": "cours ados",
+                  "start": "14h00",
+                  "end": "15h30",
+                  "label": " Complet"
+                },
+                {
+                  "type": "cours ados",
+                  "start": "17h00",
+                  "end": "18h30",
+                  "participants": {
+                    "max": 4,
+                    "booked": "2"
+                  }
+                }
+              ]
+            },
+            {
+              "day": 4,
+              "events": [
+                {
+                  "type": "projet libre",
+                  "start": "14h00",
+                  "end": "16h00",
+                  "participants": {
+                    "max": 4,
+                    "booked": "2"
+                  }
+                },
+                {
+                  "type": "cours particulier",
+                  "start": "17h30",
+                  "end": "19h30",
+                  "label": " Créneau réservé"
+                }
+              ]
+            },
+            {
+              "day": 5,
+              "events": [
+                {
+                  "type": "cours adultes",
+                  "start": "18h00",
+                  "end": "19h45",
+                  "label": " Complet"
+                }
+              ]
+            },
+            {
+              "day": 6,
+              "events": [
+                {
+                  "type": "cours adultes",
+                  "start": "10h45",
+                  "end": "12h30",
+                  "label": " Complet"
+                },
+                {
+                  "type": "cours particulier",
+                  "start": "13h30",
+                  "end": "15h30",
+                  "label": "Créneau réservé"
+                }
+              ]
+            },
+            {
+              "day": 7,
+              "events": []
+            },
+            {
+              "day": 8,
+              "events": [
+                {
+                  "type": "cours particulier",
+                  "start": "10h00",
+                  "end": "11h30",
+                  "label": " Créneau réservé"
+                },
+                {
+                  "type": "projet libre",
+                  "start": "18h00",
+                  "end": "20h00",
+                  "participants": {
+                    "max": 4,
+                    "booked": 0
+                  }
+                }
+              ]
+            },
+            {
+              "day": 9,
+              "events": []
+            },
+            {
+              "day": 10,
+              "events": [
+                {
+                  "type": "cours ados",
+                  "start": "14h00",
+                  "end": "15h30",
+                  "label": " Complet"
+                },
+                {
+                  "type": "cours ados",
+                  "start": "17h00",
+                  "end": "18h30",
+                  "participants": {
+                    "max": 4,
+                    "booked": "2"
+                  }
+                }
+              ]
+            },
+            {
+              "day": 11,
+              "events": []
+            },
+            {
+              "day": 12,
+              "events": [
+                {
+                  "type": "cours particulier",
+                  "start": "9h00",
+                  "end": "12h00",
+                  "label": " Créneau réservé"
+                },
+                {
+                  "type": "cours adultes",
+                  "start": "18h00",
+                  "end": "19h45",
+                  "label": " Complet"
+                }
+              ]
+            },
+            {
+              "day": 13,
+              "events": [
+                {
+                  "type": "cours adultes",
+                  "start": "10h45",
+                  "end": "12h30",
+                  "label": " Complet"
+                }
+              ]
+            },
+            {
+              "day": 14,
+              "events": []
+            },
+            {
+              "day": 15,
+              "events": []
+            },
+            {
+              "day": 16,
+              "events": []
+            },
+            {
+              "day": 17,
+              "events": [
+                {
+                  "type": "cours ados",
+                  "start": "14h00",
+                  "end": "15h30",
+                  "label": " Complet"
+                },
+                {
+                  "type": "cours ados",
+                  "start": "17h00",
+                  "end": "18h30",
+                  "participants": {
+                    "max": 4,
+                    "booked": "2"
+                  }
+                }
+              ]
+            },
+            {
+              "day": 18,
+              "events": [
+                {
+                  "type": "projet libre",
+                  "start": "14h00",
+                  "end": "16h00",
+                  "participants": {
+                    "max": 4,
+                    "booked": "1"
+                  }
+                }
+              ]
+            },
+            {
+              "day": 19,
+              "events": [
+                {
+                  "type": "cours adultes",
+                  "start": "18h00",
+                  "end": "19h45",
+                  "label": " Complet"
+                }
+              ]
+            },
+            {
+              "day": 20,
+              "events": [
+                {
+                  "type": "cours adultes",
+                  "start": "10h45",
+                  "end": "12h30",
+                  "label": " Complet"
+                },
+                {
+                  "type": "projet libre",
+                  "start": "13h30",
+                  "end": "15h30",
+                  "participants": {
+                    "max": 4,
+                    "booked": "2"
+                  }
+                }
+              ]
+            },
+            {
+              "day": 21,
+              "events": []
+            },
+            {
+              "day": 22,
+              "events": [
+                {
+                  "type": "projet libre",
+                  "start": "18h00",
+                  "end": "20h00",
+                  "participants": {
+                    "max": 4,
+                    "booked": 0
+                  }
+                }
+              ]
+            },
+            {
+              "day": 23,
+              "events": []
+            },
+            {
+              "day": 24,
+              "events": [
+                {
+                  "type": "cours ados",
+                  "start": "14h00",
+                  "end": "15h30",
+                  "label": " Complet"
+                },
+                {
+                  "type": "cours ados",
+                  "start": "17h00",
+                  "end": "18h30",
+                  "participants": {
+                    "max": 4,
+                    "booked": "2"
+                  }
+                }
+              ]
+            },
+            {
+              "day": 25,
+              "events": []
+            },
+            {
+              "day": 26,
+              "events": [
+                {
+                  "type": "cours adultes",
+                  "start": "18h00",
+                  "end": "19h45",
+                  "label": " Complet"
+                }
+              ]
+            },
+            {
+              "day": 27,
+              "events": [
+                {
+                  "type": " Grande vente tissus + mercerie + créations upcyclées",
+                  "start": "10h00",
+                  "end": "18h00"
+                }
+              ]
+            },
+            {
+              "day": 28,
+              "events": []
+            },
+            {
+              "day": 29,
+              "events": []
+            },
+            {
+              "day": 30,
+              "events": []
+            }
+          
+    ]
+    }
