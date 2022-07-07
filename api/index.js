@@ -124,3 +124,26 @@ export async function getProductBySlugAndCategory(slug, category){
         image: `product/${meta.data.image}`
     }
 }
+
+export async function getAllCreations(){
+    const context = require.context('../data/_creations', false, /\.json$/)
+    const jsons = []
+    for(const key of context.keys()){
+        const json = key.slice(2);
+        const slug = json.replace('.json','')
+        jsons.push({
+            slug: slug,
+            title: slug
+        })
+    }
+    return jsons;
+}
+
+export async function getCreationByName(name){
+    const fileContent = await import(`../data/_creations/${name}.json`)
+
+    return {
+        content: fileContent.default,
+        slug : name
+    }
+}
