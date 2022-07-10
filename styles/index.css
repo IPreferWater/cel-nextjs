@@ -1,34 +1,26 @@
-@import "tailwindcss/base";
+/*@import "tailwindcss/base";
 
 @import "tailwindcss/components";
 
-@import "tailwindcss/utilities";
+@import "tailwindcss/utilities";*/
 
-@layer utilities {
-  .blur {
-    filter: blur(25px);
-  }
-}
-
-body {
-  @apply bg-white ;
-}
-
-h1  {
-  @apply text-4xl;
-}
-
-h2 {
-  @apply text-2xl mb-6;
-}
-p {
-  @apply mb-6
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
-  font-family: "railey";
-  src: url("/fonts/Railey-PersonalUse.ttf");
+  font-family: "marker";
+  src: url("fonts/PermanentMarker-Regular.ttf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+}
+
+@layer components {
+  .wow-stroke-txt {
+    @apply  font-bold tracking-tighter;
+    -webkit-text-stroke-width: 1.40px;
+    -webkit-text-stroke-color: black;
+    font-family: Tahoma;
+  }
 }
