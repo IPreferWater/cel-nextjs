@@ -2,7 +2,7 @@
 
 import { getAllCreationIds, getCreationDataByID  } from '../../pages/api/blog'
 import Layout from '../../components/Layout'
-import {Informations} from '../../components/creations/Informations'
+import {Informations} from '../../components/creations/NavigationInformations'
 import {Creation,IInformations} from '../../interfaces/index'
 
 type CreationProps = {

@@ -35,11 +35,20 @@ export type Creation = {
 }
 
 export type IInformations = {
-  story: {
-    origin: Array<tupple>
-    makingof: Array<tupple>
-    costs: Array<string>
-  }
+  story: IStory
+  realisation: IRealisation
+}
+
+export type IStory = {
+  origin: Array<tupple>
+  funfact: tupple
+}
+
+export type IRealisation = {
+  sketchs: Array<tupple>
+  patterns: Array<tupple>
+  sewings: Array<tupple>
+  costs: Array<string>
 }
 
 type tupple = {

@@ -13,13 +13,40 @@
                     "img":"todo"
                 }                
             ],
-            "makingof" : [
+            "funfact" :
                 {
                     "txt":"Le poncho & le kimono sont deux tissus amples. J’ai voulu me rapprocher du design des Kimonos japonais.Lorem Ipsum is simply dummy text of the printing and typesetting ",
                     "img":"todo"
-                } 
+                }
+        },
+        "realisation": {
+            "sketchs" : [
+                    {
+                        "txt":"Le poncho & le kimono sont deux tissus amples. J’ai voulu me rapprocher du design des Kimonos japonais.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+                        "img":"todo"
+                    }
             ],
-            "costs": ["🕐 temps de creation :  25h", "🎯 cout des matiere premiere : 30€", "⚡ materiel & energie : 5€"]
+            "patterns": [
+                {
+                    "txt":"J’ai décousu à cet endroit pour prendre les mesures et comme je ne voulais pas d’ourlet basique mais un arrondi j’ai utilisé une regle perroquets pour réussir",
+                    "img":"todo"
+                },
+                {
+                    "txt":"Avec les chutes je ferais une pochette assortit",
+                    "img":"todo"
+                }
+            ],
+            "sewings" : [
+                {
+                    "txt":"J’ai décousu à cet endroit pour prendre les mesures et comme je ne voulais pas d’ourlet basique mais un arrondi j’ai utilisé une regle perroquets pour réussir",
+                    "img":"todo"
+                },
+                {
+                    "txt":"Avec les chutes je ferais une pochette assortit",
+                    "img":"todo"
+                }
+            ],
+            "costs": ["🕐 temps de creation :  25h","🎯 cout des matiere premiere : 30€","⚡ materiel & energie : 5€"]
         }
     }
 }

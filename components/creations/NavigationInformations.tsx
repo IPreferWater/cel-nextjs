@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import {IInformations} from '../../interfaces/index'
+import {TabRealisation} from './TabRealisation'
+import {TabStory} from './TabStory'
 
 
 type InformationsProps = {
@@ -56,17 +58,13 @@ role="tablist">
     aria-controls="tabs-profile" aria-selected="false" onClick={buttonHandler}>Profile</a>
 </li>
 </ul>
-<div className="tab-content" id="tabs-tabContent">
-<div className={`tab-pane fade ${stateTab=="tabs-home-tab" ? 'show active':'hidden' }`} id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab">
-{informations.story.costs.map((cost) =>(
-        <div key={cost}>{cost}</div>
-    ))}
+  <div className="tab-content" id="tabs-tabContent">
+    <div className={`tab-pane fade ${stateTab=="tabs-home-tab" ? 'show active':'hidden' }`} id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab">
+    <TabStory story={informations.story}/>
+    </div>
+    <div className={`tab-pane fade ${stateTab=="tabs-profile-tab" ? 'show active':'hidden' }`} id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
+    <TabRealisation realisation={informations.realisation}/>
+    </div>
+  </div>
 </div>
-<div className={`tab-pane fade ${stateTab=="tabs-profile-tab" ? 'show active':'hidden' }`} id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
-  Tab 2 content
-</div>
-</div>
-</div>
-}
-
-
+    }
