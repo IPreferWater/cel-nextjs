@@ -31,4 +31,18 @@ export type Product = {
 export type Creation = {
   title: string
   date: number
+  informations: IInformations
+}
+
+export type IInformations = {
+  story: {
+    origin: Array<tupple>
+    makingof: Array<tupple>
+    costs: Array<string>
+  }
+}
+
+type tupple = {
+  txt: string
+  img: string
 }
