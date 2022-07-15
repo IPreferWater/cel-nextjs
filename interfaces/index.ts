@@ -40,7 +40,7 @@ export type IInformations = {
 }
 
 export type IStory = {
-  origin: Array<tupple>
+  origins: Array<tupple>
   funfact: tupple
 }
 

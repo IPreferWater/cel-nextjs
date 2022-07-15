@@ -3,50 +3,47 @@
     "title":"kimonooo",
     "informations": {
         "story" : {
-            "origin" : [
+            "origins" : [
                 {
-                    "txt":"J’ai trouvé ce poncho dans une bradie à Hem.Il vient du perou acheté par une dame qui y a habité pendant 5ans en 1975. ",
-                    "img":"todo"
+                    "txt":" Poncho coloré en très bon état, déniché dans une friperie de quartier à Nantes, intérieur en polaire et extérieur en coton. ",
+                    "img":"/creations/kimono/poncho_avant_1_small.webp"
                 },
                 {
-                    "txt":"C’est un kimono de jujitsu-brésilien. C’est un sport de combat ou l’on tire beaucoup sur les vetements. Malgres les renforts, le pantalon à ceder ... J’ai recuperé la veste qui est en cotton 100%.",
-                    "img":"todo"
+                    "txt":"C’est un kimono de jujitsu-brésilien. C’est un sport de combat où l’on tire beaucoup sur les vêtements. Malgré les renforts, le pantalon a craqué ... J’ai récuperé la veste qui est en coton 100%.",
+                    "img":"/creations/kimono/kimono_scramble.webp"
                 }                
             ],
             "funfact" :
                 {
                     "txt":"Le poncho & le kimono sont deux tissus amples. J’ai voulu me rapprocher du design des Kimonos japonais.Lorem Ipsum is simply dummy text of the printing and typesetting ",
-                    "img":"todo"
+                    "img":"/creations/kimono/kimono_scramble.webp"
                 }
         },
         "realisation": {
             "sketchs" : [
                     {
-                        "txt":"Le poncho & le kimono sont deux tissus amples. J’ai voulu me rapprocher du design des Kimonos japonais.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-                        "img":"todo"
+                        "txt":"Il y a une forte inspiration de l'esthétisme japonais dans la réalisation des créations. Ici j'ai voulu mixer cette pièce traditionnelle avec un modernisme actuel. Avec comme méthode l'upcycling afin de donner une nouvelle vie à des textiles de seconde main. C'est pour cela que j'ai eu l'idée d'associer le tissu du poncho avec celui du kimono de bjj. Le restant de la veste de kimono sera également combiné à un autre tissu pour en faire une nouvelle veste moderne de kimono.",
+                        "img":"public/creations/kimono/croquis_kimono.webp"
+                   
                     }
             ],
             "patterns": [
                 {
-                    "txt":"J’ai décousu à cet endroit pour prendre les mesures et comme je ne voulais pas d’ourlet basique mais un arrondi j’ai utilisé une regle perroquets pour réussir",
-                    "img":"todo"
+                    "txt":"Je suis parti d’un patron existant d’une veste kimono que j’avais. J’ai découpé les devants et dos dans le poncho, puis j’ai découpé la parementure ainsi que les manches du kimono de jujitsu. ",
+                    "img":"public/creations/kimono/patronnage_1.webp"
                 },
                 {
-                    "txt":"Avec les chutes je ferais une pochette assortit",
-                    "img":"todo"
+                    "txt":"Les chutes du poncho seront utilisées pour réaliser les bas de manches et celles du kimono pour la réalisation d'une nouvelle veste.",
+                    "img":"public/creations/kimono/decoupe_tissu.webp"
                 }
             ],
             "sewings" : [
                 {
-                    "txt":"J’ai décousu à cet endroit pour prendre les mesures et comme je ne voulais pas d’ourlet basique mais un arrondi j’ai utilisé une regle perroquets pour réussir",
-                    "img":"todo"
-                },
-                {
-                    "txt":"Avec les chutes je ferais une pochette assortit",
-                    "img":"todo"
+                    "txt":"J’ai d’abord surjeté les bords de toutes les pièces, puis j’ai assemblé les devants avec les dos, la parementure et enfin les manches. ce qui a posé problème c’est les épaisseurs... Environ 5 aiguilles ont péri, des coutures ont été défaites puis refaites puis redéfaites pour être bien rerefaites. Il a fallu s’armer de patience mais ça vaut le coup (et ça fait l’expérience !!)",
+                    "img":"public/creations/kimono/sewing.webp"
                 }
             ],
-            "costs": ["🕐 temps de creation :  25h","🎯 cout des matiere premiere : 30€","⚡ materiel & energie : 5€"]
+            "costs": ["🕐 temps de réalisation :  23h","🎯 coût des matières premières : 22€","⚡ énergie : 5€"]
         }
     }
 }
