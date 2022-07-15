@@ -21,7 +21,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <Link href="/">
         <a className='flex flex-row items-end'>
         <img className='object-contain h-24 w-24' src="/logo.svg"/>
-        <h1 className='text-2xl md:text-6xl'>IPreferWater</h1>
+        <h1 className='text-2xl md:text-6xl'>Clementinestla</h1>
         </a>
         </Link>
 

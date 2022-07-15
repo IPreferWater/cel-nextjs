@@ -8,7 +8,7 @@ type InformationsProps = {
     informations: IInformations
   }
 
-export const Informations = ( {informations} : InformationsProps) => {
+export const NavigationInformations = ( {informations} : InformationsProps) => {
 
     const [stateTab, setSateTab] = useState('tabs-home-tab');
 

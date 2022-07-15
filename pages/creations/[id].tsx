@@ -1,9 +1,10 @@
 
 
-import { getAllCreationIds, getCreationDataByID  } from '../../pages/api/blog'
-import Layout from '../../components/Layout'
-import {Informations} from '../../components/creations/NavigationInformations'
-import {Creation,IInformations} from '../../interfaces/index'
+import { getAllCreationIds, getCreationDataByID  } from '@/api/blog'
+import Layout from '@/components/Layout'
+import {NavigationInformations} from '@/components/creations/NavigationInformations'
+import {Carrousel} from '@/components/creations/Carrousel'
+import {Creation} from '@/interfaces/index'
 
 type CreationProps = {
   creation: Creation
@@ -21,7 +22,8 @@ export default function Creations({creation}:CreationProps) {
           <div className="flex flex-col w-full">
               <div>{creation.title}</div>
               <div>{creation.date}</div>
-              <Informations informations={creation.informations}/>
+              <Carrousel informations={creation.informations}/>
+              <NavigationInformations informations={creation.informations}/>
         </div>
       </Layout>
     )
