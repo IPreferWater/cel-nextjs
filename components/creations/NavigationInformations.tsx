@@ -38,7 +38,7 @@ role="tablist">
     focus:border-transparent
     active
   " id="tabs-home-tab" data-bs-toggle="pill" data-bs-target="#tabs-home" role="tab" aria-controls="tabs-home"
-    aria-selected="true" onClick={buttonHandler}>Home</a>
+    aria-selected="true" onClick={buttonHandler}>Histoire</a>
 </li>
 <li className="nav-item" role="presentation">
   <a href="#tabs-profile" className="
@@ -55,7 +55,7 @@ role="tablist">
     hover:border-transparent hover:bg-gray-100
     focus:border-transparent
   " id="tabs-profile-tab" data-bs-toggle="pill" data-bs-target="#tabs-profile" role="tab"
-    aria-controls="tabs-profile" aria-selected="false" onClick={buttonHandler}>Profile</a>
+    aria-controls="tabs-profile" aria-selected="false" onClick={buttonHandler}>Réalisation</a>
 </li>
 </ul>
   <div className="tab-content" id="tabs-tabContent">
