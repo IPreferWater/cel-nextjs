@@ -32,9 +32,6 @@ export default function Creations({creation}:CreationProps) {
 
 export async function getStaticProps(params:any) {
     const creation = getCreationDataByID(params.params.id) 
-    
-    
-    console.log(creation)
     return {
       props: {
         creation
