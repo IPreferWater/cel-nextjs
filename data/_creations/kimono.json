@@ -23,24 +23,24 @@
             "sketchs" : [
                     {
                         "txt":"Il y a une forte inspiration de l'esthétisme japonais dans la réalisation des créations. Ici j'ai voulu mixer cette pièce traditionnelle avec un modernisme actuel. Avec comme méthode l'upcycling afin de donner une nouvelle vie à des textiles de seconde main. C'est pour cela que j'ai eu l'idée d'associer le tissu du poncho avec celui du kimono de bjj. Le restant de la veste de kimono sera également combiné à un autre tissu pour en faire une nouvelle veste moderne de kimono.",
-                        "img":"public/creations/kimono/croquis_kimono.webp"
+                        "img":"/creations/kimono/croquis_kimono_small.webp"
                    
                     }
             ],
             "patterns": [
                 {
                     "txt":"Je suis parti d’un patron existant d’une veste kimono que j’avais. J’ai découpé les devants et dos dans le poncho, puis j’ai découpé la parementure ainsi que les manches du kimono de jujitsu. ",
-                    "img":"public/creations/kimono/patronnage_1.webp"
+                    "img":"/creations/kimono/patronnage_1_small.webp"
                 },
                 {
                     "txt":"Les chutes du poncho seront utilisées pour réaliser les bas de manches et celles du kimono pour la réalisation d'une nouvelle veste.",
-                    "img":"public/creations/kimono/decoupe_tissu.webp"
+                    "img":"/creations/kimono/decoupe_tissu.webp"
                 }
             ],
             "sewings" : [
                 {
                     "txt":"J’ai d’abord surjeté les bords de toutes les pièces, puis j’ai assemblé les devants avec les dos, la parementure et enfin les manches. ce qui a posé problème c’est les épaisseurs... Environ 5 aiguilles ont péri, des coutures ont été défaites puis refaites puis redéfaites pour être bien rerefaites. Il a fallu s’armer de patience mais ça vaut le coup (et ça fait l’expérience !!)",
-                    "img":"public/creations/kimono/sewing.webp"
+                    "img":"/creations/kimono/sewing.webp"
                 }
             ],
             "costs": ["🕐 temps de réalisation :  23h","🎯 coût des matières premières : 22€","⚡ énergie : 5€"]
