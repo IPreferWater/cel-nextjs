@@ -10,59 +10,49 @@ type InformationsProps = {
 
 export const NavigationInformations = ( {informations} : InformationsProps) => {
 
-    const [stateTab, setSateTab] = useState('tabs-home-tab');
+    const headers = [
+      {id:"story", label :"Histoire"},
+      {id:"realisation", label :"Réalisation"}]
+    const [stateTab, setSateTab] = useState('story');
 
-    const buttonHandler = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    const buttonHandler = (event: React.MouseEvent<HTMLAnchorElement>, idHeader: string) => {
         event.preventDefault();
         const button: HTMLAnchorElement = event.currentTarget;
-        setSateTab(button.id);
+        setSateTab(idHeader);
       };
 
 return <div>
-    <ul className="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tab"
-role="tablist">
-<li className="nav-item" role="presentation">
-  <a href="#tabs-home" className="
-  text-red-400
-    nav-link
-    block
-    font-medium
-    text-xs
-    leading-tight
-    uppercase
-    border-x-0 border-t-0 border-b-2 border-transparent
-    px-6
-    py-3
-    my-2
+    <ul className="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4 space-x-4">
+
+  {headers.map((header, i) => (
+  <li key={`HeaderInfo-${i}`} className="nav-item" role="presentation">
+      <a href={`#tabs-${header.id}`} 
+      //className={`${stateTab=={`#tabs-${header.id}-tab`} ? 'underline':''} hover:border-transparent hover:bg-gray-100 active`} id="tabs-home-tab" data-bs-toggle="pill" data-bs-target="#tabs-home" role="tab" aria-controls="tabs-home"}
+      className={`${stateTab==header.id ? 'underline decoration-orange-400 decoration-1':''}`}
+    aria-selected="true" onClick={(e) => buttonHandler(e, header.id)}>{header.label}</a>
+  </li>
+))}
+
+{/*<li >
+  <a href="#tabs-home" className={`
+    ${stateTab=="tabs-home-tab" ? 'underline':''} 
     hover:border-transparent hover:bg-gray-100
-    focus:border-transparent
     active
-  " id="tabs-home-tab" data-bs-toggle="pill" data-bs-target="#tabs-home" role="tab" aria-controls="tabs-home"
+    `} id="tabs-home-tab" data-bs-toggle="pill" data-bs-target="#tabs-home" role="tab" aria-controls="tabs-home"
     aria-selected="true" onClick={buttonHandler}>Histoire</a>
 </li>
 <li className="nav-item" role="presentation">
-  <a href="#tabs-profile" className="
-    nav-link
-    block
-    font-medium
-    text-xs
-    leading-tight
-    uppercase
-    border-x-0 border-t-0 border-b-2 border-transparent
-    px-6
-    py-3
-    my-2
+  <a href="#tabs-profile" className={`
     hover:border-transparent hover:bg-gray-100
-    focus:border-transparent
-  " id="tabs-profile-tab" data-bs-toggle="pill" data-bs-target="#tabs-profile" role="tab"
+    `} id="tabs-profile-tab" data-bs-toggle="pill" data-bs-target="#tabs-profile" role="tab"
     aria-controls="tabs-profile" aria-selected="false" onClick={buttonHandler}>Réalisation</a>
-</li>
+</li>*/}
 </ul>
-  <div className="tab-content" id="tabs-tabContent">
-    <div className={`tab-pane fade ${stateTab=="tabs-home-tab" ? 'show active':'hidden' }`} id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab">
+  <div>
+    <div className={`${stateTab=="story" ? 'show active':'hidden' }`}>
     <TabStory story={informations.story}/>
     </div>
-    <div className={`tab-pane fade ${stateTab=="tabs-profile-tab" ? 'show active':'hidden' }`} id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
+    <div className={`${stateTab=="realisation" ? 'show active':'hidden' }`}>
     <TabRealisation realisation={informations.realisation}/>
     </div>
   </div>

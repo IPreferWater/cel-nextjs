@@ -23,7 +23,9 @@ export default function Creations({creation}:CreationProps) {
               <div>{creation.title}</div>
               <div>{creation.date}</div>
               <Carrousel informations={creation.informations}/>
+              <div className='w-4/5 m-auto'>
               <NavigationInformations informations={creation.informations}/>
+              </div>
         </div>
       </Layout>
     )

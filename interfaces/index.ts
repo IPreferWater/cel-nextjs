@@ -40,18 +40,17 @@ export type IInformations = {
 }
 
 export type IStory = {
-  origins: Array<tupple>
-  funfact: tupple
+  origins: Array<ICaseInformation>
 }
 
 export type IRealisation = {
-  sketchs: Array<tupple>
-  patterns: Array<tupple>
-  sewings: Array<tupple>
+  sketchs: Array<ICaseInformation>
+  patterns: Array<ICaseInformation>
+  sewings: Array<ICaseInformation>
   costs: Array<string>
 }
 
-type tupple = {
+export type ICaseInformation = {
   txt: string
   img: string
 }
