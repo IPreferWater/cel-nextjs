@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {IInformations} from '../../interfaces/index'
 import {TabRealisation} from './TabRealisation'
 import {TabStory} from './TabStory'
+import Layout from '@/components/Layout'
 
 
 type CarrouselProps = {
@@ -11,12 +12,32 @@ type CarrouselProps = {
 export const Carrousel = ( {informations} : CarrouselProps) => {
 
     const [stateCarrousel, setSateCarrousel] = useState(0);
+    const [windowSize, setWindowSize] = useState(getWindowSize());
 
     const imgs = ["/creations/kimono/c_1.webp","/creations/kimono/c_2.webp","/creations/kimono/c_3.webp","/creations/kimono/c_4.webp","/creations/kimono/c_5.webp"
   ]
-    function mooveSlide(){
 
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
     }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
+  function getWindowSize() {
+    if (typeof window !== "undefined") {
+      const {innerWidth, innerHeight} = window;
+      return {innerWidth, innerHeight};
+    }
+    return 0,0
+  }
+
     const moveCarrousel = (event: React.MouseEvent<HTMLButtonElement>, i: number) => {
         event.preventDefault();
         const newStateCarrousel = stateCarrousel +i
@@ -35,6 +56,11 @@ export const Carrousel = ( {informations} : CarrouselProps) => {
       };
 
 return <div id="carouselExampleControls" className="carousel slide relative" data-bs-ride="carousel">
+      <div>
+      <h2>Width: {windowSize.innerWidth}</h2>
+
+      <h2>Height: {windowSize.innerHeight}</h2>
+    </div>
 <div className="carousel-inner relative w-full overflow-hidden">
 
 {imgs.map((img, i) => (
@@ -68,5 +94,21 @@ return <div id="carouselExampleControls" className="carousel slide relative" dat
   <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
   <span className="visually-hidden">Next</span>
 </button>
+
+
+{/* Bottom part*/}
+<div className="w-full flex flex-row">
+
+{
+// how much photo to display ?
+
+imgs.map((img, i) => (
+  <div className={`${stateCarrousel == i ? "active":"opacity-50"} carousel-item  relative float-left w-full `}>
+  <img src={img} className="block w-full max-h-20 object-contain"
+  />
+</div>
+))}
+
+</div>
 </div>
     }
