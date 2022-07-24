@@ -32,6 +32,7 @@ export type Creation = {
   title: string
   date: number
   informations: IInformations
+  imgs: Array<string>
 }
 
 export type IInformations = {

@@ -40,5 +40,6 @@
             ],
             "costs": ["🕐 temps de réalisation :  23h","🎯 coût des matières premières : 22€","⚡ énergie : 5€"]
         }
-    }
+    },
+    "imgs" : ["/creations/kimono/c_1.webp","/creations/kimono/c_2.webp","/creations/kimono/c_3.webp","/creations/kimono/c_4.webp","/creations/kimono/c_5.webp","/creations/kimono/croquis_kimono_small.webp"]
 }

@@ -19,7 +19,7 @@ export default function Creations({creation}:CreationProps) {
           <div className="flex flex-col w-full">
               <div>{creation.title}</div>
               <div>{creation.date}</div>
-              <Carrousel informations={creation.informations}/>
+              <Carrousel imgs={creation.imgs}/>
               <div className='w-4/5 m-auto'>
               <NavigationInformations informations={creation.informations}/>
               </div>
