@@ -13,9 +13,6 @@ type CreationProps = {
 
 
 export default function Creations({creation}:CreationProps) {
-
-    console.log("from layout")
-    console.log(creation)
     return (
       
       <Layout>
