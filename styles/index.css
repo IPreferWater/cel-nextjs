@@ -23,4 +23,10 @@
     -webkit-text-stroke-color: black;
     font-family: Tahoma;
   }
+
+  .background-grid-green {
+    background-image: url(grid_test.svg);
+    background-repeat: repeat;
+    background-size: 22px 22px;
+  }
 }
