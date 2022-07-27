@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
+import {LatestCard} from '@/components/index/LatestCard'
 
 
 type IndexProps = {
@@ -15,15 +16,9 @@ type IndexProps = {
 
    <div className='w-4/5 m-auto h-96 flex flex-col background-grid-green '>
     <div>logo new</div>
-    <div className='flex flex-row'>
-      <div className='bg-blue-300'>
-        <img className='max-h-48' src='creations/kimono/c_2.webp'/>
-        <h1>title</h1>
-      </div>
-
-      <div className='bg-blue-300 w-full'>
-        <img className='max-h-48' src='creations/kimono/c_2.webp'/>
-      </div>
+    <div className='flex flex-row justify-around'>
+    <LatestCard img='creations/kimono/c_2.webp' title='title_1'/>
+    <LatestCard img='creations/kimono/c_2.webp' title='title_2'/>
     </div>
 
     <div>link all creations</div>
