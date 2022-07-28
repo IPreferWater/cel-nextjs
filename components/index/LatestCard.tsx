@@ -11,7 +11,7 @@ type LatestCardProps = {
 export const LatestCard = ( {img, title} : LatestCardProps) => {
 
 return     <div className='flex flex-row '>
-<div className='bg-blue-300 p-8'>
+<div className='background-gray-green p-8'>
   <img className='max-h-48' src={img}/>
   <h1 className='text-center'>{title}</h1>
 </div>
