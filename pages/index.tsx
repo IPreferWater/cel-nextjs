@@ -14,11 +14,11 @@ type IndexProps = {
    
    {/* latest creations */}
 
-   <div className='w-4/5 m-auto h-96 flex flex-col background-grid-green '>
-    <div>logo new</div>
-    <div className='flex flex-row justify-around'>
-    <LatestCard img='creations/kimono/c_2.webp' title='title_1'/>
-    <LatestCard img='creations/kimono/c_2.webp' title='title_2'/>
+   <div className='w-4/5 m-auto h-96 flex flex-col background-grid-green relative rounded-xl'>
+    <img className='h-24 absolute -top-8 -left-8 object-scale-down' src='/icon_new.svg'/>
+    <div className='flex flex-col sm:flex-row justify-around h-full items-center'>
+    <LatestCard img='creations/kimono/c_2.webp' title='kimono' url='/creations/kimono'/>
+    <LatestCard img='creations/kimono/c_2.webp' title='kimono' url='/creations/kimono'/>
     </div>
 
     <div>link all creations</div>
