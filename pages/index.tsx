@@ -15,23 +15,25 @@ type IndexProps = {
    <Bandeau txt='Consommez autrement, upcyclez votre quotidien !'/>
    </div>
 
-<div className='flex flew-row '>
-   <div className='flex flex-col w-1/2 space-y-4'>
+<div className='columns md:columns-2 gap-8'>
+   
       <div className='h-72 m-20 text-xl flex flex-col items-center justify-center text-center'>
         <p>Bienvenue à l’atelier boutique qui propose de la couture et une mode éco-responsable !</p>
         <p>Ici vous pouvez prendre des cours, participer à un atelier, faire réaliser des réparations, des transformations de vêtements et vous pouvez trouver des créations uniques et originales ! </p>
       </div>
       <div className='bg-yellow-400 p-20 text-center h-96 w-96 m-auto flex items-center justify-center text-3xl'>Planning du mois</div>
       <img className='w-96 object-contain m-auto' src='index/landscape.webp'/>
-    </div>
+   
 
-    <div className='flex flex-col w-1/2 space-y-12'>
+    
       <img className='h-96 object-contain' src='index/bag.webp'/>
       <img className='w-96 object-contain m-auto' src='index/sewing_room.webp'/>
       <div className='bg-red-400 p-20 text-center w-4/5 m-auto h-96 flex items-center justify-center text-3xl'>Réparations et transformations</div>
-    </div>
 
-    </div>
+      </div>
+   
+
+    
 
    {/* latest creations  TODO put in another component
 

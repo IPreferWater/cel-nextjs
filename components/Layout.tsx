@@ -36,7 +36,7 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
     },
     {
       id:'instagram',
-      url: 'todo'
+      url: 'https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fclementinestla%2F%3Fhl%3Dfr&h=AT14p2Xfzw9I8Y4Z2OKvwhHa4Oy8zcqNdCOjDL9ugUPX0yV8zJ0eqCUM2iJlQZZVR8LOOv1inSnCeR0VSHoqf5ZCr6gp0dAufB0Woi8VgHgYpA0yagvFf-0FVu9WiN6jdZgmsQ'
     },
     {
       id:'youtube',
