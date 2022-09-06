@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {IInformations} from '../../interfaces/index'
 import {TabRealisation} from './TabRealisation'
 import {TabStory} from './TabStory'
-import Layout from '@/components/Layout'
+import {Layout} from '@/components/Layout'
 
 
 type CarrouselProps = {

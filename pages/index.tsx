@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import {Layout} from '../components/Layout'
 import {LatestCard} from '@/components/index/LatestCard'
 import {Bandeau} from '@/components/Bandeau'
 
@@ -11,17 +11,18 @@ type IndexProps = {
 
 
   return (<Layout title="index">
-    <h1>Index</h1>
+    <div className='my-4'>
    <Bandeau txt='Consommez autrement, upcyclez votre quotidien !'/>
+   </div>
 
 <div className='flex flew-row '>
    <div className='flex flex-col w-1/2 space-y-4'>
       <div className='h-72 m-20 text-xl flex flex-col items-center justify-center text-center'>
-        <p>Bienvenue A l’atelier boutique qui propose de la couture et une mode éco-responsable !</p>
+        <p>Bienvenue à l’atelier boutique qui propose de la couture et une mode éco-responsable !</p>
         <p>Ici vous pouvez prendre des cours, participer à un atelier, faire réaliser des réparations, des transformations de vêtements et vous pouvez trouver des créations uniques et originales ! </p>
       </div>
       <div className='bg-yellow-400 p-20 text-center h-96 w-96 m-auto flex items-center justify-center text-3xl'>Planning du mois</div>
-      <img src='index/landscape.webp'/>
+      <img className='w-96 object-contain m-auto' src='index/landscape.webp'/>
     </div>
 
     <div className='flex flex-col w-1/2 space-y-12'>
