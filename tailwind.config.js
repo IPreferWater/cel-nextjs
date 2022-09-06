@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'cel-marker': '#5D5555',
         'cel-orange': '#E59A67',
+        'cel-green': '#9ECAA6',
       },
       fontFamily: {
         marker: ['marker']

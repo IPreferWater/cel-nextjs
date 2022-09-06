@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import {LatestCard} from '@/components/index/LatestCard'
+import {Bandeau} from '@/components/Bandeau'
 
 
 type IndexProps = {
@@ -11,8 +12,27 @@ type IndexProps = {
 
   return (<Layout title="index">
     <h1>Index</h1>
-   
-   {/* latest creations */}
+   <Bandeau txt='Consommez autrement, upcyclez votre quotidien !'/>
+
+<div className='flex flew-row '>
+   <div className='flex flex-col w-1/2 space-y-4'>
+      <div className='h-72 m-20 text-xl flex flex-col items-center justify-center text-center'>
+        <p>Bienvenue A l’atelier boutique qui propose de la couture et une mode éco-responsable !</p>
+        <p>Ici vous pouvez prendre des cours, participer à un atelier, faire réaliser des réparations, des transformations de vêtements et vous pouvez trouver des créations uniques et originales ! </p>
+      </div>
+      <div className='bg-yellow-400 p-20 text-center h-96 w-96 m-auto flex items-center justify-center text-3xl'>Planning du mois</div>
+      <img src='index/landscape.webp'/>
+    </div>
+
+    <div className='flex flex-col w-1/2 space-y-12'>
+      <img className='h-96 object-contain' src='index/bag.webp'/>
+      <img className='w-96 object-contain m-auto' src='index/sewing_room.webp'/>
+      <div className='bg-red-400 p-20 text-center w-4/5 m-auto h-96 flex items-center justify-center text-3xl'>Réparations et transformations</div>
+    </div>
+
+    </div>
+
+   {/* latest creations  TODO put in another component
 
    <div className='w-4/5 m-auto h-96 flex flex-col background-grid-green relative rounded-xl'>
     <img className='h-24 absolute -top-8 -left-8 object-scale-down' src='/icon_new.svg'/>
@@ -22,8 +42,9 @@ type IndexProps = {
     </div>
 
     <div>link all creations</div>
-
-   </div>
+     </div>
+  */}
+  
   </Layout>)
 }
 
