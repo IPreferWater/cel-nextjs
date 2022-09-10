@@ -13,19 +13,19 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
   const navigationUrls = [
     {
       title:'Cours et ateliers',
-      url:'/about'
+      url:'/comingsoon'
     },
     {
       title:'Réparations et transformations',
-      url:'/about'
+      url:'/comingsoon'
     },
     {
       title:'Les créations upcyclées',
-      url:'/about'
+      url:'/comingsoon'
     },
     {
       title:'Le projet',
-      url:'/about'
+      url:'/comingsoon'
     }
   ]
 

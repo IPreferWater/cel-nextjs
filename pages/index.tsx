@@ -22,15 +22,24 @@ type IndexProps = {
         <p>à l’atelier boutique qui propose de la couture et une mode éco-responsable !</p>
         <p>Ici vous pouvez prendre des cours, participer à un atelier, faire réaliser des réparations, des transformations de vêtements et vous pouvez trouver des créations uniques et originales ! </p>
       </div>
-      <div className='bg-yellow-400 p-20 text-center h-96 w-96 m-auto flex items-center justify-center text-3xl'>Planning du mois</div>
+      <div className='bg-yellow-400 p-20 text-center h-96 w-96 m-auto flex items-center justify-center text-3xl'>
+        <div className='flex flex-col'>
+          <h2>Planning du mois</h2>
+          <p className='font-marker text-cel-marker text-lg'>(bientot...)</p>
+        </div>
+      </div>
       <img className='h-index-photo object-contain m-auto' src='index/landscape.webp'/>
    
 
     
       <img className=' h-index-photo object-contain m-auto' src='index/bag.webp'/>
       <img className='h-index-photo object-contain m-auto' src='index/sewing_room.webp'/>
-      <div className='bg-red-400 p-20 text-center  h-96 w-96 m-auto h-96 flex items-center justify-center text-3xl'>Réparations et transformations</div>
-
+      <div className='bg-red-400 p-20 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl'>
+      <div className='flex flex-col'>
+          <h2>Réparations et transformations</h2>
+          <p className='font-marker text-cel-marker text-lg'>(bientot...)</p>
+        </div>
+        </div>
       </div>
       
       <div className='my-20'>
