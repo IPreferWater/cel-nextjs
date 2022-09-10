@@ -1,7 +1,7 @@
 
 
 import { getAllCreationIds, getCreationDataByID  } from '@/api/blog'
-import Layout from '@/components/Layout'
+import {Layout} from '@/components/Layout'
 import {NavigationInformations} from '@/components/creations/NavigationInformations'
 import {Carrousel} from '@/components/creations/Carrousel'
 import {Creation} from '@/interfaces/index'
