@@ -16,6 +16,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "domine";
+  src: url("fonts/Domine.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @layer components {
   .wow-stroke-txt {
     @apply  font-bold tracking-tighter;

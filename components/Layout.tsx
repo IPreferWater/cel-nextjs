@@ -55,7 +55,7 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
       <div className='flex justify-between items-center'>
       <Link href="/">
         <a>
-          <img className='object-contain h-24' src="/logo.svg"/>
+          <img className='object-contain h-24 mb-6' src="/logo.svg"/>
         </a>
         </Link>
 
@@ -74,7 +74,7 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
         </div>
         
 
-      <nav className='flex flex-col md:flex-row md:items-end justify-between mr-8'>
+      <nav className='flex flex-col md:flex-row md:items-end justify-between mx-8 space-x-6'>
       {navigationUrls.map(({title, url}: any) => {
            return <Link key={title} href={url}>
            <a className='text-xl md:text-2xl'>{title}</a>

@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
    ],
   theme: {
+    fontFamily: {
+      sans: ['domine','arial']
+    },
     extend: {
       colors: {
         'cel-marker': '#5D5555',
@@ -13,8 +16,11 @@ module.exports = {
         'cel-green': '#9ECAA6',
       },
       fontFamily: {
-        marker: ['marker']
+        marker: ['marker','domine']
       },
+      height: {
+        'index-photo': '32rem',
+      }
     },
   },
   plugins: [
