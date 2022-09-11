@@ -45,9 +45,6 @@ type IndexProps = {
       <div className='my-20'>
       <Bandeau txt='Lutter contre le gaspillage textile et la fast fashion c’est l’objectif à travers les services et créations proposées'/>
       </div>
-   
-
-    
 
    {/* latest creations  TODO put in another component
 
