@@ -1,6 +1,6 @@
 import {Layout} from '../components/Layout'
 import {Bandeau} from '@/components/Bandeau'
-import {SquaredPaper} from '@/components/reparationstransformations/SquaredPaper'
+import {SquaredPaper} from '@/components/tarifs/SquaredPaper'
 
   export default function ReparationsTransformations() {
 
