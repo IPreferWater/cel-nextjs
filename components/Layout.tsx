@@ -13,11 +13,11 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
   const navigationUrls = [
     {
       title:'Cours et ateliers',
-      url:'/comingsoon'
+      url:'/cours'
     },
     {
       title:'Réparations et transformations',
-      url:'/comingsoon'
+      url:'/tarifs'
     },
     {
       title:'Les créations upcyclées',
@@ -51,7 +51,6 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-    
       <div className='flex justify-between items-center'>
       <Link href="/">
         <a>
@@ -77,7 +76,7 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
       <nav className='flex flex-col md:flex-row md:items-end justify-between mx-8 space-x-6'>
       {navigationUrls.map(({title, url}: any) => {
            return <Link key={title} href={url}>
-           <a className='text-xl md:text-2xl'>{title}</a>
+           <a className='text-xl md:text-2xl underline decoration-cel-orange decoration-2'>{title}</a>
          </Link>
         })
         }

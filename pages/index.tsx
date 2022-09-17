@@ -34,20 +34,18 @@ type IndexProps = {
     
       <img className=' h-index-photo object-contain m-auto' src='index/bag.webp'/>
       <img className='h-index-photo object-contain m-auto' src='index/sewing_room.webp'/>
-      <div className='bg-red-400 p-20 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl'>
-      <div className='flex flex-col'>
-          <h2>Réparations et transformations</h2>
-          <p className='font-marker text-cel-marker text-lg'>(bientot...)</p>
-        </div>
-        </div>
+      <Link href={`/reparationstransformations`}>
+      <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
+      <img className='object-fit' src='index/reparation_background.webp'/>
+          <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
+          <p className='top-50 absolute'>Réparations et transformations</p>
+        </a>
+        </Link>
       </div>
       
       <div className='my-20'>
       <Bandeau txt='Lutter contre le gaspillage textile et la fast fashion c’est l’objectif à travers les services et créations proposées'/>
       </div>
-   
-
-    
 
    {/* latest creations  TODO put in another component
 
