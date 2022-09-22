@@ -1,10 +1,10 @@
 import fs from 'fs'
 import path from 'path'
-import {IPlanning} from '../../interfaces/index'
+import {IPlanning, IPlanningTitle} from '../../interfaces/index'
 
 const planningsDirectory = path.join(process.cwd(), 'data/_plannings')
 
-export async function getAllPlannings(){
+export function getAllPlannings(): IPlanningTitle[]{
     const jsons = []
 
     var files = fs.readdirSync('data/_plannings');

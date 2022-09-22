@@ -79,3 +79,8 @@ export type IPlanningParticipants = {
   max: number
   booked: number
 }
+
+export type IPlanningTitle = {
+  id: string
+  title: string
+}
