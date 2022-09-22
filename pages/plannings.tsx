@@ -18,12 +18,14 @@ type PlanningsPageProps = {
    </div>
    <div className='mx-8 text-center'>
 
+    <div className='flex flex-col'>
    {planningTitles.map(({id, title}: IPlanningTitle) => {
            return <Link key={id} href={`plannings/${id}`}>
            <a className='text-xl md:text-2xl underline decoration-cel-orange decoration-2'>{title}</a>
          </Link>
         })
         }
+        </div>
    </div>
    
   </Layout>)
