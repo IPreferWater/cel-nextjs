@@ -1,5 +1,17 @@
+import {IPlanningEvent} from '@/interfaces/index'
 
-export function PlanningBuilderInput({ field, event, indexDay, indexEvent, handleChangePlaning, options }) {
+type PlanningInputProps = {
+    field: string
+    event: IPlanningEvent
+    indexDay: number
+    indexEvent: number
+    handleChangePlaning: GreetFunction
+    options: Array<string>
+}
+
+type GreetFunction = (indexDay: number, indexEvent: number, parameter: string) => void;
+
+export function PlanningInput({ field, event, indexDay, indexEvent, handleChangePlaning, options }:PlanningInputProps) {
 
 
     return (

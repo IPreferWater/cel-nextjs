@@ -72,7 +72,7 @@ export type IPlanningEvent = {
   start: string
   end: string
   label: string
-  participants: IPlanningParticipants
+  participants?: IPlanningParticipants
 }
 
 export type IPlanningParticipants = {
