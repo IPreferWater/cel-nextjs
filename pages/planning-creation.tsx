@@ -1,7 +1,7 @@
 import React from 'react'
 import { PlanningInput } from '@/components/plannings/PlanningInput'
-import { getLabelDay } from '@/utils/calendar'
-import {IPlanningDay, IPlanningEvent} from '@/interfaces/index'
+import { getLabelDay, getMonthLabelFromInt } from '@/utils/calendar'
+import {IPlanning, IPlanningDay, IPlanningEvent} from '@/interfaces/index'
 
 interface IStatePlanningCreation {
     month: string
@@ -11,6 +11,7 @@ interface IStatePlanningCreation {
   }
 
 export default class PlanningCreation extends React.Component<IStatePlanningCreation> {
+
     state: IStatePlanningCreation = {
         month: "",
         year: "",
@@ -18,6 +19,12 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         days: []
 
     };
+
+    componentDidMount() {
+        const now = new Date()
+        this.setState({ month: now.getMonth()+1, year: now.getFullYear() });
+    }
+
 
     getDaysInMonth(month:number, year:number) {
         return new Date(year, month, 0).getDate();
@@ -37,11 +44,6 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
             month = `0${month}`
         }
         return `${this.state.year}_${month}.json`
-    }
-
-    componentDidMount() {
-        const now = new Date()
-        this.setState({ month: now.getMonth(), year: now.getFullYear() });
     }
 
     deleteEvent = (indexDay: number, indexEvent: number) => (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -90,10 +92,10 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
     }
 
     handleChangeMonth = (e: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({ month: e.currentTarget });
+        this.setState({ month: e.target.value });
     }
     handleChangeYear = (e: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({ year: e.currentTarget });
+        this.setState({ year: e.target.value });
     }
 
     handleChangePlaning = (indexDay: number, indexEvent: number, parameter: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -135,7 +137,7 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         let elem = newArray[indexDay].events[indexEvent]
 
         if (this.participantsIsNull(elem)) {
-            elem.participants = { max: 4, booked: 0 }
+            elem.participants = { max: 3, booked: 0 }
         } else {
             delete elem.participants
         }
@@ -153,37 +155,52 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         }))
     };
 
+     downloadTxtFile = () => {
+        const element = document.createElement("a");
+        const planningToSave :IPlanning = {
+            title: "TODO",
+            days: this.state.days
+        }
+        const file = new Blob([JSON.stringify(planningToSave, null, 2)], {
+          type: "text/plain"
+        });
+        element.href = URL.createObjectURL(file);
+        element.download = this.getJsonFileName();
+        document.body.appendChild(element);
+        element.click();
+      };
+
     render() {
 
-        const availableHours = ["9h00", "10h00", "11h00", "12h00", "13h00", "14h00", "15h00", "16h00", "17h00", "18h00", "19h00", "20h00"]
+        const availableHours = ["9h00", "10h00", "11h00", "12h00", "13h00", "14h00", "15h00", "15h30", "16h00", "17h00", "17h30", "18h00", "18h15", "19h00", "20h00"]
         const availableType = ["access libre", "projet libre", "cours enfants", "cours ados", "cours adultes", "atelier à theme", "cours particulier"]
-        const availableLabel = ["5€ l'heure"]
+        const availableLabel = ["Complet","Réservé","Libre"]
 
 
         return (
-            <div className="">
+            <div>
                 <section>
                     <button onClick={this.handleClick}>+</button>
-                    <label> month :
-          <input type="text" value={this.state.month} onChange={this.handleChangeMonth} />
+                    <label className='text-2xl underline decoration-8 decoration-blue-500'> month : ({getMonthLabelFromInt(parseInt(this.state.month))})
+          <input className='border border-slate-500' type="text" value={this.state.month} onChange={this.handleChangeMonth} />
                     </label>
                     <label> year :
-          <input type="text" value={this.state.year} onChange={this.handleChangeYear} />
+          <input className='border border-slate-500' type="text" value={this.state.year} onChange={this.handleChangeYear} />
                     </label>
 
                     {this.state.days.map((day, indexDay) =>
                         <div key={indexDay} className="flex flex-row ">
-                            <div className="flex flex-col mb-8">
+                            <div className="flex flex-col mb-8 w-1/2">
                                 <h2>{`${getLabelDay(this.state.year, this.state.month, indexDay+1)} - ${indexDay + 1}`}</h2>
                                 {day.events.map((event, indexEvent) =>
                                     <div key={`event_${indexEvent}`}>
-                                        <button className={`p-2 bg-beach-red`} onClick={this.deleteEvent(indexDay, indexEvent)} type="button">X</button>
+                                        <button className={`p-4 bg-red-300`} onClick={this.deleteEvent(indexDay, indexEvent)} type="button">X</button>
                                         <PlanningInput field="type" event={event} indexDay={indexDay} indexEvent={indexEvent} handleChangePlaning={this.handleChangePlaning} options={availableType} />
                                         <PlanningInput field="start" event={event} indexDay={indexDay} indexEvent={indexEvent} handleChangePlaning={this.handleChangePlaning} options={availableHours} />
                                         <PlanningInput field="end" event={event} indexDay={indexDay} indexEvent={indexEvent} handleChangePlaning={this.handleChangePlaning} options={availableHours} />
                                         <PlanningInput field="label" event={event} indexDay={indexDay} indexEvent={indexEvent} handleChangePlaning={this.handleChangePlaning} options={availableLabel} />
                                         <div>
-                                            <button className={`p-4 ${this.participantsIsNull(event) ? "bg-beach-green" : "bg-beach-red"}`} onClick={this.triggerParticipants(indexDay, indexEvent)} type="button">trigger participants</button>
+                                            <button className={`p-4 ${this.participantsIsNull(event) ? "bg-blue-200" : "bg-orange-300"}`} onClick={this.triggerParticipants(indexDay, indexEvent)} type="button">trigger participants</button>
                                             {!this.participantsIsNull(event) &&
                                                 <div className="flex flex-col">
                                                     <label>max participants :
@@ -198,20 +215,16 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
                                         </div>
                                     </div>
                                 )}
-                                <button className={`p-2 bg-beach-green`} onClick={this.addEvent(indexDay)} type="button">+</button>
+                                <button className={`p-2 bg-purple-200`} onClick={this.addEvent(indexDay)} type="button">+</button>
 
                             </div>
-                            <div >
+                            <div className='bg-green-200'>
                                 <pre>{JSON.stringify(day, null, 2)}</pre>
                             </div>
 
                         </div>
 
                     )}
-
-                    <div>
-                        <button onClick={this.showJsonFile}>show json file</button>
-                    </div>
                 </section>
 
                 {this.state.showJsonFile &&
@@ -219,6 +232,10 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
                         <h2>file : {this.getJsonFileName()}</h2>
                         <pre>{JSON.stringify(this.state.days, null, 2)}</pre>
                     </section>}
+
+                    <div>
+      <button className='p-4 bg-red-400 text-white' onClick={this.downloadTxtFile}>Telecharger le planning en json</button>
+    </div>
             </div>
         )
     }

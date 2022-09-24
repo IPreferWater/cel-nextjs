@@ -2,14 +2,14 @@ import {IPlanningEvent} from '@/interfaces/index'
 
 type PlanningInputProps = {
     field: string
-    event: IPlanningEvent
+    event: any
     indexDay: number
     indexEvent: number
-    handleChangePlaning: GreetFunction
+    handleChangePlaning: functionChanglePlanning
     options: Array<string>
 }
 
-type GreetFunction = (indexDay: number, indexEvent: number, parameter: string) => void;
+type functionChanglePlanning = (indexDay: number, indexEvent: number, parameter: string) => any;
 
 export function PlanningInput({ field, event, indexDay, indexEvent, handleChangePlaning, options }:PlanningInputProps) {
 
@@ -18,7 +18,7 @@ export function PlanningInput({ field, event, indexDay, indexEvent, handleChange
 
         <section>
             <label> {field} :
-<input type="text" value={event[field] || ""} onChange={handleChangePlaning(indexDay, indexEvent, field)} />
+<input className='border border-slate-500' type="text" value={event[field] || ""} onChange={handleChangePlaning(indexDay, indexEvent, field)} />
             </label>
             <select name={field} onChange={handleChangePlaning(indexDay, indexEvent, field)} value={event[field]}>
                 <option value="choose">--SELECT {field}--</option>
