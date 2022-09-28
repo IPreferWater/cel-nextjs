@@ -32,11 +32,11 @@ export async function getStaticProps(context:any){
 
 export async function getStaticPaths(){
     let paths = await getAllPlannings()
-    paths = paths.map(planning => ({
+    const paramsPaths = paths.map(planning => ({
         params: { id:planning.id, title:planning.title }
     }));
     return {
-        paths: paths,
+        paths: paramsPaths,
         fallback: false
     }
 }
