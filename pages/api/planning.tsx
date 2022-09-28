@@ -30,18 +30,20 @@ export function getPlanningByID(id:String): IPlanning{
 function getPlanningNameByID(id:String){
 
     const arr = id.split("_", 2)
-    const monthLabel = getMonthLabelFromInt(arr[1])
+    const monthStr = arr[1]
+    const monthNumber = parseInt(monthStr)
+    const monthLabel = getMonthLabelFromInt(monthNumber)
 
     return `${monthLabel} - ${arr[0]}`
 }
 
 const arrMonthsString = ["","janvier","février","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","décembre"]
 
-export function getMonthLabelFromInt(month:String){
+export function getMonthLabelFromInt(month:number){
     return arrMonthsString[month]
 }
 
-export function getLabelDay(year, month, day) {
+export function getLabelDay(year:string, month:string, day:string) {
     var date = new Date(`${year}/${month}/${day}`);
     return date.toLocaleDateString("fr-FR", { weekday: 'long' });
   }
