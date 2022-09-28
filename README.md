@@ -3,5 +3,5 @@
 cwebp -q 80 image.png -o image.webp
 
 ## TODO
-use utils methods 
-
+- use utils methods 
+- 404 fav icon
