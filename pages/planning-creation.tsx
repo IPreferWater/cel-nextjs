@@ -41,7 +41,7 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         let month = this.state.month
         const monthInt = parseInt(month)
         if (monthInt <= 10) {
-            month = `0${month}`
+            month = `${month}`
         }
         return `${this.state.year}_${month}.json`
     }
@@ -72,7 +72,7 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         });
     }
 
-    handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    handleClickCreateEmptyPlanning = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         const monthInt = parseInt(this.state.month)
         const yearInt = parseInt(this.state.year)
@@ -83,7 +83,7 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
             const dayPlanning = {
                 //array start at 0 but day at 1
                 day: i + 1,
-                events: [{ type: "", start: "", end: "" }]
+                events: []
             }
             planning[i] = dayPlanning
         }
@@ -180,7 +180,7 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         return (
             <div>
                 <section>
-                    <button onClick={this.handleClick}>+</button>
+                    <button onClick={this.handleClickCreateEmptyPlanning}>+</button>
                     <label className='text-2xl underline decoration-8 decoration-blue-500'> month : ({getMonthLabelFromInt(parseInt(this.state.month))})
           <input className='border border-slate-500' type="text" value={this.state.month} onChange={this.handleChangeMonth} />
                     </label>

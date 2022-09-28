@@ -22,25 +22,28 @@ type IndexProps = {
         <p>à l’atelier boutique qui propose de la couture et une mode éco-responsable !</p>
         <p>Ici vous pouvez prendre des cours, participer à un atelier, faire réaliser des réparations, des transformations de vêtements et vous pouvez trouver des créations uniques et originales ! </p>
       </div>
-      <div className='bg-yellow-400 p-20 text-center h-96 w-96 m-auto flex items-center justify-center text-3xl'>
-        <div className='flex flex-col'>
-          <h2>Planning du mois</h2>
-          <p className='font-marker text-cel-marker text-lg'>(bientot...)</p>
-        </div>
-      </div>
-      <img className='h-index-photo object-contain m-auto' src='index/landscape.webp'/>
-   
 
+      <Link href={`/plannings`}>
+        <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
+          <img className='object-fit' src='index/planning_background.webp'/>
+          <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
+          <p className='top-50 absolute'>Plannings</p>
+        </a>
+      </Link>
+
+      <img className='h-index-photo object-contain m-auto' src='index/landscape.webp'/>
     
       <img className=' h-index-photo object-contain m-auto' src='index/bag.webp'/>
+
       <img className='h-index-photo object-contain m-auto' src='index/sewing_room.webp'/>
+
       <Link href={`/reparationstransformations`}>
-      <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
-      <img className='object-fit' src='index/reparation_background.webp'/>
+        <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
+          <img className='object-fit' src='index/reparation_background.webp'/>
           <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
           <p className='top-50 absolute'>Réparations et transformations</p>
         </a>
-        </Link>
+      </Link>
       </div>
       
       <div className='my-20'>
