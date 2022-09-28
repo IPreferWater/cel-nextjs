@@ -29,7 +29,7 @@ type PlanningDayProps = {
         }
       }
       
-      function getParticipants(participants: IPlanningParticipants) {
+      function getParticipants(participants?: IPlanningParticipants) {
         if (null == participants) {
           return ""
         }
