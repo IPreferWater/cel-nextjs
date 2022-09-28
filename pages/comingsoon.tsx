@@ -10,7 +10,7 @@ type ComingSoonProps = {
     
 
   return (<Layout title="coming soon !">
-    <div className='my-4'>
+    <div className='mb-4'>
    <Bandeau txt='BIENTOT !'/>
    </div>
    <div className='mx-8 text-center'>

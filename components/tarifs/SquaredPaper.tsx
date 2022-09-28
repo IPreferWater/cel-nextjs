@@ -23,7 +23,7 @@ return   <div className='m-8 background-gray-green p-8 rounded-xl relative '>
 
 {//render tab if defined
 priceTab!=null ? priceTab.map(({title, price}: Price) => {
-         return <div className='flex flex-row justify-between'>
+         return <div key={title} className='flex flex-row justify-between'>
           <div>{title}</div>
           <div className='font-bold'>{price}€</div>
           </div>
