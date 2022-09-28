@@ -95,9 +95,7 @@ export function getAllCreationIds() {
 export function getCreationDataByID(id:number) :Creation {
   const fullPath = path.join(creationsDirectory, `${id}.json`)
   const creationString = fs.readFileSync(fullPath, 'utf8')
-
   const creation: Creation = JSON.parse(creationString);
-
   return creation
 
 
