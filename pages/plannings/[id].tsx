@@ -2,6 +2,7 @@ import {Layout} from '../../components/Layout'
 import { getPlanningByID, getAllPlannings } from "../api/planning"
 import {IPlanning} from '@/interfaces/index'
 import {PlanningDay} from '@/components/plannings/PlanningDay'
+import {Bandeau} from '@/components/Bandeau'
 
 type PlanningProps = {
     planning: IPlanning,
@@ -9,12 +10,10 @@ type PlanningProps = {
 }
 export default function PlanningsPage({planning, id}:PlanningProps) {
     return (<Layout title="Planning">
-        <div>
-        {planning.title}
-        </div>
+        <Bandeau txt={planning.title}/>        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
             {planning.days.map((day, index) => 
-             <PlanningDay  key={index} day={day} id={id} dayNumber={index}/>
+             <PlanningDay  key={index} day={day} id={id} dayNumber={index+1}/>
              )}
         </div>
     </Layout>)

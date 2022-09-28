@@ -11,9 +11,11 @@ type IndexProps = {
 
 
   return (<Layout title="index">
-    <div className='my-4'>
+
+    <div className='mb-4'>
    <Bandeau txt='Consommez autrement, upcyclez votre quotidien !'/>
    </div>
+   
 
 <div className='columns md:columns-2 gap-8 mr-4 space-y-8'>
    
@@ -37,7 +39,7 @@ type IndexProps = {
 
       <img className='h-index-photo object-contain m-auto' src='index/sewing_room.webp'/>
 
-      <Link href={`/reparationstransformations`}>
+      <Link href={`/tarifs`}>
         <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
           <img className='object-fit' src='index/reparation_background.webp'/>
           <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>

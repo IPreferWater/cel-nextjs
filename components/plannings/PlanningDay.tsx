@@ -55,7 +55,7 @@ type PlanningDayProps = {
       <div className="px-6 py-4 pb-16">
         <div className="flex flex-row justify-between">
           <div className="font-bold text-xl mb-2">
-            {getLabelDayWithID()} {/*day*/}
+             {getLabelDayWithID()} {dayNumber}
           </div>
           <div className="text-xs"></div>
         </div>

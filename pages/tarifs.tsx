@@ -45,9 +45,7 @@ import {SquaredPaper} from '@/components/tarifs/SquaredPaper'
     
 
   return (<Layout title="Réparations et transformations">
-    <div className='my-4'>
    <Bandeau txt='Tableau des tarifs pour les retouches et réparations'/>
-   </div>
    <div className='background-grid-green relative m-6 lg:mx-20 pt-8'>
     <img className='h-24 absolute -top-8 -left-8 object-scale-down' src='/icon_new.svg'/>
     <div className='grid grid-cols-1 md:grid-cols-2 justify-center'>
