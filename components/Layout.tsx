@@ -50,7 +50,7 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header>
+    <header className='mb-4'>
       <div className='flex justify-between items-center'>
       <Link href="/">
         <a>
@@ -62,7 +62,7 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
         {navigationSocialNetwork.map(({id,url}: any) => {
            return <Link key={id} href={`icon_${id}.svg`}>
             <a href={url} target='_blank'>
-            <img className='object-contain h-16' src={`icon_${id}.svg`} />
+            <img className='object-contain h-16' src={`/icon_${id}.svg`} />
           </a>
           </Link>
          

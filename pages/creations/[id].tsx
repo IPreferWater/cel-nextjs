@@ -1,4 +1,3 @@
-//TODO lets make a good file name
 import { getAllCreationIds, getCreationDataByID  } from '@/api/blog'
 import {Layout} from '@/components/Layout'
 import {NavigationInformations} from '@/components/creations/NavigationInformations'

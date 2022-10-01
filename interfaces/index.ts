@@ -55,3 +55,32 @@ export type ICaseInformation = {
   txt: string
   img: string
 }
+
+
+export type IPlanning = {
+  title: string
+  days: Array<IPlanningDay>
+}
+
+export type IPlanningDay = {
+  day: number
+  events: Array<IPlanningEvent>
+}
+
+export type IPlanningEvent = {
+  type: string
+  start: string
+  end: string
+  label: string
+  participants?: IPlanningParticipants
+}
+
+export type IPlanningParticipants = {
+  max: number
+  booked: number
+}
+
+export type IPlanningTitle = {
+  id: string
+  title: string
+}
