@@ -59,17 +59,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 2
-          }
-        },
-        {
-          "type": "projet libre",
-          "start": "18h00",
-          "end": "20h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 0
+            "booked": 3
           }
         }
       ]
@@ -88,7 +78,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 2
+            "booked": 3
           }
         }
       ]
@@ -147,7 +137,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 1
+            "booked": 2
           }
         }
       ]
@@ -214,7 +204,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 1
+            "booked": 2
           }
         }
       ]
@@ -233,7 +223,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 2
+            "booked": 3
           }
         }
       ]
@@ -264,7 +254,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 0
+            "booked": 1
           }
         },
         {
