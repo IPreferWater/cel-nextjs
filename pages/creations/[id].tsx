@@ -8,12 +8,9 @@ type CreationProps = {
   creation: Creation
 }
 
-
-
 export default function Creations({creation}:CreationProps) {
     return (
-      
-      <Layout>
+    <Layout title="Clementinestla créations">
           <div className="flex flex-col w-full">
               <div>{creation.title}</div>
               <div>{creation.date}</div>
@@ -25,7 +22,6 @@ export default function Creations({creation}:CreationProps) {
       </Layout>
     )
   }
-
 
 export async function getStaticProps(params:any) {
     const creation = getCreationDataByID(params.params.id) 

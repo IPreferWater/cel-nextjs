@@ -9,7 +9,7 @@ type ComingSoonProps = {
 
     
 
-  return (<Layout title="coming soon !">
+  return (<Layout title="Clementinestla coming soon !">
     <div className='mb-4'>
    <Bandeau txt='BIENTOT !'/>
    </div>

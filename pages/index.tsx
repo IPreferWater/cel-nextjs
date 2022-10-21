@@ -1,16 +1,12 @@
 import Link from 'next/link'
 import {Layout} from '../components/Layout'
-import {LatestCard} from '@/components/index/LatestCard'
 import {Bandeau} from '@/components/Bandeau'
 
 
-type IndexProps = {
-  todo: string
-}
-  export default function IndexPage({ todo } : IndexProps) {
+  export default function IndexPage() {
 
 
-  return (<Layout title="index">
+  return (<Layout title="Clementinestla cours couture Villeneuve d'ascq Lille">
 
     <div className='mb-4'>
    <Bandeau txt='Consommez autrement, upcyclez votre quotidien !'/>
