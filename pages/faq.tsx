@@ -1,6 +1,6 @@
 import {Layout} from '../components/Layout'
 import {Bandeau} from '@/components/Bandeau'
-import {Question} from '@/components/faq/question'
+import {Question} from '@/components/faq/Question'
 
 const FaqPage = () => (
   <Layout title="Clementinestla FAQ">
