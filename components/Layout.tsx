@@ -16,7 +16,7 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
       url:'/cours'
     },
     {
-      title:'Réparations et transformations',
+      title:'Tarifs réparations',
       url:'/tarifs'
     },
     {
