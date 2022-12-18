@@ -1,32 +1,28 @@
+import { IQuestionProps } from '@/interfaces/index';
 import React from 'react'
 
-
-type QuestionProps = {
-  // WARNING the title is used as a key, it need to be unique
-  question: string
-  text: string
-  }
-
-export const Question = ( {question, text} : QuestionProps) => {
+export const Question = ( {question, texts} : IQuestionProps) => {
 
   const moveCarrousel = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     
-    copyTextToClipboard(text);
+    copyTextToClipboard(texts);
   };
 
-  async function copyTextToClipboard(text: string) {
+  async function copyTextToClipboard(texts: Array<string>) {
+    const str = texts.join("\r\n");
     if ('clipboard' in navigator) {
-      return await navigator.clipboard.writeText(text);
+      return await navigator.clipboard.writeText(str);
     } else {
-      return document.execCommand('copy', true, text);
+      return document.execCommand('copy', true, str);
     }
   }
 
 
 return <div>
       <h1 className='font-bold'>{question}</h1>
-    <div className='border-l pl-3 border-gray-300' onClick={(e) => moveCarrousel(e)}>
-  {text}
+    <div className='flex flex-col gap-y-2' onClick={(e) => moveCarrousel(e)}>
+    {texts.map((str: string,i: number) => {
+  return <p key={i}>{str}</p>})}
 </div>
 </div>
 }

@@ -84,3 +84,9 @@ export type IPlanningTitle = {
   id: string
   title: string
 }
+
+export type IQuestionProps = {
+  // WARNING the title is used as a key, it need to be unique
+  question: string
+  texts: Array<string>
+  }
