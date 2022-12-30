@@ -1,5 +1,5 @@
 {
-  "title": "Les plannings c'est reparti !",
+  "title": "Janvier, bois du Perrier",
   "days": [
     {
       "day": 1,
@@ -11,10 +11,6 @@
     },
     {
       "day": 3,
-      "events": []
-    },
-    {
-      "day": 4,
       "events": [
         {
           "type": "cours adultes",
@@ -25,7 +21,7 @@
       ]
     },
     {
-      "day": 5,
+      "day": 4,
       "events": [
         {
           "type": "cours ados",
@@ -39,8 +35,8 @@
         },
         {
           "type": "cours ados",
-          "start": "16h00",
-          "end": "17h30",
+          "start": "14h00",
+          "end": "15h30",
           "label": "",
           "participants": {
             "max": 3,
@@ -50,17 +46,24 @@
       ]
     },
     {
-      "day": 6,
+      "day": 5,
       "events": [
         {
           "type": "projet libre",
           "start": "14h00",
           "end": "16h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 3
-          }
+          "label": "Complet"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "events": [
+        {
+          "type": "cours particulier",
+          "start": "16h00",
+          "end": "17h00",
+          "label": "Réservé"
         }
       ]
     },
@@ -70,29 +73,25 @@
     },
     {
       "day": 8,
+      "events": []
+    },
+    {
+      "day": 9,
       "events": [
         {
           "type": "projet libre",
-          "start": "14h00",
-          "end": "16h00",
+          "start": "18h00",
+          "end": "20h00",
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 3
+            "booked": 1
           }
         }
       ]
     },
     {
-      "day": 9,
-      "events": []
-    },
-    {
       "day": 10,
-      "events": []
-    },
-    {
-      "day": 11,
       "events": [
         {
           "type": "cours adultes",
@@ -103,7 +102,7 @@
       ]
     },
     {
-      "day": 12,
+      "day": 11,
       "events": [
         {
           "type": "cours ados",
@@ -128,7 +127,7 @@
       ]
     },
     {
-      "day": 13,
+      "day": 12,
       "events": [
         {
           "type": "projet libre",
@@ -137,10 +136,14 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 2
+            "booked": 1
           }
         }
       ]
+    },
+    {
+      "day": 13,
+      "events": []
     },
     {
       "day": 14,
@@ -152,14 +155,21 @@
     },
     {
       "day": 16,
-      "events": []
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "18h00",
+          "end": "20h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 0
+          }
+        }
+      ]
     },
     {
       "day": 17,
-      "events": []
-    },
-    {
-      "day": 18,
       "events": [
         {
           "type": "cours adultes",
@@ -170,7 +180,103 @@
       ]
     },
     {
+      "day": 18,
+      "events": [
+        {
+          "type": "cours ados",
+          "start": "14h00",
+          "end": "15h30",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 2
+          }
+        },
+        {
+          "type": "cours ados",
+          "start": "14h00",
+          "end": "15h30",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 2
+          }
+        }
+      ]
+    },
+    {
       "day": 19,
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "14h00",
+          "end": "16h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "events": [
+        {
+          "type": "cours particulier",
+          "start": "16h00",
+          "end": "17h00",
+          "label": "Réservé"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "10h00",
+          "end": "12h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "events": []
+    },
+    {
+      "day": 23,
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "18h00",
+          "end": "20h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "events": [
+        {
+          "type": "cours adultes",
+          "start": "18h15",
+          "end": "20h00",
+          "label": "Complet"
+        }
+      ]
+    },
+    {
+      "day": 25,
       "events": [
         {
           "type": "cours ados",
@@ -189,56 +295,10 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 3
-          }
-        }
-      ]
-    },
-    {
-      "day": 20,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "14h00",
-          "end": "16h00",
-          "label": "",
-          "participants": {
-            "max": 3,
             "booked": 2
           }
         }
       ]
-    },
-    {
-      "day": 21,
-      "events": []
-    },
-    {
-      "day": 22,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "14h00",
-          "end": "16h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 3
-          }
-        }
-      ]
-    },
-    {
-      "day": 23,
-      "events": []
-    },
-    {
-      "day": 24,
-      "events": []
-    },
-    {
-      "day": 25,
-      "events": []
     },
     {
       "day": 26,
@@ -246,28 +306,7 @@
     },
     {
       "day": 27,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "14h00",
-          "end": "16h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 1
-          }
-        },
-        {
-          "type": "projet libre",
-          "start": "18h00",
-          "end": "20h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 0
-          }
-        }
-      ]
+      "events": []
     },
     {
       "day": 28,
@@ -283,7 +322,14 @@
     },
     {
       "day": 31,
-      "events": []
+      "events": [
+        {
+          "type": "cours adultes",
+          "start": "18h15",
+          "end": "20h00",
+          "label": "Complet"
+        }
+      ]
     }
   ]
 }
