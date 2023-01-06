@@ -1,0 +1,54 @@
+{
+    "date":20230106,
+    "title":"jjb trou pantalon",
+    "informations": {
+        "story" : {
+            "origins" : [
+                {
+                    "txt":"TEXT TODO.",
+                    "img":"/creations/jjb-trou-pantalon/origine_small.webp"
+                }             
+            ]
+        },
+        "realisation": {
+            "sketchs" : [
+
+            ],
+            "patterns": [
+
+            ],
+            "sewings" : [
+                {
+                    "txt":"todo",
+                    "img":"/creations/jjb-trou-pantalon/sewing_0.webp"
+                },
+                {
+                    "txt":"todo",
+                    "img":"/creations/jjb-trou-pantalon/sewing_1.webp"
+                },
+                {
+                    "txt":"todo",
+                    "img":"/creations/jjb-trou-pantalon/sewing_2.webp"
+                },
+                {
+                    "txt":"todo",
+                    "img":"/creations/jjb-trou-pantalon/sewing_3.webp"
+                },
+                {
+                    "txt":"todo",
+                    "img":"/creations/jjb-trou-pantalon/sewing_4.webp"
+                },
+                {
+                    "txt":"todo",
+                    "img":"/creations/jjb-trou-pantalon/sewing_5.webp"
+                },
+                {
+                    "txt":"todo",
+                    "img":"/creations/jjb-trou-pantalon/sewing_6.webp"
+                }
+            ],
+            "costs": ["🕐 temps de réalisation :  30 minutes","🎯 coût des matières premières : 0.5 €","⚡ énergie : 0.5€"]
+        }
+    },
+    "imgs" : ["/creations/jjb-trou-pantalon/c_1.webp"]
+}

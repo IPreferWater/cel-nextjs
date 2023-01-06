@@ -12,10 +12,11 @@ export const TabRealisation = ( {realisation} : TabRealisationProps) => {
 
 
 return <div className='flex flex-col space-y-4'>
+    {realisation.sketchs.length > 0 ? <CasesInformations title='Croquis schemas' casesInfo={realisation.sketchs}/> : null}
+    {realisation.patterns.length > 0 ? <CasesInformations title='Patronage découpe' casesInfo={realisation.patterns}/> : null}
+    {realisation.sewings.length > 0 ? <CasesInformations title='Couture finitions' casesInfo={realisation.sewings}/> : null}
     
-    <CasesInformations title='Croquis schemas' casesInfo={realisation.sketchs}/>
-    <CasesInformations title='Patronage découpe' casesInfo={realisation.patterns}/>
-    <CasesInformations title='Couture finitions' casesInfo={realisation.sewings}/>
+    
 
 <h1 className='font-bold'>Cout</h1>
 <div className='border-l pl-3 border-gray-300'>
