@@ -12,7 +12,7 @@ type PlanningsPageProps = {
 
   export default function Plannings({planningTitles} : PlanningsPageProps) {
 
-  return (<Layout title="Clementinestla cours plannings">
+  return (<Layout title="Clementinestla cours plannings"  metaName = "Calendrier" metaDescription="Liste des horaires disponibles pour participer aux cours de couture Clementinestla">
     <div className='mb-4'>
    <Bandeau txt='Tous les Plannings !'/>
    </div>

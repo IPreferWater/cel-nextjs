@@ -5,10 +5,12 @@ import 'tailwindcss/tailwind.css'
 
 type Props = {
   children?: ReactNode
-  title?: string
+  title: string
+  metaName: string,
+  metaDescription: string
 }
 
-export const Layout = ({ children, title = 'This is the default title' }: Props) => {
+export const Layout = ({ children, title, metaName, metaDescription}: Props) => {
 
   const navigationUrls = [
     {
@@ -47,15 +49,15 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
   return <div>
     <Head>
       <title>{title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta charSet="utf-8" />      
       <link rel="shortcut icon" href="favicon.gif" />
     </Head>
     <header className='mb-4'>
+    <meta name={metaName} content={metaDescription}/>
       <div className='flex justify-between items-center'>
       <Link href="/">
         <a>
-          <img className='object-contain h-24 mb-6' src="/logo.svg"/>
+          <img className='object-contain h-40 p-4' src="/logo.svg"/>
         </a>
         </Link>
 

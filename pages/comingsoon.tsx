@@ -9,7 +9,7 @@ type ComingSoonProps = {
 
     
 
-  return (<Layout title="Clementinestla coming soon !">
+  return (<Layout title="Clementinestla coming soon !"  metaName = "Page d'attente" metaDescription="Page temporaire en attendant que Clementine finisse le code du site">
     <div className='mb-4'>
    <Bandeau txt='BIENTOT !'/>
    </div>

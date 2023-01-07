@@ -44,7 +44,7 @@ import {SquaredPaper} from '@/components/tarifs/SquaredPaper'
     ]
     
 
-  return (<Layout title="Clementinestla retouches réparations tarifs">
+  return (<Layout title="Clementinestla retouches réparations tarifs"  metaName = "Prix" metaDescription="Liste de prix pour les differentes retouche disponible chez Clementinestla">
     <div className='mb-4'>
    <Bandeau txt='Tableau des tarifs pour les retouches et réparations'/>
    </div>

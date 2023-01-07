@@ -6,7 +6,7 @@ import {Bandeau} from '@/components/Bandeau'
   export default function IndexPage() {
 
 
-  return (<Layout title="Clementinestla cours couture Villeneuve d'ascq Lille">
+  return (<Layout title="Clementinestla cours couture Villeneuve d'ascq Lille" metaName = "Acceuil" metaDescription="Page d'acceuil de l'entreprise Clementinestla cours atelier de coutures sur Ascq">
 
     <div className='mb-4'>
    <Bandeau txt='Consommez autrement, upcyclez votre quotidien !'/>
