@@ -11,10 +11,10 @@ type CaseInformationProps = {
 export const CasesInformations = ( {title,casesInfo} : CaseInformationProps) => {
 
 return <div>
-      <h1 className='font-bold'>Origine des tissus</h1>
+      <h1 className='font-bold'>{title}</h1>
     <div className='border-l pl-3 border-gray-300'>
 {casesInfo.map((origin, i) => (
-  <div key={`${title}-${i}`} className='flex flex-row items-center space-x-4 my-4'>
+  <div key={`${title}-${i}`} className='flex flex-col md:flex-row items-center space-x-4 my-4'>
     <img src={origin.img}/>
     <div>{origin.txt}</div>
   </div>

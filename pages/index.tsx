@@ -1,16 +1,12 @@
 import Link from 'next/link'
 import {Layout} from '../components/Layout'
-import {LatestCard} from '@/components/index/LatestCard'
 import {Bandeau} from '@/components/Bandeau'
 
 
-type IndexProps = {
-  todo: string
-}
-  export default function IndexPage({ todo } : IndexProps) {
+  export default function IndexPage() {
 
 
-  return (<Layout title="index">
+  return (<Layout title="Clementinestla cours couture Villeneuve d'ascq Lille" metaName = "Acceuil" metaDescription="Page d'acceuil de l'entreprise Clementinestla cours atelier de coutures sur Ascq">
 
     <div className='mb-4'>
    <Bandeau txt='Consommez autrement, upcyclez votre quotidien !'/>
@@ -27,21 +23,21 @@ type IndexProps = {
 
       <Link href={`/plannings`}>
         <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
-          <img className='object-fit' src='index/planning_background.webp'/>
+          <img className='object-fit' src='index/planning_background.webp' alt="photo link pour la page des plannings"/>
           <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
           <p className='top-50 absolute'>Plannings</p>
         </a>
       </Link>
 
-      <img className='h-index-photo object-contain m-auto' src='index/landscape.webp'/>
+      <img className='h-index-photo object-contain m-auto' src='index/landscape.webp' alt="Clémentine avec une création jupe verte"/>
     
-      <img className=' h-index-photo object-contain m-auto' src='index/bag.webp'/>
+      <img className=' h-index-photo object-contain m-auto' src='index/bag.webp' alt="Clémentine avec une création jupe rouge"/>
 
-      <img className='h-index-photo object-contain m-auto' src='index/sewing_room.webp'/>
+      <img className='h-index-photo object-contain m-auto' src='index/sewing_room.webp' alt="Atelier de couture de Clémentine"/>
 
       <Link href={`/tarifs`}>
         <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
-          <img className='object-fit' src='index/reparation_background.webp'/>
+          <img className='object-fit' src='index/reparation_background.webp' alt='link prix disponibles pour les retouches de coutures' />
           <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
           <p className='top-50 absolute'>Réparations et transformations</p>
         </a>

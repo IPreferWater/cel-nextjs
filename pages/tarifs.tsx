@@ -44,7 +44,7 @@ import {SquaredPaper} from '@/components/tarifs/SquaredPaper'
     ]
     
 
-  return (<Layout title="Réparations et transformations">
+  return (<Layout title="Clementinestla retouches réparations tarifs"  metaName = "Prix" metaDescription="Liste de prix pour les differentes retouche disponible chez Clementinestla">
     <div className='mb-4'>
    <Bandeau txt='Tableau des tarifs pour les retouches et réparations'/>
    </div>
@@ -52,7 +52,7 @@ import {SquaredPaper} from '@/components/tarifs/SquaredPaper'
     <img className='h-24 absolute -top-8 -left-8 object-scale-down' src='/icon_new.svg'/>
     <div className='grid grid-cols-1 md:grid-cols-2 justify-center'>
 
-  <SquaredPaper title='Pantalon Robe Jube' rotateLeft={true} priceTab={pricesDress} />
+  <SquaredPaper title='Pantalon Robe Jupe' rotateLeft={true} priceTab={pricesDress} />
   <SquaredPaper title='Broderie' rotateLeft={false} priceTab={pricesBroderies} />
   
 

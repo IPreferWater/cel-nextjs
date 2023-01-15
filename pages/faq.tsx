@@ -49,7 +49,7 @@ export default function ReparationsTransformations() {
     }
   ]
 
-  return (<Layout title="Clementinestla FAQ">
+  return (<Layout title="Clementinestla FAQ"  metaName = "Questions les plus posé" metaDescription="Liste des questions fréquentes posé pour les ateliers de coutures">
         <div className='mb-4'>
    <Bandeau txt='FAQ'/>
    </div>

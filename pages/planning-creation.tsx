@@ -1,13 +1,31 @@
 import React from 'react'
 import { PlanningInput } from '@/components/plannings/PlanningInput'
 import { getLabelDay, getMonthLabelFromInt } from '@/utils/calendar'
-import {IPlanning, IPlanningDay, IPlanningEvent} from '@/interfaces/index'
+import {IPlanning, IPlanningDay, IPlanningEvent, IPlanningParticipants} from '@/interfaces/index'
 
 interface IStatePlanningCreation {
     month: string
     year: string
     showJsonFile: boolean
     days: Array<IPlanningDay>
+    recursive: IStateRecursive
+  }
+
+  interface IStateRecursive {
+    monday: boolean
+    tuesday: boolean
+    wednesday: boolean
+    thursday: boolean,
+    friday: boolean,
+    saturday: boolean,
+    sunday: boolean,
+
+    event: IPlanningEvent
+   /* type: string,
+    start: string
+    end: string
+    label: string
+    participants?: IPlanningParticipants*/
   }
 
 export default class PlanningCreation extends React.Component<IStatePlanningCreation> {
@@ -16,8 +34,8 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         month: "",
         year: "",
         showJsonFile: false,
-        days: []
-
+        days: [],
+        recursive: {monday:false,tuesday:false,wednesday:false,thursday:false,friday:false,saturday:false,sunday:false, event:{ type: "", start:"", end:"", label:"", participants:{max:0, booked:0}}}
     };
 
     componentDidMount() {
@@ -98,6 +116,122 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         this.setState({ year: e.target.value });
     }
 
+    handleRecursiveEvent = (e: React.MouseEvent<HTMLButtonElement>) => {
+        const arrValidDays :string[] = [] 
+        
+        const recursive = this.state.recursive
+        if (recursive.monday) arrValidDays.push("lundi")
+        if (recursive.tuesday) arrValidDays.push("mardi")
+        if (recursive.wednesday) arrValidDays.push("mercredi")
+        if (recursive.thursday) arrValidDays.push("jeudi")
+        if (recursive.friday) arrValidDays.push("vendredi")
+        if (recursive.saturday) arrValidDays.push("samedi")
+        if (recursive.sunday) arrValidDays.push("dimanche")
+
+    
+        const valideDays = this.state.days.filter(day =>arrValidDays.includes( getLabelDay(this.state.year, this.state.month, day.day)));
+
+        e.preventDefault();
+        let newArray = [...this.state.days]
+        console.log("event")
+        console.log(this.state.recursive.event)
+        valideDays.forEach(day => newArray[day.day-1].events.push(this.state.recursive.event))
+        //TODO if a put this code, the event pushed is empty ...
+       /* recursive.event.type=""
+        recursive.event.start=""
+        recursive.event.end=""
+        recursive.event.label=""
+        recursive.monday=false
+        recursive.thursday=false
+        recursive.wednesday=false
+        recursive.thursday=false
+        recursive.friday=false
+        recursive.saturday=false
+        recursive.sunday=false*/
+        this.setState({
+            days: newArray,
+          //  recursive: recursive
+        });
+        
+    }
+
+    //triggerParticipants = (indexDay: number, indexEvent: number) => (e: React.MouseEvent<HTMLButtonElement>) => {
+    handleCheckboxRecursiveDay = (dayString : string) => (event: React.ChangeEvent<HTMLInputElement>) => {
+        let recursive = this.state.recursive
+        switch (dayString) {
+        case 'monday':
+            recursive.monday = !recursive.monday            
+            break;
+        case 'tuesday':
+            recursive.tuesday = !recursive.tuesday
+            break;
+            case 'wednesday':
+            recursive.wednesday = !recursive.wednesday
+            break;
+            case 'thursday':
+            recursive.thursday = !recursive.thursday
+            break;
+            case 'friday':
+            recursive.friday = !recursive.friday
+            break;
+            case 'saturday':
+            recursive.saturday = !recursive.saturday
+            break;
+            case 'sunday':
+            recursive.sunday = !recursive.sunday
+            break;
+        default:
+            //error
+        }
+        this.setState({recursive : recursive})
+      };
+
+    getStateFromDayString(dayString : string) {
+        const recursive = this.state.recursive
+ switch (dayString) {
+        case 'monday': return recursive.monday            
+        case 'tuesday': return recursive.tuesday
+            case 'wednesday': return recursive.wednesday
+            case 'thursday':recursive.thursday
+            case 'friday':recursive.friday
+            case 'saturday':recursive.saturday
+            case 'sunday':recursive.sunday
+            break;
+        default:
+           return false
+        }
+    }
+
+    handleChangeRecursiveInfos = (indexDay: number, indexEvent: number, parameter: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
+        let recursive = this.state.recursive
+        const value = e.target.value
+        switch (parameter) {
+            case 'type':
+                recursive.event.type = value
+                break;
+            case 'start':
+                recursive.event.start = value
+                break;
+            case 'end':
+                recursive.event.end = value
+                break;
+            case 'label':
+                recursive.event.label = value
+                break;
+            case 'participants-max':
+                recursive.event.participants!.max = parseInt(value)
+                break;
+            case 'participants-booked':
+                recursive.event.participants!.booked = parseInt(value)
+                break;
+            default:
+                console.log(`Error handleChangeRecursiveInfos can't find a value to set in event for input type ${parameter} with value ${value}.`);
+        }
+        this.setState({
+            recursive: recursive,
+        });
+    }
+
     handleChangePlaning = (indexDay: number, indexEvent: number, parameter: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
         let newArray = [...this.state.days]
         const value = e.target.value
@@ -175,6 +309,7 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
         const availableHours = ["9h00", "10h00", "11h00", "12h00", "13h00", "14h00", "15h00", "15h30", "16h00", "17h00", "17h30", "18h00", "18h15", "19h00", "20h00"]
         const availableType = ["access libre", "projet libre", "cours enfants", "cours ados", "cours adultes", "atelier à theme", "cours particulier"]
         const availableLabel = ["Complet","Réservé","Libre"]
+        const arrDaysLabels = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
 
 
         return (
@@ -187,6 +322,22 @@ export default class PlanningCreation extends React.Component<IStatePlanningCrea
                     <label> year :
           <input className='border border-slate-500' type="text" value={this.state.year} onChange={this.handleChangeYear} />
                     </label>
+                    { /* recursive*/ }
+                    {this.state.days.length>0 ? <div className='bg-green-400 p-2'>
+                     <div className='flex flex-row'>
+                    {arrDaysLabels.map((dayLabel) =>
+                    <div key={`checkbox-day-${dayLabel}`}>
+                        {dayLabel} <input type="checkbox" checked={this.getStateFromDayString(dayLabel)} onChange={this.handleCheckboxRecursiveDay(dayLabel)}/>
+                    </div>
+                    )}   
+                    </div>             
+                    <PlanningInput field="type" event={this.state.recursive.event} indexDay={-1} indexEvent={-1} handleChangePlaning={this.handleChangeRecursiveInfos} options={availableType} />
+                    <PlanningInput field="start" event={this.state.recursive.event} indexDay={-1} indexEvent={-1} handleChangePlaning={this.handleChangeRecursiveInfos} options={availableHours} />
+                                        <PlanningInput field="end" event={this.state.recursive.event} indexDay={-1} indexEvent={-1} handleChangePlaning={this.handleChangeRecursiveInfos} options={availableHours} />
+                                        <PlanningInput field="label" event={this.state.recursive.event} indexDay={-1} indexEvent={-1} handleChangePlaning={this.handleChangeRecursiveInfos} options={availableLabel} />
+
+                    <button className={`p-4 bg-white`} onClick={this.handleRecursiveEvent}  type="button">X</button>
+                    </div> : null}
 
                     {this.state.days.map((day, indexDay) =>
                         <div key={indexDay} className="flex flex-row ">
