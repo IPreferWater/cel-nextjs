@@ -53,6 +53,7 @@ export const Layout = ({ children, title, metaName, metaDescription}: Props) => 
       <link rel="shortcut icon" href="favicon.gif" />
     </Head>
     <header className='mb-4'>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <meta name={metaName} content={metaDescription}/>
       <div className='flex justify-between items-center'>
       <Link href="/">
