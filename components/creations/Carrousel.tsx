@@ -50,8 +50,8 @@ export const Carrousel = ( {imgs} : CarrouselProps) => {
 
     const imgsToShow: string[] = [];
 
-    //we want to show 5 images
-    for (let i = -2; i<= 2; i++) {
+    //we want to show 3 images
+    for (let i = -1; i<= 1; i++) {
       // if we are to near the start, show the last 
       let indexToPush = i + stateCarrousel
       if (indexToPush <0){indexToPush = imgs.length + indexToPush} 
@@ -101,10 +101,11 @@ return <div>
 
 
 {/* Bottom part*/}
-<div className="w-full flex flex-row">
+<div className="w-full flex flex-row mt-4">
 <button
   className="carousel-control-prev flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
   type="button"
+  onClick={(e) => moveCarrousel(e, -1)}
 >
   <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
   <span className="visually-hidden">{'<'}</span>
@@ -112,7 +113,7 @@ return <div>
 {
   //TODO onclick, set img by index
 getImgsToShowOrdered().map((img, i) => (
-  <div key={i} onClick={(e) => console.log(e)} className={`${i == 2 ? "active":"opacity-50"} carousel-item  relative float-left w-full `}>
+  <div key={i} onClick={(e) => console.log(e)} className={`${i == 1 ? "active":"opacity-50"} carousel-item  relative float-left w-full `}>
   <img src={img} className="block w-full max-h-20 object-contain"
   />
 </div>

@@ -30,6 +30,7 @@ export type Product = {
 
 export type Creation = {
   title: string
+  description: string
   date: number
   informations: IInformations
   imgs: Array<string>

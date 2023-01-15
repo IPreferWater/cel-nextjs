@@ -1,0 +1,50 @@
+{
+    "date":20230106,
+    "title":"jujitsu trou pantalon",
+    "description":"2 pantalons de kimono malmenés = poubelle ? non non non c'est l'occasion d'en réparer un et de donner une nouvelle utilité à l'autre !",
+    "informations": {
+        "story" : {
+            "origins" : [
+                {
+                    "txt":"ces 2 pantalons de kimono ont été donnés gracieusement par 2 combattants au Japon, car ils étaient trop petits pour eux",
+                    "img":"/creations/jujitsu-trou-pantalon/origine_small.webp"
+                }             
+            ]
+        },
+        "realisation": {
+            "sketchs" : [
+
+            ],
+            "patterns": [
+
+            ],
+            "sewings" : [
+                {
+                    "txt":"découpe des bas d'un des 2 pantalons au dessus du trou, sur les 2 jambes",
+                    "img":"/creations/jujitsu-trou-pantalon/sewing_1.webp"
+                },
+                {
+                    "txt":"préparation d'un morceau de réparation du trou du pantalon à partir d'un bas de l'autre pantalon découpé",
+                    "img":"/creations/jujitsu-trou-pantalon/sewing_2.webp"
+                },
+                {
+                    "txt":"découpe du morceau et surjet tout autour de celui-ci (zigzag pour arrêter effilochage)",
+                    "img":"/creations/jujitsu-trou-pantalon/sewing_3.webp"
+                },
+                {
+                    "txt":"mise en place du morceau sur l'envers du pantalon avec les épingles sur l'endroit",
+                    "img":"/creations/jujitsu-trou-pantalon/sewing_4.webp"
+                },
+                {
+                    "txt":"couture de maintien et de réparation en zigzag, avec 2 passages tout autour pour assurer un bon maintien (ça tire beaucoup dans le jujitsu)",
+                    "img":"/creations/jujitsu-trou-pantalon/sewing_5.webp"
+                },
+                {
+                    "txt":"sur l'autre pantalon devenu pantacourt d'escalade, couture des bas de jambe en zigzag pour arrêter l'effilochage",
+                    "img":"/creations/jujitsu-trou-pantalon/sewing_6.webp"
+                }
+            ],
+            "costs": ["🕐 temps de réalisation :  30 minutes","🎯 coût des matières premières : 0.5 €","⚡ énergie : 0.5€"]
+        }
+    },
+    "imgs" : ["/creations/jujitsu-trou-pantalon/c_3.webp","/creations/jujitsu-trou-pantalon/c_2.webp","/creations/jujitsu-trou-pantalon/c_1.webp"]}

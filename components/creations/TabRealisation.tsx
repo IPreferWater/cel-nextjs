@@ -18,7 +18,7 @@ return <div className='flex flex-col space-y-4'>
     
     
 
-<h1 className='font-bold'>Cout</h1>
+<h1 className='font-bold'>Coût</h1>
 <div className='border-l pl-3 border-gray-300'>
 <ul  className='flex flex-col'>
 {realisation.costs.map((cost, i) => (
