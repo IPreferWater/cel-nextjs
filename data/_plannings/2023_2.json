@@ -1,108 +1,8 @@
 {
-  "title": "Janvier, bois du Perrier",
+  "title": "Février, essuie toi les pieds",
   "days": [
     {
       "day": 1,
-      "events": []
-    },
-    {
-      "day": 2,
-      "events": []
-    },
-    {
-      "day": 3,
-      "events": [
-        {
-          "type": "cours adultes",
-          "start": "18h15",
-          "end": "20h00",
-          "label": "Complet"
-        }
-      ]
-    },
-    {
-      "day": 4,
-      "events": [
-        {
-          "type": "cours ados",
-          "start": "14h00",
-          "end": "15h30",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
-        },
-        {
-          "type": "cours ados",
-          "start": "14h00",
-          "end": "15h30",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
-        }
-      ]
-    },
-    {
-      "day": 5,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "14h00",
-          "end": "16h00",
-          "label": "Complet"
-        }
-      ]
-    },
-    {
-      "day": 6,
-      "events": [
-        {
-          "type": "cours particulier",
-          "start": "16h00",
-          "end": "17h00",
-          "label": "Réservé"
-        }
-      ]
-    },
-    {
-      "day": 7,
-      "events": []
-    },
-    {
-      "day": 8,
-      "events": []
-    },
-    {
-      "day": 9,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "18h00",
-          "end": "20h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 1
-          }
-        }
-      ]
-    },
-    {
-      "day": 10,
-      "events": [
-        {
-          "type": "cours adultes",
-          "start": "18h15",
-          "end": "20h00",
-          "label": "Complet"
-        }
-      ]
-    },
-    {
-      "day": 11,
       "events": [
         {
           "type": "cours ados",
@@ -127,12 +27,35 @@
       ]
     },
     {
-      "day": 12,
+      "day": 2,
       "events": [
         {
           "type": "projet libre",
           "start": "14h00",
           "end": "16h00",
+          "label": "Complet"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "events": []
+    },
+    {
+      "day": 4,
+      "events": []
+    },
+    {
+      "day": 5,
+      "events": []
+    },
+    {
+      "day": 6,
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "18h00",
+          "end": "20h00",
           "label": "",
           "participants": {
             "max": 3,
@@ -142,34 +65,7 @@
       ]
     },
     {
-      "day": 13,
-      "events": []
-    },
-    {
-      "day": 14,
-      "events": []
-    },
-    {
-      "day": 15,
-      "events": []
-    },
-    {
-      "day": 16,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "18h00",
-          "end": "20h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 0
-          }
-        }
-      ]
-    },
-    {
-      "day": 17,
+      "day": 7,
       "events": [
         {
           "type": "cours adultes",
@@ -180,7 +76,7 @@
       ]
     },
     {
-      "day": 18,
+      "day": 8,
       "events": [
         {
           "type": "cours ados",
@@ -194,8 +90,8 @@
         },
         {
           "type": "cours ados",
-          "start": "14h00",
-          "end": "15h30",
+          "start": "16h00",
+          "end": "17h30",
           "label": "",
           "participants": {
             "max": 3,
@@ -205,7 +101,7 @@
       ]
     },
     {
-      "day": 19,
+      "day": 9,
       "events": [
         {
           "type": "projet libre",
@@ -220,18 +116,152 @@
       ]
     },
     {
+      "day": 10,
+      "events": []
+    },
+    {
+      "day": 11,
+      "events": []
+    },
+    {
+      "day": 12,
+      "events": []
+    },
+    {
+      "day": 13,
+      "events": [
+        {
+          "type": "Stage couture",
+          "start": "10h30",
+          "end": "12h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 2
+          }
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "events": [
+        {
+          "type": "Stage couture",
+          "start": "10h30",
+          "end": "12h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 2
+          }
+        },
+        {
+          "type": "cours adultes",
+          "start": "18h15",
+          "end": "20h00",
+          "label": "Complet"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "events": [
+        {
+          "type": "Stage couture",
+          "start": "10h30",
+          "end": "12h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 2
+          }
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "14h00",
+          "end": "16h00",
+          "label": "Complet"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "events": []
+    },
+    {
+      "day": 18,
+      "events": []
+    },
+    {
+      "day": 19,
+      "events": []
+    },
+    {
       "day": 20,
       "events": [
         {
-          "type": "cours particulier",
-          "start": "16h00",
-          "end": "17h00",
-          "label": "Réservé"
+          "type": "Stage couture",
+          "start": "10h30",
+          "end": "12h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 1
+          }
         }
       ]
     },
     {
       "day": 21,
+      "events": [
+        {
+          "type": "Stage couture",
+          "start": "10h30",
+          "end": "12h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 1
+          }
+        },
+        {
+          "type": "cours adultes",
+          "start": "18h15",
+          "end": "20h00",
+          "label": "Complet"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "events": [
+        {
+          "type": "Stage couture",
+          "start": "10h30",
+          "end": "12h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "events": []
+    },
+    {
+      "day": 24,
+      "events": []
+    },
+    {
+      "day": 25,
       "events": [
         {
           "type": "projet libre",
@@ -246,11 +276,11 @@
       ]
     },
     {
-      "day": 22,
+      "day": 26,
       "events": []
     },
     {
-      "day": 23,
+      "day": 27,
       "events": [
         {
           "type": "projet libre",
@@ -259,13 +289,13 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 1
+            "booked": 0
           }
         }
       ]
     },
     {
-      "day": 24,
+      "day": 28,
       "events": [
         {
           "type": "cours adultes",
@@ -274,43 +304,6 @@
           "label": "Complet"
         }
       ]
-    },
-    {
-      "day": 25,
-      "events": [
-        {
-          "type": "cours ados",
-          "start": "14h00",
-          "end": "15h30",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
-        },
-        {
-          "type": "cours ados",
-          "start": "16h00",
-          "end": "17h30",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
-        }
-      ]
-    },
-    {
-      "day": 26,
-      "events": []
-    },
-    {
-      "day": 27,
-      "events": []
-    },
-    {
-      "day": 28,
-      "events": []
     },
     {
       "day": 29,
@@ -322,14 +315,7 @@
     },
     {
       "day": 31,
-      "events": [
-        {
-          "type": "cours adultes",
-          "start": "18h15",
-          "end": "20h00",
-          "label": "Complet"
-        }
-      ]
+      "events": []
     }
   ]
 }
