@@ -3,7 +3,7 @@ import {Bandeau} from '@/components/Bandeau'
 import {Item} from '@/components/ou/Item'
 
 const OuPage = () => (
-  <Layout title="localisation atelier">
+  <Layout title="localisation atelier" metaName = "Localisation" metaDescription="Comment se rendre à l'atelier de couture Clementinestla">
         <div className='mb-4'>
    <Bandeau txt='Où c’est qu’il est l’atelier'/>
    </div>

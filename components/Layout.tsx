@@ -5,10 +5,12 @@ import 'tailwindcss/tailwind.css'
 
 type Props = {
   children?: ReactNode
-  title?: string
+  title: string
+  metaName: string,
+  metaDescription: string
 }
 
-export const Layout = ({ children, title = 'This is the default title' }: Props) => {
+export const Layout = ({ children, title, metaName, metaDescription}: Props) => {
 
   const navigationUrls = [
     {
@@ -47,15 +49,16 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
   return <div>
     <Head>
       <title>{title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta charSet="utf-8" />      
       <link rel="shortcut icon" href="favicon.gif" />
     </Head>
     <header className='mb-4'>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta name={metaName} content={metaDescription}/>
       <div className='flex justify-between items-center'>
       <Link href="/">
         <a>
-          <img className='object-contain h-24 mb-6' src="/logo.svg"/>
+          <img className='object-contain h-40 p-4' src="/logo.svg" alt="logo de la page d'index"/>
         </a>
         </Link>
 
@@ -63,7 +66,7 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
         {navigationSocialNetwork.map(({id,url}: any) => {
            return <Link key={id} href={`icon_${id}.svg`}>
             <a href={url} target='_blank'>
-            <img className='object-contain h-16' src={`/icon_${id}.svg`} />
+            <img className='object-contain h-16' src={`/icon_${id}.svg`} alt={`icon reseau social ${id}`} />
           </a>
           </Link>
          
@@ -74,10 +77,10 @@ export const Layout = ({ children, title = 'This is the default title' }: Props)
         </div>
         
 
-      <nav className='flex flex-col md:flex-row md:items-end justify-between mx-8 space-x-6'>
+      <nav className='flex flex-col text-5xl md:flex-row md:text-2xl md:items-end md:justify-between md:mx-8 md:space-x-6'>
       {navigationUrls.map(({title, url}: any) => {
            return <Link key={title} href={url}>
-           <a className='text-xl md:text-2xl underline decoration-cel-orange decoration-2'>{title}</a>
+           <a className='underline decoration-cel-orange decoration-2'>{title}</a>
          </Link>
         })
         }

@@ -5,7 +5,7 @@ import {CoursComponent} from '@/components/cours/CoursComponent'
 
     
 
-  return (<Layout title="Clementinestla cours couture Villeneuve d'ascq Lille">
+  return (<Layout title="Clementinestla cours couture Villeneuve d'ascq Lille"  metaName = "Tarifs cours" metaDescription="tarifs et explication des differents type d'ateliers disponible chez Clementinestla">
     <div className='flex flex-col my-12 space-y-10'>
 
 <CoursComponent titles={['Planning du mois'/* TODO: Clementine,'Réservation ici'*/]}>

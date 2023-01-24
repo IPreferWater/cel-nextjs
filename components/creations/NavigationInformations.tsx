@@ -22,7 +22,7 @@ export const NavigationInformations = ( {informations} : InformationsProps) => {
       };
 
 return <div>
-    <ul className="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4 space-x-4">
+    {/*<ul className="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4 space-x-4">
 
   {headers.map((header, i) => (
   <li key={`HeaderInfo-${i}`} className="nav-item" role="presentation">
@@ -32,29 +32,22 @@ return <div>
     aria-selected="true" onClick={(e) => buttonHandler(e, header.id)}>{header.label}</a>
   </li>
 ))}
-
-{/*<li >
-  <a href="#tabs-home" className={`
-    ${stateTab=="tabs-home-tab" ? 'underline':''} 
-    hover:border-transparent hover:bg-gray-100
-    active
-    `} id="tabs-home-tab" data-bs-toggle="pill" data-bs-target="#tabs-home" role="tab" aria-controls="tabs-home"
-    aria-selected="true" onClick={buttonHandler}>Histoire</a>
-</li>
-<li className="nav-item" role="presentation">
-  <a href="#tabs-profile" className={`
-    hover:border-transparent hover:bg-gray-100
-    `} id="tabs-profile-tab" data-bs-toggle="pill" data-bs-target="#tabs-profile" role="tab"
-    aria-controls="tabs-profile" aria-selected="false" onClick={buttonHandler}>Réalisation</a>
-</li>*/}
-</ul>
-  <div>
+  </ul>*/}
+  {/*<div>
     <div className={`${stateTab=="story" ? 'show active':'hidden' }`}>
     <TabStory story={informations.story}/>
     </div>
     <div className={`${stateTab=="realisation" ? 'show active':'hidden' }`}>
     <TabRealisation realisation={informations.realisation}/>
     </div>
+  </div>*/}
+
+<div>
+  <h2 className='text-4xl font-bold my-2'>Histoire</h2>
+    <TabStory story={informations.story}/>      
+    <h2 className='text-4xl font-bold my-2'>Réalisation</h2>  
+    <TabRealisation realisation={informations.realisation}/>    
   </div>
+  
 </div>
     }
