@@ -211,7 +211,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 1
+            "booked": 3
           }
         }
       ]
@@ -226,7 +226,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 1
+            "booked": 3
           }
         },
         {
@@ -247,7 +247,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 1
+            "booked": 3
           }
         }
       ]
