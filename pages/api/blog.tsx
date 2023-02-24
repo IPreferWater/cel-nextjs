@@ -92,7 +92,28 @@ export function getAllCreationIds() {
   })
 }
 
-export function getCreationDataByID(id:number) :Creation {
+export function getAllCreationsSortedByDate() : Array<Creation> {
+  //create objs containing ids from the data/_creations folder
+  const objs = getAllCreationIds()
+  //get only the id of the file (filename)
+  const idStrs = objs.map(obj => obj.params.id)
+  //get data from each creation in data/_creation using id
+  const creations = idStrs.map(id => getCreationDataByID(id))
+  //sort creations by date
+  const sortedCreations =   creations.sort(({ date: a }, { date: b }) => {
+    if (a < b) {
+      return 1
+    } else if (a > b) {
+      return -1
+    } else {
+      return 0
+    }
+  })
+
+  return sortedCreations
+}
+
+export function getCreationDataByID(id:string) :Creation {
   const fullPath = path.join(creationsDirectory, `${id}.json`)
   const creationString = fs.readFileSync(fullPath, 'utf8')
   const creation: Creation = JSON.parse(creationString);
