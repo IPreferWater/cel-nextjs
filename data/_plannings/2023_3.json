@@ -1,5 +1,5 @@
 {
-  "title": "Février, essuie toi les pieds",
+  "title": "mars, viens prendre une place",
   "days": [
     {
       "day": 1,
@@ -8,34 +8,19 @@
           "type": "cours ados",
           "start": "14h00",
           "end": "15h30",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
+          "label": "Complet"
         },
         {
           "type": "cours ados",
           "start": "16h00",
           "end": "17h30",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
+          "label": "1 place"
         }
       ]
     },
     {
       "day": 2,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "14h00",
-          "end": "16h00",
-          "label": "Complet"
-        }
-      ]
+      "events": []
     },
     {
       "day": 3,
@@ -56,11 +41,7 @@
           "type": "projet libre",
           "start": "18h00",
           "end": "20h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 1
-          }
+          "label": "Complet"
         }
       ]
     },
@@ -71,7 +52,11 @@
           "type": "cours adultes",
           "start": "18h15",
           "end": "20h00",
-          "label": "Complet"
+          "label": "",
+          "participants": {
+            "max": 0,
+            "booked": 0
+          }
         }
       ]
     },
@@ -82,21 +67,13 @@
           "type": "cours ados",
           "start": "14h00",
           "end": "15h30",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
+          "label": "Complet"
         },
         {
           "type": "cours ados",
           "start": "16h00",
           "end": "17h30",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
+          "label": "1 place"
         }
       ]
     },
@@ -110,7 +87,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 0
+            "booked": 2
           }
         }
       ]
@@ -129,37 +106,20 @@
     },
     {
       "day": 13,
-      "events": [
-        {
-          "type": "Stage couture",
-          "start": "10h30",
-          "end": "12h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
-        }
-      ]
+      "events": []
     },
     {
       "day": 14,
       "events": [
         {
-          "type": "Stage couture",
-          "start": "10h30",
-          "end": "12h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
-        },
-        {
           "type": "cours adultes",
           "start": "18h15",
           "end": "20h00",
-          "label": "Complet"
+          "label": "",
+          "participants": {
+            "max": 0,
+            "booked": 0
+          }
         }
       ]
     },
@@ -167,14 +127,16 @@
       "day": 15,
       "events": [
         {
-          "type": "Stage couture",
-          "start": "10h30",
-          "end": "12h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
+          "type": "cours ados",
+          "start": "14h00",
+          "end": "15h30",
+          "label": "Complet"
+        },
+        {
+          "type": "cours ados",
+          "start": "16h00",
+          "end": "17h30",
+          "label": "1 place"
         }
       ]
     },
@@ -185,7 +147,11 @@
           "type": "projet libre",
           "start": "14h00",
           "end": "16h00",
-          "label": "Complet"
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 2
+          }
         }
       ]
     },
@@ -205,13 +171,13 @@
       "day": 20,
       "events": [
         {
-          "type": "Stage couture",
-          "start": "10h30",
-          "end": "12h00",
+          "type": "projet libre",
+          "start": "18h00",
+          "end": "20h00",
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 3
+            "booked": 2
           }
         }
       ]
@@ -220,20 +186,14 @@
       "day": 21,
       "events": [
         {
-          "type": "Stage couture",
-          "start": "10h30",
-          "end": "12h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 3
-          }
-        },
-        {
           "type": "cours adultes",
           "start": "18h15",
           "end": "20h00",
-          "label": "Complet"
+          "label": "",
+          "participants": {
+            "max": 0,
+            "booked": 0
+          }
         }
       ]
     },
@@ -241,20 +201,33 @@
       "day": 22,
       "events": [
         {
-          "type": "Stage couture",
-          "start": "10h30",
-          "end": "12h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 3
-          }
+          "type": "cours ados",
+          "start": "14h00",
+          "end": "15h30",
+          "label": "Complet"
+        },
+        {
+          "type": "cours ados",
+          "start": "16h00",
+          "end": "17h30",
+          "label": "1 place"
         }
       ]
     },
     {
       "day": 23,
-      "events": []
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "14h00",
+          "end": "16h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 1
+          }
+        }
+      ]
     },
     {
       "day": 24,
@@ -270,7 +243,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 0
+            "booked": 2
           }
         }
       ]
@@ -289,7 +262,7 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 0
+            "booked": 1
           }
         }
       ]
@@ -301,17 +274,45 @@
           "type": "cours adultes",
           "start": "18h15",
           "end": "20h00",
-          "label": "Complet"
+          "label": "",
+          "participants": {
+            "max": 0,
+            "booked": 0
+          }
         }
       ]
     },
     {
       "day": 29,
-      "events": []
+      "events": [
+        {
+          "type": "cours ados",
+          "start": "14h00",
+          "end": "15h30",
+          "label": "Complet"
+        },
+        {
+          "type": "cours ados",
+          "start": "16h00",
+          "end": "17h30",
+          "label": "1 place"
+        }
+      ]
     },
     {
       "day": 30,
-      "events": []
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "14h00",
+          "end": "16h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 0
+          }
+        }
+      ]
     },
     {
       "day": 31,
