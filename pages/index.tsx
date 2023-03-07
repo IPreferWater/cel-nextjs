@@ -25,7 +25,7 @@ import {Bandeau} from '@/components/Bandeau'
         <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
           <img className='object-fit' src='index/planning_background.webp' alt="photo link pour la page des plannings"/>
           <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
-          <p className='top-50 absolute'>Plannings</p>
+          <p className='top-50 absolute underline decoration-cel-orange decoration-2'>Plannings</p>
         </a>
       </Link>
 
@@ -39,7 +39,7 @@ import {Bandeau} from '@/components/Bandeau'
         <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
           <img className='object-fit' src='index/reparation_background.webp' alt='link prix disponibles pour les retouches de coutures' />
           <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
-          <p className='top-50 absolute'>Réparations et transformations</p>
+          <p className='top-50 absolute underline decoration-cel-orange decoration-2'>Réparations et transformations</p>
         </a>
       </Link>
       </div>
