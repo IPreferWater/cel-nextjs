@@ -13,7 +13,10 @@ return <a href={url} className='flex flex-col text-center relative'>
   <img className = "object-cover h-4/6 "src={imgUrl}/>
 <div className='font-bold text-cel-black text-2xl'>{creationTitle}</div>
 <div className='italic text-cel-black'>réalisé</div>
-<div className="font-bold">{price} €</div>
+{
+  price >0 ? <div className="font-bold">{price} €</div>:null 
+}
+
 </a>
 }
 
