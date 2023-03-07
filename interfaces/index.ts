@@ -29,6 +29,7 @@ export type Product = {
 }
 
 export type Creation = {
+  id: string
   title: string
   description: string
   date: number

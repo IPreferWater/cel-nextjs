@@ -23,7 +23,7 @@ export const Layout = ({ children, title, metaName, metaDescription}: Props) => 
     },
     {
       title:'Les créations upcyclées',
-      url:'/comingsoon'
+      url:'/creations'
     },
     {
       title:'Le projet',
