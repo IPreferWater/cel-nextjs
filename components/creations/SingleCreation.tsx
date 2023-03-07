@@ -1,17 +1,18 @@
 type SingleCreationProps = {
   creationTitle: string
   imgUrl: string
+  url: string
   price : number
   }
 
-export const SingleCreation = ( {creationTitle, imgUrl, price} : SingleCreationProps) => {
+export const SingleCreation = ( {creationTitle, imgUrl, url, price} : SingleCreationProps) => {
 
-return <a href="https://www.google.com/" className='bg-lime-700  p-4 flex flex-col text-center'> 
-<div className= 'bg-green-400 h-80 p-4'>
-  <img src={imgUrl}/>
-</div>
-<div className='font-bold text-cel-orange text-2xl'>{creationTitle}</div>
-<div className='italic text-cel-green'>réalisé</div>
+return <a href={url} className='flex flex-col text-center relative'>
+  <div className={`w-36 h-16 bg-orange-400 absolute -top-6 left-1/2 -translate-x-11 opacity-80 rotate-6`}></div>
+
+  <img className = "object-cover h-4/6 "src={imgUrl}/>
+<div className='font-bold text-cel-black text-2xl'>{creationTitle}</div>
+<div className='italic text-cel-black'>réalisé</div>
 <div className="font-bold">{price} €</div>
 </a>
 }
