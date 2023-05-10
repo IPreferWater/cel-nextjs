@@ -1,8 +1,27 @@
 {
-  "title": "mars, viens prendre une place",
+  "title": "Mai, houjysuisfatigué",
   "days": [
     {
       "day": 1,
+      "events": []
+    },
+    {
+      "day": 2,
+      "events": [
+        {
+          "type": "cours adultes",
+          "start": "18h15",
+          "end": "20h00",
+          "label": "Complet",
+          "participants": {
+            "max": 0,
+            "booked": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": 3,
       "events": [
         {
           "type": "cours ados",
@@ -14,17 +33,9 @@
           "type": "cours ados",
           "start": "16h00",
           "end": "17h30",
-          "label": "1 place"
+          "label": "1 place dispo"
         }
       ]
-    },
-    {
-      "day": 2,
-      "events": []
-    },
-    {
-      "day": 3,
-      "events": []
     },
     {
       "day": 4,
@@ -36,23 +47,24 @@
     },
     {
       "day": 6,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "18h00",
-          "end": "20h00",
-          "label": "Complet"
-        }
-      ]
+      "events": []
     },
     {
       "day": 7,
+      "events": []
+    },
+    {
+      "day": 8,
+      "events": []
+    },
+    {
+      "day": 9,
       "events": [
         {
           "type": "cours adultes",
           "start": "18h15",
           "end": "20h00",
-          "label": "",
+          "label": "Complet",
           "participants": {
             "max": 0,
             "booked": 0
@@ -61,7 +73,7 @@
       ]
     },
     {
-      "day": 8,
+      "day": 10,
       "events": [
         {
           "type": "cours ados",
@@ -73,12 +85,12 @@
           "type": "cours ados",
           "start": "16h00",
           "end": "17h30",
-          "label": "1 place"
+          "label": "1 place dispo"
         }
       ]
     },
     {
-      "day": 9,
+      "day": 11,
       "events": [
         {
           "type": "projet libre",
@@ -91,14 +103,6 @@
           }
         }
       ]
-    },
-    {
-      "day": 10,
-      "events": []
-    },
-    {
-      "day": 11,
-      "events": []
     },
     {
       "day": 12,
@@ -106,135 +110,6 @@
     },
     {
       "day": 13,
-      "events": []
-    },
-    {
-      "day": 14,
-      "events": [
-        {
-          "type": "cours adultes",
-          "start": "18h15",
-          "end": "20h00",
-          "label": "",
-          "participants": {
-            "max": 0,
-            "booked": 0
-          }
-        }
-      ]
-    },
-    {
-      "day": 15,
-      "events": [
-        {
-          "type": "cours ados",
-          "start": "14h00",
-          "end": "15h30",
-          "label": "Complet"
-        },
-        {
-          "type": "cours ados",
-          "start": "16h00",
-          "end": "17h30",
-          "label": "1 place"
-        }
-      ]
-    },
-    {
-      "day": 16,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "14h00",
-          "end": "16h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
-        }
-      ]
-    },
-    {
-      "day": 17,
-      "events": []
-    },
-    {
-      "day": 18,
-      "events": []
-    },
-    {
-      "day": 19,
-      "events": []
-    },
-    {
-      "day": 20,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "18h00",
-          "end": "20h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 2
-          }
-        }
-      ]
-    },
-    {
-      "day": 21,
-      "events": [
-        {
-          "type": "cours adultes",
-          "start": "18h15",
-          "end": "20h00",
-          "label": "",
-          "participants": {
-            "max": 0,
-            "booked": 0
-          }
-        }
-      ]
-    },
-    {
-      "day": 22,
-      "events": [
-        {
-          "type": "cours ados",
-          "start": "14h00",
-          "end": "15h30",
-          "label": "Complet"
-        },
-        {
-          "type": "cours ados",
-          "start": "16h00",
-          "end": "17h30",
-          "label": "1 place"
-        }
-      ]
-    },
-    {
-      "day": 23,
-      "events": [
-        {
-          "type": "projet libre",
-          "start": "14h00",
-          "end": "16h00",
-          "label": "",
-          "participants": {
-            "max": 3,
-            "booked": 1
-          }
-        }
-      ]
-    },
-    {
-      "day": 24,
-      "events": []
-    },
-    {
-      "day": 25,
       "events": [
         {
           "type": "projet libre",
@@ -249,11 +124,11 @@
       ]
     },
     {
-      "day": 26,
+      "day": 14,
       "events": []
     },
     {
-      "day": 27,
+      "day": 15,
       "events": [
         {
           "type": "projet libre",
@@ -262,19 +137,19 @@
           "label": "",
           "participants": {
             "max": 3,
-            "booked": 1
+            "booked": 2
           }
         }
       ]
     },
     {
-      "day": 28,
+      "day": 16,
       "events": [
         {
           "type": "cours adultes",
           "start": "18h15",
           "end": "20h00",
-          "label": "",
+          "label": "Complet",
           "participants": {
             "max": 0,
             "booked": 0
@@ -283,7 +158,7 @@
       ]
     },
     {
-      "day": 29,
+      "day": 17,
       "events": [
         {
           "type": "cours ados",
@@ -295,17 +170,95 @@
           "type": "cours ados",
           "start": "16h00",
           "end": "17h30",
-          "label": "1 place"
+          "label": "1 place dispo"
         }
       ]
     },
     {
-      "day": 30,
+      "day": 18,
+      "events": []
+    },
+    {
+      "day": 19,
+      "events": []
+    },
+    {
+      "day": 20,
+      "events": []
+    },
+    {
+      "day": 21,
+      "events": []
+    },
+    {
+      "day": 22,
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "18h00",
+          "end": "20h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 2
+          }
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "events": [
+        {
+          "type": "cours adultes",
+          "start": "18h15",
+          "end": "20h00",
+          "label": "Complet",
+          "participants": {
+            "max": 0,
+            "booked": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "events": [
+        {
+          "type": "cours ados",
+          "start": "14h00",
+          "end": "15h30",
+          "label": "Complet"
+        },
+        {
+          "type": "cours ados",
+          "start": "16h00",
+          "end": "17h30",
+          "label": "1 place dispo"
+        }
+      ]
+    },
+    {
+      "day": 25,
       "events": [
         {
           "type": "projet libre",
           "start": "14h00",
           "end": "16h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "9h45",
+          "end": "11h45",
           "label": "",
           "participants": {
             "max": 3,
@@ -315,8 +268,59 @@
       ]
     },
     {
-      "day": 31,
+      "day": 27,
+      "events": [
+        {
+          "type": "projet libre",
+          "start": "14h00",
+          "end": "16h00",
+          "label": "",
+          "participants": {
+            "max": 3,
+            "booked": 1
+          }
+        }
+      ]
+    },
+    {
+      "day": 28,
       "events": []
+    },
+    {
+      "day": 29,
+      "events": []
+    },
+    {
+      "day": 30,
+      "events": [
+        {
+          "type": "cours adultes",
+          "start": "18h15",
+          "end": "20h00",
+          "label": "Complet",
+          "participants": {
+            "max": 0,
+            "booked": 0
+          }
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "events": [
+        {
+          "type": "cours ados",
+          "start": "14h00",
+          "end": "15h30",
+          "label": "Complet"
+        },
+        {
+          "type": "cours ados",
+          "start": "16h00",
+          "end": "17h30",
+          "label": "1 place dispo"
+        }
+      ]
     }
   ]
 }
