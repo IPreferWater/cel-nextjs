@@ -15,7 +15,7 @@ type ComingSoonProps = {
    </div>
    <div className='mx-8 text-center'>
     <h1 className='text-3xl'>{title}</h1>
-    <div className='text-2xl'>On y travaille ! n'hesitez pas à m'envoyer un message sur mes reseaux si c'est une partie du site que vous aimeriez qu'on s'occupe en priorité !</div> 
+    <div className='text-2xl'>Promis ça va être dingue ... je vais vous montrer comment avoir un diplôme de ouf sans payer les 16000 balles de l'école</div> 
    </div>
    
   </Layout>)

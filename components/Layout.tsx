@@ -29,6 +29,11 @@ export const Layout = ({ children, title, metaName, metaDescription}: Props) => 
       title:'Le projet',
       url:'/comingsoon'
     }
+    ,
+    {
+      title:'FAQ',
+      url:'/faq'
+    }
   ]
 
   const navigationSocialNetwork = [

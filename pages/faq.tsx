@@ -26,14 +26,9 @@ export default function ReparationsTransformations() {
       question:'Des stages de couture de plusieurs jours sont-ils organisés ?',
       texts:['Oui pendant les vacances scolaires, 2 sessions de 3 jours chacune sont organisées, à raison d\'1h30 par jour. Accessibles pour tous les niveaux !']
     },
-    /*{
-      question:'J\'aimerai acheter une machine à coudre, quels sont les critères à prendre en compte et avez-vous des machines à recommander ?',
-      texts:['']
-    },*/
     {
       question:'Quels sont les outils "indispensables" pour se mettre à la couture ?',
       texts:['Voici une liste non exhaustive d\'outils et matériel :','','- du fil élastique noir','- assortiment d\'aiguilles à machine (marque Bohin ou Organ)','- épingles extrafines','- assortiment d\'aiguille à coudre (couture main)','- ciseaux de couturière (fiska c\'est top), ciseaux que pour le tissu !!','- coupe fil','- ciseaux cranteurs','- découseur','- épingles à tête de verre','- Règle japonaise','- Equerre','- mètre ruban','- Craie tailleur','- stylo frixion','- feutre textile effaçable à l\'eau']
-      //Vous pouvez retrouver tout ce matériel sur le site  www.rascol.com
     },
     {
       question:'C\'est possible de réserver pour un atelier à domicile ?',
@@ -46,6 +41,14 @@ export default function ReparationsTransformations() {
     {
       question:'Quelles sont les différentes options de cours de couture ?',
       texts:['Sont accessibles soit : ', '- des cours particuliers', '- des ateliers projets libres (3 personnes max/atelier)', '- des cours de coutures au mois','- stages de coutures pendant les vacances scolaires']
+    },
+    {
+      question:'Quel peut être le moyen de paiement ?',
+      texts:['Vous pouvez régler en espèces ou CB']
+    },
+    {
+      question:'Je peux ramener un projet ?',
+      texts:['Oui tout à fait je m\'adapte à vous et à vos envies 🙂.', 'Après si vous ne savez pas trop quoi réaliser, je vous propose des idées de créations en fonction de votre niveau et de vos envies']
     }
   ]
 
