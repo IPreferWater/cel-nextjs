@@ -21,12 +21,10 @@ import {Bandeau} from '@/components/Bandeau'
         <p>Ici vous pouvez prendre des cours, participer à un atelier, faire réaliser des réparations, des transformations de vêtements et vous pouvez trouver des créations uniques et originales ! </p>
       </div>
 
-      <Link href={`/plannings`}>
-        <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
+      <Link href={`/plannings`} className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
           <img className='object-fit' src='index/planning_background.webp' alt="photo link pour la page des plannings"/>
           <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
           <p className='top-50 absolute underline decoration-cel-orange decoration-2'>Plannings</p>
-        </a>
       </Link>
 
       <img className='h-index-photo object-contain m-auto' src='index/landscape.webp' alt="Clémentine avec une création jupe verte"/>
@@ -35,12 +33,10 @@ import {Bandeau} from '@/components/Bandeau'
 
       <img className='h-index-photo object-contain m-auto' src='index/sewing_room.webp' alt="Atelier de couture de Clémentine"/>
 
-      <Link href={`/tarifs`}>
-        <a className="bg-red-100 text-center  h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">
+      <Link href={`/tarifs`} className="text-center h-96 w-96 m-auto flex items-center justify-center text-3xl relative bg-reparations-100">      
           <img className='object-fit' src='index/reparation_background.webp' alt='link prix disponibles pour les retouches de coutures' />
           <div className='bg-white absolute rounded-full w-64 h-64 opacity-90'></div>
           <p className='top-50 absolute underline decoration-cel-orange decoration-2'>Réparations et transformations</p>
-        </a>
       </Link>
       </div>
       

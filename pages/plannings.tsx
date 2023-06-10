@@ -20,8 +20,8 @@ type PlanningsPageProps = {
 
     <div className='flex flex-col'>
    {planningTitles.map(({id, title}: IPlanningTitle) => {
-           return <Link key={id} href={`plannings/${id}`}>
-           <a className='text-xl md:text-2xl underline decoration-cel-orange decoration-2'>{title}</a>
+           return <Link key={id} href={`plannings/${id}`} className='text-xl md:text-2xl underline decoration-cel-orange decoration-2'>
+           {title}
          </Link>
         })
         }
